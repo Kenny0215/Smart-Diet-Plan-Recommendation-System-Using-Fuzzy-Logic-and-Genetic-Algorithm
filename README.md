@@ -5,7 +5,7 @@ This project is a Smart Diet Plan Recommendation System designed to provide pers
 🧠 Technologies Used
 1. Python
 2. Fuzzy Logic (Scikit-Fuzzy)
-3. Genetic Algorithm (DEAP / custom implementation)
+3. Genetic Algorithm
 4. Streamlit – Interactive web interface
 5. Pandas & NumPy – Data processing
 6. Matplotlib – Visualization
