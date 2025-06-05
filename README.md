@@ -4,17 +4,16 @@ This project is a Smart Diet Plan Recommendation System designed to provide pers
 
 🧠 Technologies Used
 1. Python
-2. Fuzzy Logic (Scikit-Fuzzy)
-3. Genetic Algorithm
-4. Streamlit – Interactive web interface
-5. Pandas & NumPy – Data processing
-6. Matplotlib – Visualization
+2. Genetic Algorithm
+3. Streamlit – Interactive web interface
+4. Pandas & NumPy – Data processing
+5. Matplotlib – Visualization
 
 🚀 Features
 1. User input form for athlete’s age, bmi and activity level
 2. Fuzzy inference system to determine nutritional requirements (calories, protein, carbs, fats)
 3. Genetic algorithm to generate optimized diet plans using a food database
-4. Diet plan output with meal suggestions, nutrient breakdown, and total calories
+4. Diet plan output with meal suggestions, nutrient breakdown and total calories
 5. Dynamic visual feedback on macronutrient distribution
 6. Scalable for different sports and health profiles
 
