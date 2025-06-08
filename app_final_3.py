@@ -40,6 +40,8 @@ def activity_membership(activity_level):
 ## belongs to each fuzzy category.
 
 def fuzzy_health_assessment(age, bmi, activity, diabetes=False, hypertension=False):
+    risk_category = None
+    
     age_m = age_membership(age)
     bmi_m = bmi_membership(bmi)
     act_m = activity_membership(activity)
