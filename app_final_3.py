@@ -16,24 +16,24 @@ def triangular(x, a, b, c):
 
 def age_membership(age):
     return {
-        "Young": triangular(age, 0, 18, 30),
-        "Adult": triangular(age, 25, 40, 60),
-        "Elder": triangular(age, 55, 70, 100)
+        "Young": triangular(age, 18, 18, 30),
+        "Adult": triangular(age, 25, 35, 45),
+        "Elder": triangular(age, 40, 50, 50)
     }
 
 def bmi_membership(bmi):
     return {
-        "Underweight": triangular(bmi, 0, 16, 18.5),
-        "Normal": triangular(bmi, 18.5, 22.5, 24.9),
-        "Overweight": triangular(bmi, 25, 27.5, 29.9),
-        "Obese": triangular(bmi, 30, 37, 45)
+        "Underweight": triangular(bmi, 10, 14, 18.5),
+        "Normal": triangular(bmi, 18, 21.5, 25),
+        "Overweight": triangular(bmi, 24, 27, 30),
+        "Obese": triangular(bmi, 29, 34, 40)
     }
 
 def activity_membership(activity_level):
     return {
-        "Low": triangular(activity_level, 0, 2, 4),
-        "Moderate": triangular(activity_level, 3, 5, 7),
-        "High": triangular(activity_level, 6, 8, 10)
+        "Low": triangular(activity_level, 1, 1, 4),
+        "Moderate": triangular(activity_level, 3, 5.5, 8),
+        "High": triangular(activity_level, 6, 10, 10)
     }
 
 ## These membership functions determine the degree to which an input (age, BMI, activity level)
@@ -286,9 +286,9 @@ with tabs[1]:
     col1, col2 = st.columns(2)
     with col1:
         st.subheader("Enter Your Health Details")
-        user_age = st.number_input("Age", min_value=0, max_value=120, value=30, key="age")
-        user_bmi = st.number_input("BMI", min_value=10.0, max_value=50.0, value=22.0, step=0.1, key="bmi")
-        user_activity = st.slider("Activity Level (0 low - 10 high)", 0, 10, 5, key="activity")
+        user_age = st.number_input("Age", min_value=18, max_value=50, value=25, key="age")
+        user_bmi = st.number_input("BMI", min_value=10.0, max_value=40.0, value=22.0, step=0.1, key="bmi")
+        user_activity = st.slider("Activity Level (1 low - 10 high)", 1, 10, 5, key="activity")
         user_diabetes = st.checkbox("Diabetes", value=False, key="diabetes")
         user_hypertension = st.checkbox("Hypertension", value=False, key="hypertension")
     with col2:
