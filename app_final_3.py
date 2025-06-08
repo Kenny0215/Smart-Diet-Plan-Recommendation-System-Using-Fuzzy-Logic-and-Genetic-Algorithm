@@ -4,6 +4,10 @@ import numpy as np
 import matplotlib.pyplot as plt
 import random
 
+file_path = "/content/drive/MyDrive/Dataset/meal.csv"
+meals_df = pd.read_csv(file_path)
+meal_ids = meals_df["Meal_ID"].tolist()
+
 # ----------------------
 # Fuzzy Logic Functions
 # ----------------------
@@ -17,22 +21,22 @@ def triangular(x, a, b, c):
 def age_membership(age):
     return {
         "Young": triangular(age, 18, 20, 25),
-        "Adult": triangular(age, 30, 35, 40),
-        "Elder": triangular(age, 40, 45, 50)
+        "Adult": triangular(age, 30, 35, 45),
+        "Elder": triangular(age, 50, 55, 60)
     }
 
 def bmi_membership(bmi):
     return {
-        "Underweight": triangular(bmi, 10, 14, 18.5),
-        "Normal": triangular(bmi, 18, 21.5, 25),
-        "Overweight": triangular(bmi, 24, 27, 30),
-        "Obese": triangular(bmi, 29, 34, 40)
+        "Underweight": triangular(bmi, 0, 16, 18.5),
+        "Normal": triangular(bmi, 18, 22, 25),
+        "Overweight": triangular(bmi, 23, 27, 30),
+        "Obese": triangular(bmi, 28, 35, 50)
     }
 
 def activity_membership(activity_level):
     return {
-        "Low": triangular(activity_level, 1, 2.5, 4),
-        "Moderate": triangular(activity_level, 3, 5.5, 8),
+        "Low": triangular(activity_level, 1, 2, 4),
+        "Moderate": triangular(activity_level, 3, 5, 7),
         "High": triangular(activity_level, 6, 8, 10)
     }
 
@@ -41,7 +45,7 @@ def activity_membership(activity_level):
 
 def fuzzy_health_assessment(age, bmi, activity, diabetes=False, hypertension=False):
     risk_category = None
-    
+
     age_m = age_membership(age)
     bmi_m = bmi_membership(bmi)
     act_m = activity_membership(activity)
@@ -215,6 +219,11 @@ def mutate(chromosome, mutation_rate=0.15):
             new_chromosome[i] = random.choice(meal_ids)
     return new_chromosome
 
+# Use session state to store GA results so that changing the selectbox doesn't rerun the GA.
+if "ga_result" not in st.session_state:
+    st.session_state.ga_result = None
+    st.session_state.fitness_history = None
+
 def run_ga(high_protein=True):
     population = [create_chromosome() for _ in range(POPULATION_SIZE)]
     best_chromo = None
@@ -288,16 +297,16 @@ with tabs[1]:
     col1, col2 = st.columns(2)
     with col1:
         st.subheader("Enter Your Health Details")
-        user_age = st.number_input("Age", min_value=18, max_value=50, value=25, key="age")
-        user_bmi = st.number_input("BMI", min_value=10.0, max_value=40.0, value=22.0, step=0.1, key="bmi")
+        user_age = st.number_input("Age", min_value=18, max_value=60, value=25, key="age")
+        user_bmi = st.number_input("BMI", min_value=10.0, max_value=50.0, value=22.0, step=0.1, key="bmi")
         user_activity = st.slider("Activity Level (1 low - 10 high)", 1, 10, 5, key="activity")
         user_diabetes = st.checkbox("Diabetes", value=False, key="diabetes")
         user_hypertension = st.checkbox("Hypertension", value=False, key="hypertension")
     with col2:
         risk, risk_cat, fuzzy_expl = fuzzy_health_assessment(user_age, user_bmi, user_activity, user_diabetes, user_hypertension)
-        recs = get_recommendations(user_age, risk_cat)
+        recs = get_recommendations(user_age, user_bmi, user_activity, user_diabetes, user_hypertension, risk_cat)
         st.subheader("Your Health Summary")
-        st.markdown(f"**Risk Score:** {risk:.2f} ({risk_cat} Risk)")
+        st.markdown(f"**Risk Category:** {risk_cat}")
         st.markdown("**Nutrient Recommendations:**")
         st.write(recs)
     st.markdown("---")
