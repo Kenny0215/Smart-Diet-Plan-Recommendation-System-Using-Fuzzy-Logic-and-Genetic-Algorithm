@@ -16,9 +16,9 @@ def triangular(x, a, b, c):
 
 def age_membership(age):
     return {
-        "Young": triangular(age, 18, 18, 30),
-        "Adult": triangular(age, 25, 35, 45),
-        "Elder": triangular(age, 40, 50, 50)
+        "Young": triangular(age, 18, 20, 25),
+        "Adult": triangular(age, 30, 35, 40),
+        "Elder": triangular(age, 40, 45, 50)
     }
 
 def bmi_membership(bmi):
@@ -31,9 +31,9 @@ def bmi_membership(bmi):
 
 def activity_membership(activity_level):
     return {
-        "Low": triangular(activity_level, 1, 1, 4),
+        "Low": triangular(activity_level, 1, 2.5, 4),
         "Moderate": triangular(activity_level, 3, 5.5, 8),
-        "High": triangular(activity_level, 6, 10, 10)
+        "High": triangular(activity_level, 6, 8, 10)
     }
 
 ## These membership functions determine the degree to which an input (age, BMI, activity level)
