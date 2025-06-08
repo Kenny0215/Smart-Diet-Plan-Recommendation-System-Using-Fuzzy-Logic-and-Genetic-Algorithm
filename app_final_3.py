@@ -4,8 +4,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import random
 
-file_path = "/content/drive/MyDrive/Dataset/meal.csv"
-meals_df = pd.read_csv(file_path)
+meals_df = pd.read_csv("meal.csv")
 meal_ids = meals_df["Meal_ID"].tolist()
 
 # ----------------------
