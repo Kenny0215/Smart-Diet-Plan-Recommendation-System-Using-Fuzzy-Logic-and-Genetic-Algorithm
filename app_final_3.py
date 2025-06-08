@@ -130,34 +130,35 @@ def get_recommendations(age, bmi, activity, diabetes, hypertension, risk_categor
     if age >= 60 and (diabetes or hypertension):
         risk_category = "High"
 
-    # Fallbacks
+# Fallbacks
     if "Calories" not in recommendations:
-        recommendations["Calories"] = {
-            "High": 1800,
-            "Medium": 2100,
-            "Low": 2500
-        }[risk_category]
+       recommendations["Calories"] = {
+        "High": 1500,
+        "Medium": 2000,
+        "Low": 2500
+    }.get(risk_category, 2000)
 
     if "Protein" not in recommendations:
         recommendations["Protein"] = {
-            "High": "High",
-            "Medium": "Moderate",
-            "Low": "Moderate"
-        }[risk_category]
+        "High": "High",
+        "Medium": "Moderate",
+        "Low": "Moderate"
+    }.get(risk_category, "Moderate")  # default to Moderate
 
     if "Fat" not in recommendations:
-        recommendations["Fat"] = {
-            "High": "Low",
-            "Medium": "Moderate",
-            "Low": "Moderate"
-        }[risk_category]
+       recommendations["Fat"] = {
+        "High": "Low",
+        "Medium": "Moderate",
+        "Low": "Moderate"
+    }.get(risk_category, "Moderate")  # default to Moderate
 
     if "Carbs" not in recommendations:
-        recommendations["Carbs"] = {
-            "High": "Moderate",
-            "Medium": "Moderate",
-            "Low": "High"
-        }[risk_category]
+      recommendations["Carbs"] = {
+        "High": "Moderate",
+        "Medium": "Moderate",
+        "Low": "High"
+    }.get(risk_category, "Moderate")  # default to Moderate
+
 
     return recommendations
 
