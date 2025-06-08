@@ -1,501 +1,501 @@
 Meal_ID,Meal_Name,Calories,Protein_g,Carbohydrate_g,Fat_g,Fiber_g,Calcium_mg,Iron_mg,Potassium_mg,VitC_mg,VitA_ug,VitB12_ug,Magnesium_mg,Veg,Age,Weight_kg,Height_cm,BMI,Disease_Type,Activity_Level,Diet_Recommendation,Food_Category
-1,Nasi Lemak,450,15,55,12,10,80,3,450,8,35,0,55,Yes,43,53.4,150,23.7,Diabetes,Moderate,"Low sugar, high fiber meals",Main Course
-2,Char Kway Teow,320,10,40,12,8,150,2.1,330,6,90,0,50,Yes,37,50.1,158,20.1,Diabetes,Low,"Low sugar, high fiber meals",Main Course
-3,Roti Canai,350,12,60,10,8,120,2,500,15,45,0,40,Yes,51,98.2,177,31.3,Hypertension,Moderate,"Low sodium, potassium-rich meals",Breakfast
-4,Satay,450,15,55,12,10,80,3,450,8,35,0,55,Yes,54,73.7,156,30.3,Diabetes,High,"Low sugar, high fiber meals",Appetizer
-5,Laksa,320,10,40,12,8,150,2.1,330,6,90,0,50,Yes,43,96.1,190,26.6,Obesity,Low,"Low calorie, high protein meals",Main Course
-6,Nasi Kerabu,320,10,40,12,8,150,2.1,330,6,90,0,50,Yes,23,56.2,174,18.6,Obesity,Low,"Low calorie, high protein meals",Main Course
-7,Mee Goreng Mamak,450,15,55,12,10,80,3,450,8,35,0,55,Yes,44,52.1,168,18.5,Obesity,High,"Low calorie, high protein meals",Main Course
-8,Hainanese Chicken Rice,450,15,55,12,10,80,3,450,8,35,0,55,Yes,61,65.7,160,25.7,Diabetes,Moderate,"Low sugar, high fiber meals",Main Course
-9,Asam Pedas,450,15,55,12,10,80,3,450,8,35,0,55,Yes,59,74.4,153,31.8,None,High,Balanced meals,Main Course
-10,Rendang,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,38,90.4,171,30.9,None,Moderate,Balanced meals,Main Course
-11,Cendol,350,12,60,10,8,120,2,500,15,45,0,40,Yes,62,95.2,175,31.1,Diabetes,High,"Low sugar, high fiber meals",Dessert
-12,Kuih Lapis,250,8,30,5,6,100,1,400,5,90,0,35,Yes,19,87.8,167,31.5,Hypertension,Moderate,"Low sodium, potassium-rich meals",Dessert
-13,Teh Tarik,320,10,40,12,8,150,2.1,330,6,90,0,50,Yes,45,92.2,186,26.7,None,Low,Balanced meals,Beverage
-14,Air Bandung,450,15,55,12,10,80,3,450,8,35,0,55,Yes,59,50,158,20,Obesity,Moderate,"Low calorie, high protein meals",Beverage
-15,Nasi Dagang,350,12,60,10,8,120,2,500,15,45,0,40,Yes,43,78,153,33.3,None,Moderate,Balanced meals,Main Course
-16,Maggi Goreng,250,8,30,5,6,100,1,400,5,90,0,35,Yes,45,68.8,168,24.4,Hypertension,Moderate,"Low sodium, potassium-rich meals",Main Course
-17,Ayam Masak Merah,320,10,40,12,8,150,2.1,330,6,90,0,50,Yes,21,59.9,184,17.7,Hypertension,Low,"Low sodium, potassium-rich meals",Main Course
-18,Lontong,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,62,94.5,186,27.3,Obesity,Low,"Low calorie, high protein meals",Main Course
-19,Nasi Kandar,320,10,40,12,8,150,2.1,330,6,90,0,50,Yes,39,51.4,180,15.9,Hypertension,Moderate,"Low sodium, potassium-rich meals",Main Course
-20,Roti Jala,350,12,60,10,8,120,2,500,15,45,0,40,Yes,65,64.1,153,27.4,None,Low,Balanced meals,Breakfast
-21,Keropok Lekor,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,50,91.8,155,38.2,None,Low,Balanced meals,Snack
-22,Ais Kacang,450,15,55,12,10,80,3,450,8,35,0,55,Yes,59,65.6,172,22.2,Hypertension,Low,"Low sodium, potassium-rich meals",Dessert
-23,Pulut Panggang,350,12,60,10,8,120,2,500,15,45,0,40,Yes,29,75.1,178,23.7,Diabetes,Low,"Low sugar, high fiber meals",Snack
-24,Mee Rebus,350,12,60,10,8,120,2,500,15,45,0,40,Yes,25,69.9,156,28.7,Diabetes,Low,"Low sugar, high fiber meals",Main Course
-25,Mee Bandung,250,8,30,5,6,100,1,400,5,90,0,35,Yes,60,58.6,166,21.3,Obesity,Moderate,"Low calorie, high protein meals",Main Course
-26,Kaya Toast,450,15,55,12,10,80,3,450,8,35,0,55,Yes,49,66.3,186,19.2,None,Moderate,Balanced meals,Breakfast
-27,Bubur Cha Cha,320,10,40,12,8,150,2.1,330,6,90,0,50,Yes,62,68.1,151,29.9,Diabetes,High,"Low sugar, high fiber meals",Dessert
-28,Apam Balik,350,12,60,10,8,120,2,500,15,45,0,40,Yes,25,71,160,27.7,Diabetes,High,"Low sugar, high fiber meals",Snack
-29,Tosai,450,15,55,12,10,80,3,450,8,35,0,55,Yes,51,93.2,179,29.1,Diabetes,High,"Low sugar, high fiber meals",Breakfast
-30,Curry Puff,250,8,30,5,6,100,1,400,5,90,0,35,Yes,27,63.8,158,25.6,Obesity,Low,"Low calorie, high protein meals",Snack
-31,Nasi Ulam,350,12,60,10,8,120,2,500,15,45,0,40,Yes,63,99.7,169,34.9,None,High,Balanced meals,Main Course
-32,Sambal Udang,320,10,40,12,8,150,2.1,330,6,90,0,50,Yes,43,81.4,179,25.4,Diabetes,Low,"Low sugar, high fiber meals",Main Course
-33,Ikan Bakar,320,10,40,12,8,150,2.1,330,6,90,0,50,Yes,32,79.8,160,31.2,Diabetes,Low,"Low sugar, high fiber meals",Main Course
-34,Ulam-ulaman,320,10,40,12,8,150,2.1,330,6,90,0,50,Yes,44,87,181,26.6,Obesity,High,"Low calorie, high protein meals",Side Dish
-35,Nasi Ayam Penyet,450,15,55,12,10,80,3,450,8,35,0,55,Yes,64,63.7,173,21.3,Obesity,Low,"Low calorie, high protein meals",Main Course
-36,Putu Mayam,250,8,30,5,6,100,1,400,5,90,0,35,Yes,31,79.7,155,33.2,None,Moderate,Balanced meals,Dessert
-37,Nasi Goreng Kampung,320,10,40,12,8,150,2.1,330,6,90,0,50,Yes,54,72.5,174,23.9,None,Low,Balanced meals,Main Course
-38,Teh O Ais Limau,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,23,51,176,16.5,None,Low,Balanced meals,Beverage
-39,Milo Ais,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,56,52.5,165,19.3,Diabetes,Moderate,"Low sugar, high fiber meals",Beverage
-40,Soto Ayam,250,8,30,5,6,100,1,400,5,90,0,35,Yes,29,68,170,23.5,Hypertension,Moderate,"Low sodium, potassium-rich meals",Main Course
-41,Sup Kambing,450,15,55,12,10,80,3,450,8,35,0,55,Yes,32,83.7,160,32.7,None,Moderate,Balanced meals,Main Course
-42,Pengat Pisang,350,12,60,10,8,120,2,500,15,45,0,40,Yes,51,87.5,173,29.2,Obesity,Moderate,"Low calorie, high protein meals",Dessert
-43,Kuih Seri Muka,320,10,40,12,8,150,2.1,330,6,90,0,50,Yes,37,90.7,187,25.9,None,Moderate,Balanced meals,Dessert
-44,Nasi Impit,320,10,40,12,8,150,2.1,330,6,90,0,50,Yes,39,98.2,174,32.4,Hypertension,Moderate,"Low sodium, potassium-rich meals",Side Dish
-45,Acar Awak,320,10,40,12,8,150,2.1,330,6,90,0,50,Yes,32,61.9,182,18.7,Diabetes,High,"Low sugar, high fiber meals",Side Dish
-46,Lemang,320,10,40,12,8,150,2.1,330,6,90,0,50,Yes,64,66.7,188,18.9,Hypertension,High,"Low sodium, potassium-rich meals",Main Course
-47,Otak-Otak,350,12,60,10,8,120,2,500,15,45,0,40,Yes,53,91.8,161,35.4,None,Moderate,Balanced meals,Snack
-48,Bubur Lambuk,450,15,55,12,10,80,3,450,8,35,0,55,Yes,27,94.1,159,37.2,Obesity,Low,"Low calorie, high protein meals",Breakfast
-49,Mee Kari,450,15,55,12,10,80,3,450,8,35,0,55,Yes,57,62.1,181,19,Hypertension,Low,"Low sodium, potassium-rich meals",Main Course
-50,Ayam Percik,450,15,55,12,10,80,3,450,8,35,0,55,Yes,64,79.1,171,27.1,Hypertension,Moderate,"Low sodium, potassium-rich meals",Main Course
-51,Nasi Lemak,450,15,55,12,10,80,3,450,8,35,0,55,Yes,39,65.5,156,26.9,Obesity,High,"Low calorie, high protein meals",Main Course
-52,Char Kway Teow,450,15,55,12,10,80,3,450,8,35,0,55,Yes,60,82.4,154,34.7,None,Low,Balanced meals,Main Course
-53,Roti Canai,450,15,55,12,10,80,3,450,8,35,0,55,Yes,52,64.8,185,18.9,Hypertension,High,"Low sodium, potassium-rich meals",Breakfast
-54,Satay,250,8,30,5,6,100,1,400,5,90,0,35,Yes,42,85.9,179,26.8,Hypertension,Low,"Low sodium, potassium-rich meals",Appetizer
-55,Laksa,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,65,65.1,187,18.6,None,High,Balanced meals,Main Course
-56,Nasi Kerabu,250,8,30,5,6,100,1,400,5,90,0,35,Yes,56,60.6,167,21.7,None,Moderate,Balanced meals,Main Course
-57,Mee Goreng Mamak,350,12,60,10,8,120,2,500,15,45,0,40,Yes,29,79.8,184,23.6,Obesity,High,"Low calorie, high protein meals",Main Course
-58,Hainanese Chicken Rice,320,10,40,12,8,150,2.1,330,6,90,0,50,Yes,51,63.4,167,22.7,None,Moderate,Balanced meals,Main Course
-59,Asam Pedas,450,15,55,12,10,80,3,450,8,35,0,55,Yes,23,65.5,170,22.7,Obesity,Low,"Low calorie, high protein meals",Main Course
-60,Rendang,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,53,74.5,188,21.1,Hypertension,High,"Low sodium, potassium-rich meals",Main Course
-61,Cendol,450,15,55,12,10,80,3,450,8,35,0,55,Yes,59,51.7,151,22.7,Diabetes,Moderate,"Low sugar, high fiber meals",Dessert
-62,Kuih Lapis,320,10,40,12,8,150,2.1,330,6,90,0,50,Yes,22,98.8,176,31.9,Diabetes,High,"Low sugar, high fiber meals",Dessert
-63,Teh Tarik,350,12,60,10,8,120,2,500,15,45,0,40,Yes,63,75.2,166,27.3,Obesity,Moderate,"Low calorie, high protein meals",Beverage
-64,Air Bandung,450,15,55,12,10,80,3,450,8,35,0,55,Yes,45,52.5,176,16.9,Hypertension,Low,"Low sodium, potassium-rich meals",Beverage
-65,Nasi Dagang,450,15,55,12,10,80,3,450,8,35,0,55,Yes,22,90.3,171,30.9,Obesity,Moderate,"Low calorie, high protein meals",Main Course
-66,Maggi Goreng,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,22,99.1,171,33.9,Obesity,Moderate,"Low calorie, high protein meals",Main Course
-67,Ayam Masak Merah,250,8,30,5,6,100,1,400,5,90,0,35,Yes,57,91.1,165,33.5,Diabetes,High,"Low sugar, high fiber meals",Main Course
-68,Lontong,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,51,90.5,181,27.6,Diabetes,Low,"Low sugar, high fiber meals",Main Course
-69,Nasi Kandar,320,10,40,12,8,150,2.1,330,6,90,0,50,Yes,64,61.6,155,25.6,None,Low,Balanced meals,Main Course
-70,Roti Jala,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,22,89.4,181,27.3,None,Low,Balanced meals,Breakfast
-71,Keropok Lekor,450,15,55,12,10,80,3,450,8,35,0,55,Yes,38,58.6,173,19.6,Obesity,Low,"Low calorie, high protein meals",Snack
-72,Ais Kacang,320,10,40,12,8,150,2.1,330,6,90,0,50,Yes,46,86.3,174,28.5,None,Low,Balanced meals,Dessert
-73,Pulut Panggang,320,10,40,12,8,150,2.1,330,6,90,0,50,Yes,62,58.1,152,25.1,Hypertension,Low,"Low sodium, potassium-rich meals",Snack
-74,Mee Rebus,250,8,30,5,6,100,1,400,5,90,0,35,Yes,61,97.4,173,32.5,Hypertension,Low,"Low sodium, potassium-rich meals",Main Course
-75,Mee Bandung,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,30,71.8,182,21.7,Obesity,High,"Low calorie, high protein meals",Main Course
-76,Kaya Toast,350,12,60,10,8,120,2,500,15,45,0,40,Yes,53,88.2,171,30.2,Diabetes,Low,"Low sugar, high fiber meals",Breakfast
-77,Bubur Cha Cha,250,8,30,5,6,100,1,400,5,90,0,35,Yes,45,57.3,171,19.6,Hypertension,Moderate,"Low sodium, potassium-rich meals",Dessert
-78,Apam Balik,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,34,63.5,190,17.6,Diabetes,Low,"Low sugar, high fiber meals",Snack
-79,Tosai,450,15,55,12,10,80,3,450,8,35,0,55,Yes,18,96.2,154,40.6,Obesity,High,"Low calorie, high protein meals",Breakfast
-80,Curry Puff,450,15,55,12,10,80,3,450,8,35,0,55,Yes,29,95.1,167,34.1,Hypertension,High,"Low sodium, potassium-rich meals",Snack
-81,Nasi Ulam,320,10,40,12,8,150,2.1,330,6,90,0,50,Yes,23,90.6,187,25.9,Diabetes,Moderate,"Low sugar, high fiber meals",Main Course
-82,Sambal Udang,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,50,51.7,162,19.7,Hypertension,High,"Low sodium, potassium-rich meals",Main Course
-83,Ikan Bakar,250,8,30,5,6,100,1,400,5,90,0,35,Yes,62,93.5,184,27.6,Obesity,High,"Low calorie, high protein meals",Main Course
-84,Ulam-ulaman,320,10,40,12,8,150,2.1,330,6,90,0,50,Yes,25,72.3,153,30.9,None,Low,Balanced meals,Side Dish
-85,Nasi Ayam Penyet,250,8,30,5,6,100,1,400,5,90,0,35,Yes,19,64.7,164,24.1,None,Low,Balanced meals,Main Course
-86,Putu Mayam,350,12,60,10,8,120,2,500,15,45,0,40,Yes,59,76.2,150,33.9,Obesity,High,"Low calorie, high protein meals",Dessert
-87,Nasi Goreng Kampung,450,15,55,12,10,80,3,450,8,35,0,55,Yes,52,53.8,184,15.9,Obesity,Low,"Low calorie, high protein meals",Main Course
-88,Teh O Ais Limau,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,20,64,154,27,None,Moderate,Balanced meals,Beverage
-89,Milo Ais,250,8,30,5,6,100,1,400,5,90,0,35,Yes,21,85,153,36.3,Obesity,Moderate,"Low calorie, high protein meals",Beverage
-90,Soto Ayam,250,8,30,5,6,100,1,400,5,90,0,35,Yes,20,50.3,185,14.7,Obesity,Low,"Low calorie, high protein meals",Main Course
-91,Sup Kambing,250,8,30,5,6,100,1,400,5,90,0,35,Yes,34,52.7,186,15.2,None,High,Balanced meals,Main Course
-92,Pengat Pisang,450,15,55,12,10,80,3,450,8,35,0,55,Yes,52,58.4,178,18.4,Hypertension,Moderate,"Low sodium, potassium-rich meals",Dessert
-93,Kuih Seri Muka,320,10,40,12,8,150,2.1,330,6,90,0,50,Yes,62,75.4,160,29.5,Diabetes,High,"Low sugar, high fiber meals",Dessert
-94,Nasi Impit,250,8,30,5,6,100,1,400,5,90,0,35,Yes,41,50.2,177,16,Obesity,Moderate,"Low calorie, high protein meals",Side Dish
-95,Acar Awak,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,59,89.6,174,29.6,None,Moderate,Balanced meals,Side Dish
-96,Lemang,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,29,83,173,27.7,Diabetes,Low,"Low sugar, high fiber meals",Main Course
-97,Otak-Otak,350,12,60,10,8,120,2,500,15,45,0,40,Yes,44,74.6,181,22.8,Diabetes,Moderate,"Low sugar, high fiber meals",Snack
-98,Bubur Lambuk,350,12,60,10,8,120,2,500,15,45,0,40,Yes,20,73,184,21.6,Diabetes,Low,"Low sugar, high fiber meals",Breakfast
-99,Mee Kari,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,19,98.3,185,28.7,Hypertension,Low,"Low sodium, potassium-rich meals",Main Course
-100,Ayam Percik,450,15,55,12,10,80,3,450,8,35,0,55,Yes,33,71.4,169,25,Diabetes,High,"Low sugar, high fiber meals",Main Course
-101,Nasi Lemak,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,32,81.1,174,26.8,Obesity,Low,"Low calorie, high protein meals",Main Course
-102,Char Kway Teow,350,12,60,10,8,120,2,500,15,45,0,40,Yes,53,77.2,158,30.9,None,Low,Balanced meals,Main Course
-103,Roti Canai,320,10,40,12,8,150,2.1,330,6,90,0,50,Yes,51,95.5,150,42.4,Diabetes,Low,"Low sugar, high fiber meals",Breakfast
-104,Satay,250,8,30,5,6,100,1,400,5,90,0,35,Yes,30,72.5,150,32.2,None,Low,Balanced meals,Appetizer
-105,Laksa,250,8,30,5,6,100,1,400,5,90,0,35,Yes,40,78.9,181,24.1,Obesity,Low,"Low calorie, high protein meals",Main Course
-106,Nasi Kerabu,450,15,55,12,10,80,3,450,8,35,0,55,Yes,25,70,174,23.1,Obesity,Moderate,"Low calorie, high protein meals",Main Course
-107,Mee Goreng Mamak,320,10,40,12,8,150,2.1,330,6,90,0,50,Yes,44,72.2,177,23,Obesity,Low,"Low calorie, high protein meals",Main Course
-108,Hainanese Chicken Rice,320,10,40,12,8,150,2.1,330,6,90,0,50,Yes,32,69.4,159,27.5,Obesity,Low,"Low calorie, high protein meals",Main Course
-109,Asam Pedas,450,15,55,12,10,80,3,450,8,35,0,55,Yes,47,55.9,177,17.8,Obesity,Low,"Low calorie, high protein meals",Main Course
-110,Rendang,320,10,40,12,8,150,2.1,330,6,90,0,50,Yes,57,52.7,177,16.8,None,Moderate,Balanced meals,Main Course
-111,Cendol,250,8,30,5,6,100,1,400,5,90,0,35,Yes,34,54.4,181,16.6,Hypertension,High,"Low sodium, potassium-rich meals",Dessert
-112,Kuih Lapis,450,15,55,12,10,80,3,450,8,35,0,55,Yes,19,83.8,180,25.9,Hypertension,High,"Low sodium, potassium-rich meals",Dessert
-113,Teh Tarik,250,8,30,5,6,100,1,400,5,90,0,35,Yes,64,83.3,162,31.7,None,Moderate,Balanced meals,Beverage
-114,Air Bandung,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,33,53.3,159,21.1,Diabetes,Moderate,"Low sugar, high fiber meals",Beverage
-115,Nasi Dagang,350,12,60,10,8,120,2,500,15,45,0,40,Yes,38,54,183,16.1,Obesity,Low,"Low calorie, high protein meals",Main Course
-116,Maggi Goreng,450,15,55,12,10,80,3,450,8,35,0,55,Yes,22,60.4,165,22.2,Obesity,Moderate,"Low calorie, high protein meals",Main Course
-117,Ayam Masak Merah,450,15,55,12,10,80,3,450,8,35,0,55,Yes,18,75.2,154,31.7,Diabetes,Low,"Low sugar, high fiber meals",Main Course
-118,Lontong,350,12,60,10,8,120,2,500,15,45,0,40,Yes,27,87.4,190,24.2,Diabetes,Moderate,"Low sugar, high fiber meals",Main Course
-119,Nasi Kandar,350,12,60,10,8,120,2,500,15,45,0,40,Yes,31,82.6,183,24.7,None,Moderate,Balanced meals,Main Course
-120,Roti Jala,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,30,64.1,170,22.2,None,Low,Balanced meals,Breakfast
-121,Keropok Lekor,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,20,81.1,179,25.3,Diabetes,Moderate,"Low sugar, high fiber meals",Snack
-122,Ais Kacang,450,15,55,12,10,80,3,450,8,35,0,55,Yes,46,64.5,172,21.8,Diabetes,High,"Low sugar, high fiber meals",Dessert
-123,Pulut Panggang,350,12,60,10,8,120,2,500,15,45,0,40,Yes,65,76.1,156,31.3,Obesity,Moderate,"Low calorie, high protein meals",Snack
-124,Mee Rebus,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,49,57.6,171,19.7,None,High,Balanced meals,Main Course
-125,Mee Bandung,320,10,40,12,8,150,2.1,330,6,90,0,50,Yes,28,74.2,179,23.2,Hypertension,Moderate,"Low sodium, potassium-rich meals",Main Course
-126,Kaya Toast,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,37,72.1,179,22.5,Diabetes,Low,"Low sugar, high fiber meals",Breakfast
-127,Bubur Cha Cha,320,10,40,12,8,150,2.1,330,6,90,0,50,Yes,36,53.5,175,17.5,Diabetes,Moderate,"Low sugar, high fiber meals",Dessert
-128,Apam Balik,350,12,60,10,8,120,2,500,15,45,0,40,Yes,36,63.5,169,22.2,Hypertension,Low,"Low sodium, potassium-rich meals",Snack
-129,Tosai,450,15,55,12,10,80,3,450,8,35,0,55,Yes,61,60.9,180,18.8,Hypertension,Moderate,"Low sodium, potassium-rich meals",Breakfast
-130,Curry Puff,450,15,55,12,10,80,3,450,8,35,0,55,Yes,37,99.6,189,27.9,None,Moderate,Balanced meals,Snack
-131,Nasi Ulam,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,25,83,175,27.1,None,Low,Balanced meals,Main Course
-132,Sambal Udang,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,51,68.7,182,20.7,Obesity,Moderate,"Low calorie, high protein meals",Main Course
-133,Ikan Bakar,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,51,84.4,153,36.1,Obesity,High,"Low calorie, high protein meals",Main Course
-134,Ulam-ulaman,320,10,40,12,8,150,2.1,330,6,90,0,50,Yes,42,95.8,183,28.6,Hypertension,High,"Low sodium, potassium-rich meals",Side Dish
-135,Nasi Ayam Penyet,320,10,40,12,8,150,2.1,330,6,90,0,50,Yes,65,65,187,18.6,Diabetes,Low,"Low sugar, high fiber meals",Main Course
-136,Putu Mayam,450,15,55,12,10,80,3,450,8,35,0,55,Yes,26,64.9,187,18.6,None,High,Balanced meals,Dessert
-137,Nasi Goreng Kampung,450,15,55,12,10,80,3,450,8,35,0,55,Yes,62,78.1,182,23.6,Hypertension,High,"Low sodium, potassium-rich meals",Main Course
-138,Teh O Ais Limau,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,27,57,186,16.5,Hypertension,High,"Low sodium, potassium-rich meals",Beverage
-139,Milo Ais,350,12,60,10,8,120,2,500,15,45,0,40,Yes,26,93.2,160,36.4,Diabetes,Moderate,"Low sugar, high fiber meals",Beverage
-140,Soto Ayam,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,57,90.3,165,33.2,Obesity,High,"Low calorie, high protein meals",Main Course
-141,Sup Kambing,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,23,56.5,161,21.8,None,Low,Balanced meals,Main Course
-142,Pengat Pisang,350,12,60,10,8,120,2,500,15,45,0,40,Yes,28,59.5,164,22.1,Diabetes,Low,"Low sugar, high fiber meals",Dessert
-143,Kuih Seri Muka,350,12,60,10,8,120,2,500,15,45,0,40,Yes,23,50.4,181,15.4,None,Moderate,Balanced meals,Dessert
-144,Nasi Impit,250,8,30,5,6,100,1,400,5,90,0,35,Yes,48,96.8,173,32.3,Diabetes,Low,"Low sugar, high fiber meals",Side Dish
-145,Acar Awak,250,8,30,5,6,100,1,400,5,90,0,35,Yes,32,61.4,152,26.6,None,Moderate,Balanced meals,Side Dish
-146,Lemang,450,15,55,12,10,80,3,450,8,35,0,55,Yes,43,65.8,170,22.8,Diabetes,High,"Low sugar, high fiber meals",Main Course
-147,Otak-Otak,250,8,30,5,6,100,1,400,5,90,0,35,Yes,63,67.1,189,18.8,Hypertension,Moderate,"Low sodium, potassium-rich meals",Snack
-148,Bubur Lambuk,450,15,55,12,10,80,3,450,8,35,0,55,Yes,64,67.1,183,20,None,High,Balanced meals,Breakfast
-149,Mee Kari,450,15,55,12,10,80,3,450,8,35,0,55,Yes,48,70.3,184,20.8,Diabetes,High,"Low sugar, high fiber meals",Main Course
-150,Ayam Percik,320,10,40,12,8,150,2.1,330,6,90,0,50,Yes,43,70.1,174,23.2,Hypertension,Moderate,"Low sodium, potassium-rich meals",Main Course
-151,Nasi Lemak,450,15,55,12,10,80,3,450,8,35,0,55,Yes,33,83.6,174,27.6,Hypertension,High,"Low sodium, potassium-rich meals",Main Course
-152,Char Kway Teow,250,8,30,5,6,100,1,400,5,90,0,35,Yes,44,61.8,177,19.7,Obesity,Low,"Low calorie, high protein meals",Main Course
-153,Roti Canai,320,10,40,12,8,150,2.1,330,6,90,0,50,Yes,26,93.1,156,38.3,Hypertension,High,"Low sodium, potassium-rich meals",Breakfast
-154,Satay,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,61,53.9,174,17.8,Diabetes,Moderate,"Low sugar, high fiber meals",Appetizer
-155,Laksa,450,15,55,12,10,80,3,450,8,35,0,55,Yes,47,56.9,189,15.9,Obesity,Moderate,"Low calorie, high protein meals",Main Course
-156,Nasi Kerabu,320,10,40,12,8,150,2.1,330,6,90,0,50,Yes,50,57.5,166,20.9,Obesity,Low,"Low calorie, high protein meals",Main Course
-157,Mee Goreng Mamak,450,15,55,12,10,80,3,450,8,35,0,55,Yes,45,86.2,166,31.3,Hypertension,High,"Low sodium, potassium-rich meals",Main Course
-158,Hainanese Chicken Rice,450,15,55,12,10,80,3,450,8,35,0,55,Yes,47,70.5,172,23.8,Hypertension,High,"Low sodium, potassium-rich meals",Main Course
-159,Asam Pedas,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,18,80.9,182,24.4,Obesity,High,"Low calorie, high protein meals",Main Course
-160,Rendang,250,8,30,5,6,100,1,400,5,90,0,35,Yes,51,86.8,171,29.7,None,Low,Balanced meals,Main Course
-161,Cendol,450,15,55,12,10,80,3,450,8,35,0,55,Yes,35,88.7,151,38.9,None,High,Balanced meals,Dessert
-162,Kuih Lapis,250,8,30,5,6,100,1,400,5,90,0,35,Yes,61,87.6,155,36.5,Diabetes,Low,"Low sugar, high fiber meals",Dessert
-163,Teh Tarik,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,61,74.6,162,28.4,Diabetes,High,"Low sugar, high fiber meals",Beverage
-164,Air Bandung,350,12,60,10,8,120,2,500,15,45,0,40,Yes,47,70.8,160,27.7,Diabetes,Low,"Low sugar, high fiber meals",Beverage
-165,Nasi Dagang,350,12,60,10,8,120,2,500,15,45,0,40,Yes,50,71.2,168,25.2,None,Low,Balanced meals,Main Course
-166,Maggi Goreng,320,10,40,12,8,150,2.1,330,6,90,0,50,Yes,43,93.3,154,39.3,Diabetes,Low,"Low sugar, high fiber meals",Main Course
-167,Ayam Masak Merah,320,10,40,12,8,150,2.1,330,6,90,0,50,Yes,34,55.1,171,18.8,Hypertension,Low,"Low sodium, potassium-rich meals",Main Course
-168,Lontong,450,15,55,12,10,80,3,450,8,35,0,55,Yes,52,59.6,152,25.8,Obesity,Low,"Low calorie, high protein meals",Main Course
-169,Nasi Kandar,450,15,55,12,10,80,3,450,8,35,0,55,Yes,64,56.3,159,22.3,Obesity,Moderate,"Low calorie, high protein meals",Main Course
-170,Roti Jala,250,8,30,5,6,100,1,400,5,90,0,35,Yes,33,54.2,165,19.9,Obesity,High,"Low calorie, high protein meals",Breakfast
-171,Keropok Lekor,350,12,60,10,8,120,2,500,15,45,0,40,Yes,55,86.3,154,36.4,None,Low,Balanced meals,Snack
-172,Ais Kacang,250,8,30,5,6,100,1,400,5,90,0,35,Yes,61,53.2,183,15.9,Obesity,Moderate,"Low calorie, high protein meals",Dessert
-173,Pulut Panggang,250,8,30,5,6,100,1,400,5,90,0,35,Yes,20,91,150,40.4,Diabetes,Low,"Low sugar, high fiber meals",Snack
-174,Mee Rebus,320,10,40,12,8,150,2.1,330,6,90,0,50,Yes,58,88.9,159,35.2,Diabetes,Low,"Low sugar, high fiber meals",Main Course
-175,Mee Bandung,250,8,30,5,6,100,1,400,5,90,0,35,Yes,63,73.1,153,31.2,Obesity,Low,"Low calorie, high protein meals",Main Course
-176,Kaya Toast,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,64,65.6,172,22.2,Obesity,Low,"Low calorie, high protein meals",Breakfast
-177,Bubur Cha Cha,250,8,30,5,6,100,1,400,5,90,0,35,Yes,25,87.3,166,31.7,Hypertension,Low,"Low sodium, potassium-rich meals",Dessert
-178,Apam Balik,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,32,85.3,166,31,None,Low,Balanced meals,Snack
-179,Tosai,320,10,40,12,8,150,2.1,330,6,90,0,50,Yes,23,55.2,160,21.6,None,High,Balanced meals,Breakfast
-180,Curry Puff,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,24,77.5,153,33.1,Diabetes,High,"Low sugar, high fiber meals",Snack
-181,Nasi Ulam,450,15,55,12,10,80,3,450,8,35,0,55,Yes,54,62.3,176,20.1,Obesity,Moderate,"Low calorie, high protein meals",Main Course
-182,Sambal Udang,250,8,30,5,6,100,1,400,5,90,0,35,Yes,33,78.3,180,24.2,Hypertension,Moderate,"Low sodium, potassium-rich meals",Main Course
-183,Ikan Bakar,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,35,97.2,162,37,Diabetes,Low,"Low sugar, high fiber meals",Main Course
-184,Ulam-ulaman,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,28,51.4,174,17,Obesity,Low,"Low calorie, high protein meals",Side Dish
-185,Nasi Ayam Penyet,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,62,65.7,152,28.4,Hypertension,Moderate,"Low sodium, potassium-rich meals",Main Course
-186,Putu Mayam,450,15,55,12,10,80,3,450,8,35,0,55,Yes,50,65,156,26.7,None,Low,Balanced meals,Dessert
-187,Nasi Goreng Kampung,350,12,60,10,8,120,2,500,15,45,0,40,Yes,35,55.6,161,21.4,Hypertension,Low,"Low sodium, potassium-rich meals",Main Course
-188,Teh O Ais Limau,320,10,40,12,8,150,2.1,330,6,90,0,50,Yes,62,71.6,163,26.9,Diabetes,Moderate,"Low sugar, high fiber meals",Beverage
-189,Milo Ais,320,10,40,12,8,150,2.1,330,6,90,0,50,Yes,23,92.2,152,39.9,Hypertension,Low,"Low sodium, potassium-rich meals",Beverage
-190,Soto Ayam,320,10,40,12,8,150,2.1,330,6,90,0,50,Yes,52,73.4,161,28.3,Diabetes,Moderate,"Low sugar, high fiber meals",Main Course
-191,Sup Kambing,450,15,55,12,10,80,3,450,8,35,0,55,Yes,34,95.6,179,29.8,Hypertension,High,"Low sodium, potassium-rich meals",Main Course
-192,Pengat Pisang,320,10,40,12,8,150,2.1,330,6,90,0,50,Yes,20,81.3,188,23,Hypertension,High,"Low sodium, potassium-rich meals",Dessert
-193,Kuih Seri Muka,320,10,40,12,8,150,2.1,330,6,90,0,50,Yes,19,87.8,175,28.7,Hypertension,High,"Low sodium, potassium-rich meals",Dessert
-194,Nasi Impit,350,12,60,10,8,120,2,500,15,45,0,40,Yes,30,71.1,155,29.6,Obesity,Moderate,"Low calorie, high protein meals",Side Dish
-195,Acar Awak,250,8,30,5,6,100,1,400,5,90,0,35,Yes,26,81.1,173,27.1,Obesity,Moderate,"Low calorie, high protein meals",Side Dish
-196,Lemang,320,10,40,12,8,150,2.1,330,6,90,0,50,Yes,59,96.3,153,41.1,Diabetes,High,"Low sugar, high fiber meals",Main Course
-197,Otak-Otak,320,10,40,12,8,150,2.1,330,6,90,0,50,Yes,46,95.1,181,29,Hypertension,Low,"Low sodium, potassium-rich meals",Snack
-198,Bubur Lambuk,350,12,60,10,8,120,2,500,15,45,0,40,Yes,34,94.7,155,39.4,None,Moderate,Balanced meals,Breakfast
-199,Mee Kari,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,38,98.6,165,36.2,None,Low,Balanced meals,Main Course
-200,Ayam Percik,250,8,30,5,6,100,1,400,5,90,0,35,Yes,20,94,176,30.3,None,Low,Balanced meals,Main Course
-201,Nasi Lemak,250,8,30,5,6,100,1,400,5,90,0,35,Yes,51,70,176,22.6,None,Low,Balanced meals,Main Course
-202,Char Kway Teow,450,15,55,12,10,80,3,450,8,35,0,55,Yes,35,71.2,172,24.1,None,Moderate,Balanced meals,Main Course
-203,Roti Canai,350,12,60,10,8,120,2,500,15,45,0,40,Yes,21,60,163,22.6,None,High,Balanced meals,Breakfast
-204,Satay,450,15,55,12,10,80,3,450,8,35,0,55,Yes,36,96.2,177,30.7,Hypertension,High,"Low sodium, potassium-rich meals",Appetizer
-205,Laksa,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,26,77.2,179,24.1,Obesity,High,"Low calorie, high protein meals",Main Course
-206,Nasi Kerabu,450,15,55,12,10,80,3,450,8,35,0,55,Yes,47,75.5,178,23.8,Obesity,Low,"Low calorie, high protein meals",Main Course
-207,Mee Goreng Mamak,350,12,60,10,8,120,2,500,15,45,0,40,Yes,39,83.1,161,32.1,Diabetes,Low,"Low sugar, high fiber meals",Main Course
-208,Hainanese Chicken Rice,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,57,91.4,185,26.7,Obesity,High,"Low calorie, high protein meals",Main Course
-209,Asam Pedas,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,30,86.4,158,34.6,Diabetes,Low,"Low sugar, high fiber meals",Main Course
-210,Rendang,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,38,54.9,178,17.3,Hypertension,High,"Low sodium, potassium-rich meals",Main Course
-211,Cendol,250,8,30,5,6,100,1,400,5,90,0,35,Yes,22,69.1,158,27.7,None,Moderate,Balanced meals,Dessert
-212,Kuih Lapis,450,15,55,12,10,80,3,450,8,35,0,55,Yes,61,89.8,180,27.7,Obesity,Moderate,"Low calorie, high protein meals",Dessert
-213,Teh Tarik,320,10,40,12,8,150,2.1,330,6,90,0,50,Yes,56,59,174,19.5,None,Low,Balanced meals,Beverage
-214,Air Bandung,350,12,60,10,8,120,2,500,15,45,0,40,Yes,44,91.5,157,37.1,None,Low,Balanced meals,Beverage
-215,Nasi Dagang,320,10,40,12,8,150,2.1,330,6,90,0,50,Yes,30,84.2,158,33.7,None,Moderate,Balanced meals,Main Course
-216,Maggi Goreng,350,12,60,10,8,120,2,500,15,45,0,40,Yes,24,93.4,151,41,None,Moderate,Balanced meals,Main Course
-217,Ayam Masak Merah,350,12,60,10,8,120,2,500,15,45,0,40,Yes,30,75.2,176,24.3,Hypertension,Low,"Low sodium, potassium-rich meals",Main Course
-218,Lontong,250,8,30,5,6,100,1,400,5,90,0,35,Yes,24,93.6,182,28.3,None,Moderate,Balanced meals,Main Course
-219,Nasi Kandar,450,15,55,12,10,80,3,450,8,35,0,55,Yes,51,66,171,22.6,None,Moderate,Balanced meals,Main Course
-220,Roti Jala,320,10,40,12,8,150,2.1,330,6,90,0,50,Yes,31,98.5,160,38.5,Hypertension,Low,"Low sodium, potassium-rich meals",Breakfast
-221,Keropok Lekor,450,15,55,12,10,80,3,450,8,35,0,55,Yes,28,60.9,159,24.1,None,Moderate,Balanced meals,Snack
-222,Ais Kacang,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,62,80.7,183,24.1,Diabetes,Moderate,"Low sugar, high fiber meals",Dessert
-223,Pulut Panggang,320,10,40,12,8,150,2.1,330,6,90,0,50,Yes,43,53.5,180,16.5,Hypertension,High,"Low sodium, potassium-rich meals",Snack
-224,Mee Rebus,320,10,40,12,8,150,2.1,330,6,90,0,50,Yes,54,91.7,169,32.1,Diabetes,Low,"Low sugar, high fiber meals",Main Course
-225,Mee Bandung,450,15,55,12,10,80,3,450,8,35,0,55,Yes,56,82.9,190,23,None,High,Balanced meals,Main Course
-226,Kaya Toast,450,15,55,12,10,80,3,450,8,35,0,55,Yes,63,82.9,164,30.8,Diabetes,High,"Low sugar, high fiber meals",Breakfast
-227,Bubur Cha Cha,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,45,86.7,160,33.9,Obesity,Low,"Low calorie, high protein meals",Dessert
-228,Apam Balik,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,52,74.5,188,21.1,Diabetes,Low,"Low sugar, high fiber meals",Snack
-229,Tosai,350,12,60,10,8,120,2,500,15,45,0,40,Yes,18,75.1,176,24.2,None,Moderate,Balanced meals,Breakfast
-230,Curry Puff,450,15,55,12,10,80,3,450,8,35,0,55,Yes,20,59.1,157,24,None,Moderate,Balanced meals,Snack
-231,Nasi Ulam,350,12,60,10,8,120,2,500,15,45,0,40,Yes,19,85.2,152,36.9,Hypertension,High,"Low sodium, potassium-rich meals",Main Course
-232,Sambal Udang,320,10,40,12,8,150,2.1,330,6,90,0,50,Yes,48,78.7,190,21.8,Hypertension,High,"Low sodium, potassium-rich meals",Main Course
-233,Ikan Bakar,320,10,40,12,8,150,2.1,330,6,90,0,50,Yes,29,89.9,182,27.1,Diabetes,Moderate,"Low sugar, high fiber meals",Main Course
-234,Ulam-ulaman,350,12,60,10,8,120,2,500,15,45,0,40,Yes,51,62.6,150,27.8,Hypertension,Moderate,"Low sodium, potassium-rich meals",Side Dish
-235,Nasi Ayam Penyet,250,8,30,5,6,100,1,400,5,90,0,35,Yes,19,63.2,152,27.4,None,Low,Balanced meals,Main Course
-236,Putu Mayam,350,12,60,10,8,120,2,500,15,45,0,40,Yes,22,57.9,158,23.2,Obesity,Low,"Low calorie, high protein meals",Dessert
-237,Nasi Goreng Kampung,320,10,40,12,8,150,2.1,330,6,90,0,50,Yes,52,58.8,165,21.6,None,Low,Balanced meals,Main Course
-238,Teh O Ais Limau,450,15,55,12,10,80,3,450,8,35,0,55,Yes,31,83.8,184,24.8,None,Low,Balanced meals,Beverage
-239,Milo Ais,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,18,78.9,187,22.6,None,Moderate,Balanced meals,Beverage
-240,Soto Ayam,450,15,55,12,10,80,3,450,8,35,0,55,Yes,50,56.6,178,17.9,Obesity,Moderate,"Low calorie, high protein meals",Main Course
-241,Sup Kambing,250,8,30,5,6,100,1,400,5,90,0,35,Yes,22,79.8,164,29.7,Obesity,Low,"Low calorie, high protein meals",Main Course
-242,Pengat Pisang,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,35,67,185,19.6,Hypertension,Low,"Low sodium, potassium-rich meals",Dessert
-243,Kuih Seri Muka,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,41,94.4,178,29.8,Hypertension,Low,"Low sodium, potassium-rich meals",Dessert
-244,Nasi Impit,250,8,30,5,6,100,1,400,5,90,0,35,Yes,62,73.5,168,26,Obesity,Moderate,"Low calorie, high protein meals",Side Dish
-245,Acar Awak,320,10,40,12,8,150,2.1,330,6,90,0,50,Yes,39,78.2,172,26.4,Obesity,Moderate,"Low calorie, high protein meals",Side Dish
-246,Lemang,320,10,40,12,8,150,2.1,330,6,90,0,50,Yes,36,51.1,164,19,None,High,Balanced meals,Main Course
-247,Otak-Otak,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,65,60.8,167,21.8,Hypertension,Low,"Low sodium, potassium-rich meals",Snack
-248,Bubur Lambuk,320,10,40,12,8,150,2.1,330,6,90,0,50,Yes,44,85.7,190,23.7,Diabetes,Low,"Low sugar, high fiber meals",Breakfast
-249,Mee Kari,350,12,60,10,8,120,2,500,15,45,0,40,Yes,23,62.2,172,21,Diabetes,High,"Low sugar, high fiber meals",Main Course
-250,Ayam Percik,250,8,30,5,6,100,1,400,5,90,0,35,Yes,21,61.8,184,18.3,Diabetes,Low,"Low sugar, high fiber meals",Main Course
-251,Nasi Lemak,320,10,40,12,8,150,2.1,330,6,90,0,50,Yes,37,54.2,175,17.7,Obesity,Low,"Low calorie, high protein meals",Main Course
-252,Char Kway Teow,450,15,55,12,10,80,3,450,8,35,0,55,Yes,62,84.5,162,32.2,Obesity,Low,"Low calorie, high protein meals",Main Course
-253,Roti Canai,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,39,86.1,181,26.3,Obesity,High,"Low calorie, high protein meals",Breakfast
-254,Satay,320,10,40,12,8,150,2.1,330,6,90,0,50,Yes,35,73.4,165,27,None,Low,Balanced meals,Appetizer
-255,Laksa,350,12,60,10,8,120,2,500,15,45,0,40,Yes,26,62.5,184,18.5,Hypertension,Moderate,"Low sodium, potassium-rich meals",Main Course
-256,Nasi Kerabu,320,10,40,12,8,150,2.1,330,6,90,0,50,Yes,41,71.9,174,23.7,Diabetes,Low,"Low sugar, high fiber meals",Main Course
-257,Mee Goreng Mamak,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,21,54.8,154,23.1,None,High,Balanced meals,Main Course
-258,Hainanese Chicken Rice,250,8,30,5,6,100,1,400,5,90,0,35,Yes,45,69.7,181,21.3,Hypertension,High,"Low sodium, potassium-rich meals",Main Course
-259,Asam Pedas,250,8,30,5,6,100,1,400,5,90,0,35,Yes,52,56.5,174,18.7,None,High,Balanced meals,Main Course
-260,Rendang,250,8,30,5,6,100,1,400,5,90,0,35,Yes,53,87.8,158,35.2,Obesity,High,"Low calorie, high protein meals",Main Course
-261,Cendol,320,10,40,12,8,150,2.1,330,6,90,0,50,Yes,65,88.1,175,28.8,Diabetes,Low,"Low sugar, high fiber meals",Dessert
-262,Kuih Lapis,450,15,55,12,10,80,3,450,8,35,0,55,Yes,65,60.6,155,25.2,Obesity,Low,"Low calorie, high protein meals",Dessert
-263,Teh Tarik,450,15,55,12,10,80,3,450,8,35,0,55,Yes,38,92,186,26.6,Diabetes,High,"Low sugar, high fiber meals",Beverage
-264,Air Bandung,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,53,88.8,160,34.7,None,High,Balanced meals,Beverage
-265,Nasi Dagang,350,12,60,10,8,120,2,500,15,45,0,40,Yes,60,93.6,154,39.5,Hypertension,Low,"Low sodium, potassium-rich meals",Main Course
-266,Maggi Goreng,250,8,30,5,6,100,1,400,5,90,0,35,Yes,46,85,151,37.3,Obesity,Low,"Low calorie, high protein meals",Main Course
-267,Ayam Masak Merah,450,15,55,12,10,80,3,450,8,35,0,55,Yes,59,63.6,178,20.1,None,Low,Balanced meals,Main Course
-268,Lontong,350,12,60,10,8,120,2,500,15,45,0,40,Yes,40,98.9,161,38.2,None,Moderate,Balanced meals,Main Course
-269,Nasi Kandar,250,8,30,5,6,100,1,400,5,90,0,35,Yes,44,63.5,184,18.8,Diabetes,Moderate,"Low sugar, high fiber meals",Main Course
-270,Roti Jala,350,12,60,10,8,120,2,500,15,45,0,40,Yes,27,99.1,183,29.6,None,Moderate,Balanced meals,Breakfast
-271,Keropok Lekor,320,10,40,12,8,150,2.1,330,6,90,0,50,Yes,64,94.1,187,26.9,None,Low,Balanced meals,Snack
-272,Ais Kacang,350,12,60,10,8,120,2,500,15,45,0,40,Yes,42,55.4,171,18.9,Diabetes,Low,"Low sugar, high fiber meals",Dessert
-273,Pulut Panggang,350,12,60,10,8,120,2,500,15,45,0,40,Yes,44,97.8,161,37.7,None,Moderate,Balanced meals,Snack
-274,Mee Rebus,450,15,55,12,10,80,3,450,8,35,0,55,Yes,57,97.2,162,37,Hypertension,High,"Low sodium, potassium-rich meals",Main Course
-275,Mee Bandung,450,15,55,12,10,80,3,450,8,35,0,55,Yes,61,99.4,177,31.7,None,Low,Balanced meals,Main Course
-276,Kaya Toast,250,8,30,5,6,100,1,400,5,90,0,35,Yes,53,77.4,180,23.9,Diabetes,Low,"Low sugar, high fiber meals",Breakfast
-277,Bubur Cha Cha,320,10,40,12,8,150,2.1,330,6,90,0,50,Yes,41,83.6,157,33.9,Obesity,Low,"Low calorie, high protein meals",Dessert
-278,Apam Balik,320,10,40,12,8,150,2.1,330,6,90,0,50,Yes,45,74.9,189,21,Obesity,Low,"Low calorie, high protein meals",Snack
-279,Tosai,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,56,69.5,159,27.5,Obesity,High,"Low calorie, high protein meals",Breakfast
-280,Curry Puff,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,18,91.4,151,40.1,Hypertension,Low,"Low sodium, potassium-rich meals",Snack
-281,Nasi Ulam,350,12,60,10,8,120,2,500,15,45,0,40,Yes,61,94.7,164,35.2,Diabetes,Moderate,"Low sugar, high fiber meals",Main Course
-282,Sambal Udang,450,15,55,12,10,80,3,450,8,35,0,55,Yes,55,58.6,155,24.4,Diabetes,High,"Low sugar, high fiber meals",Main Course
-283,Ikan Bakar,320,10,40,12,8,150,2.1,330,6,90,0,50,Yes,55,68.8,172,23.3,Hypertension,Moderate,"Low sodium, potassium-rich meals",Main Course
-284,Ulam-ulaman,350,12,60,10,8,120,2,500,15,45,0,40,Yes,32,75.9,161,29.3,Obesity,Moderate,"Low calorie, high protein meals",Side Dish
-285,Nasi Ayam Penyet,320,10,40,12,8,150,2.1,330,6,90,0,50,Yes,34,50,165,18.4,None,Low,Balanced meals,Main Course
-286,Putu Mayam,450,15,55,12,10,80,3,450,8,35,0,55,Yes,28,99.5,177,31.8,None,Moderate,Balanced meals,Dessert
-287,Nasi Goreng Kampung,320,10,40,12,8,150,2.1,330,6,90,0,50,Yes,18,73.6,171,25.2,Hypertension,Low,"Low sodium, potassium-rich meals",Main Course
-288,Teh O Ais Limau,320,10,40,12,8,150,2.1,330,6,90,0,50,Yes,32,73.8,179,23,None,High,Balanced meals,Beverage
-289,Milo Ais,350,12,60,10,8,120,2,500,15,45,0,40,Yes,45,62.8,150,27.9,None,Low,Balanced meals,Beverage
-290,Soto Ayam,250,8,30,5,6,100,1,400,5,90,0,35,Yes,59,91.3,154,38.5,Diabetes,High,"Low sugar, high fiber meals",Main Course
-291,Sup Kambing,250,8,30,5,6,100,1,400,5,90,0,35,Yes,35,65.8,188,18.6,Diabetes,Moderate,"Low sugar, high fiber meals",Main Course
-292,Pengat Pisang,450,15,55,12,10,80,3,450,8,35,0,55,Yes,18,96.3,153,41.1,Obesity,High,"Low calorie, high protein meals",Dessert
-293,Kuih Seri Muka,250,8,30,5,6,100,1,400,5,90,0,35,Yes,57,60.5,172,20.5,Obesity,Moderate,"Low calorie, high protein meals",Dessert
-294,Nasi Impit,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,46,85.9,160,33.6,Hypertension,Moderate,"Low sodium, potassium-rich meals",Side Dish
-295,Acar Awak,450,15,55,12,10,80,3,450,8,35,0,55,Yes,20,68,164,25.3,Obesity,High,"Low calorie, high protein meals",Side Dish
-296,Lemang,320,10,40,12,8,150,2.1,330,6,90,0,50,Yes,58,55.7,189,15.6,Hypertension,Low,"Low sodium, potassium-rich meals",Main Course
-297,Otak-Otak,350,12,60,10,8,120,2,500,15,45,0,40,Yes,37,66.1,151,29,Obesity,Moderate,"Low calorie, high protein meals",Snack
-298,Bubur Lambuk,450,15,55,12,10,80,3,450,8,35,0,55,Yes,24,80.1,178,25.3,Hypertension,Moderate,"Low sodium, potassium-rich meals",Breakfast
-299,Mee Kari,320,10,40,12,8,150,2.1,330,6,90,0,50,Yes,49,52.6,170,18.2,Diabetes,High,"Low sugar, high fiber meals",Main Course
-300,Ayam Percik,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,36,72,168,25.5,None,Low,Balanced meals,Main Course
-301,Nasi Lemak,350,12,60,10,8,120,2,500,15,45,0,40,Yes,31,87.9,179,27.4,Hypertension,Low,"Low sodium, potassium-rich meals",Main Course
-302,Char Kway Teow,320,10,40,12,8,150,2.1,330,6,90,0,50,Yes,55,54.4,161,21,None,Moderate,Balanced meals,Main Course
-303,Roti Canai,250,8,30,5,6,100,1,400,5,90,0,35,Yes,25,83,156,34.1,None,High,Balanced meals,Breakfast
-304,Satay,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,60,63.4,155,26.4,None,Low,Balanced meals,Appetizer
-305,Laksa,320,10,40,12,8,150,2.1,330,6,90,0,50,Yes,19,74.9,177,23.9,None,High,Balanced meals,Main Course
-306,Nasi Kerabu,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,33,77.8,151,34.1,Hypertension,Low,"Low sodium, potassium-rich meals",Main Course
-307,Mee Goreng Mamak,250,8,30,5,6,100,1,400,5,90,0,35,Yes,56,62,172,21,Obesity,Moderate,"Low calorie, high protein meals",Main Course
-308,Hainanese Chicken Rice,320,10,40,12,8,150,2.1,330,6,90,0,50,Yes,31,54.7,184,16.2,Obesity,High,"Low calorie, high protein meals",Main Course
-309,Asam Pedas,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,64,80.1,172,27.1,Hypertension,Moderate,"Low sodium, potassium-rich meals",Main Course
-310,Rendang,450,15,55,12,10,80,3,450,8,35,0,55,Yes,61,57.7,151,25.3,Diabetes,Low,"Low sugar, high fiber meals",Main Course
-311,Cendol,320,10,40,12,8,150,2.1,330,6,90,0,50,Yes,53,89,173,29.7,None,High,Balanced meals,Dessert
-312,Kuih Lapis,450,15,55,12,10,80,3,450,8,35,0,55,Yes,36,58.2,163,21.9,Hypertension,High,"Low sodium, potassium-rich meals",Dessert
-313,Teh Tarik,320,10,40,12,8,150,2.1,330,6,90,0,50,Yes,26,59.6,179,18.6,Obesity,High,"Low calorie, high protein meals",Beverage
-314,Air Bandung,250,8,30,5,6,100,1,400,5,90,0,35,Yes,46,93.4,180,28.8,Obesity,Moderate,"Low calorie, high protein meals",Beverage
-315,Nasi Dagang,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,62,94.4,172,31.9,Hypertension,High,"Low sodium, potassium-rich meals",Main Course
-316,Maggi Goreng,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,56,68.3,162,26,None,Low,Balanced meals,Main Course
-317,Ayam Masak Merah,320,10,40,12,8,150,2.1,330,6,90,0,50,Yes,22,71.4,172,24.1,None,High,Balanced meals,Main Course
-318,Lontong,450,15,55,12,10,80,3,450,8,35,0,55,Yes,36,67,155,27.9,None,Low,Balanced meals,Main Course
-319,Nasi Kandar,350,12,60,10,8,120,2,500,15,45,0,40,Yes,34,56.2,180,17.3,None,High,Balanced meals,Main Course
-320,Roti Jala,320,10,40,12,8,150,2.1,330,6,90,0,50,Yes,18,54.7,160,21.4,Diabetes,Moderate,"Low sugar, high fiber meals",Breakfast
-321,Keropok Lekor,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,19,60.8,162,23.2,Hypertension,Moderate,"Low sodium, potassium-rich meals",Snack
-322,Ais Kacang,320,10,40,12,8,150,2.1,330,6,90,0,50,Yes,55,52.4,165,19.2,Diabetes,Moderate,"Low sugar, high fiber meals",Dessert
-323,Pulut Panggang,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,56,52.7,178,16.6,Obesity,High,"Low calorie, high protein meals",Snack
-324,Mee Rebus,320,10,40,12,8,150,2.1,330,6,90,0,50,Yes,29,64.3,172,21.7,Obesity,Moderate,"Low calorie, high protein meals",Main Course
-325,Mee Bandung,450,15,55,12,10,80,3,450,8,35,0,55,Yes,47,89.8,180,27.7,Diabetes,Moderate,"Low sugar, high fiber meals",Main Course
-326,Kaya Toast,250,8,30,5,6,100,1,400,5,90,0,35,Yes,20,97,176,31.3,None,High,Balanced meals,Breakfast
-327,Bubur Cha Cha,320,10,40,12,8,150,2.1,330,6,90,0,50,Yes,61,56.7,181,17.3,Hypertension,High,"Low sodium, potassium-rich meals",Dessert
-328,Apam Balik,320,10,40,12,8,150,2.1,330,6,90,0,50,Yes,43,94.5,181,28.8,Obesity,High,"Low calorie, high protein meals",Snack
-329,Tosai,250,8,30,5,6,100,1,400,5,90,0,35,Yes,24,60.9,176,19.7,Hypertension,High,"Low sodium, potassium-rich meals",Breakfast
-330,Curry Puff,450,15,55,12,10,80,3,450,8,35,0,55,Yes,35,91.2,162,34.8,Obesity,Low,"Low calorie, high protein meals",Snack
-331,Nasi Ulam,250,8,30,5,6,100,1,400,5,90,0,35,Yes,52,74.2,179,23.2,Diabetes,High,"Low sugar, high fiber meals",Main Course
-332,Sambal Udang,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,27,69.2,168,24.5,Hypertension,Low,"Low sodium, potassium-rich meals",Main Course
-333,Ikan Bakar,320,10,40,12,8,150,2.1,330,6,90,0,50,Yes,41,63.9,163,24.1,Hypertension,Low,"Low sodium, potassium-rich meals",Main Course
-334,Ulam-ulaman,250,8,30,5,6,100,1,400,5,90,0,35,Yes,47,66.4,168,23.5,Diabetes,Moderate,"Low sugar, high fiber meals",Side Dish
-335,Nasi Ayam Penyet,250,8,30,5,6,100,1,400,5,90,0,35,Yes,64,60.4,159,23.9,Obesity,High,"Low calorie, high protein meals",Main Course
-336,Putu Mayam,350,12,60,10,8,120,2,500,15,45,0,40,Yes,64,65,187,18.6,None,Moderate,Balanced meals,Dessert
-337,Nasi Goreng Kampung,250,8,30,5,6,100,1,400,5,90,0,35,Yes,44,64.4,173,21.5,Obesity,Low,"Low calorie, high protein meals",Main Course
-338,Teh O Ais Limau,450,15,55,12,10,80,3,450,8,35,0,55,Yes,47,82.9,186,24,Obesity,Moderate,"Low calorie, high protein meals",Beverage
-339,Milo Ais,250,8,30,5,6,100,1,400,5,90,0,35,Yes,60,62.8,157,25.5,None,High,Balanced meals,Beverage
-340,Soto Ayam,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,45,71.6,157,29,None,Low,Balanced meals,Main Course
-341,Sup Kambing,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,42,87.8,184,25.9,None,Moderate,Balanced meals,Main Course
-342,Pengat Pisang,350,12,60,10,8,120,2,500,15,45,0,40,Yes,50,78.2,190,21.7,Hypertension,Low,"Low sodium, potassium-rich meals",Dessert
-343,Kuih Seri Muka,250,8,30,5,6,100,1,400,5,90,0,35,Yes,20,64.6,165,23.7,Obesity,Low,"Low calorie, high protein meals",Dessert
-344,Nasi Impit,320,10,40,12,8,150,2.1,330,6,90,0,50,Yes,53,55,188,15.6,Hypertension,Low,"Low sodium, potassium-rich meals",Side Dish
-345,Acar Awak,250,8,30,5,6,100,1,400,5,90,0,35,Yes,53,71.7,179,22.4,Hypertension,High,"Low sodium, potassium-rich meals",Side Dish
-346,Lemang,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,22,99.9,176,32.3,None,Moderate,Balanced meals,Main Course
-347,Otak-Otak,350,12,60,10,8,120,2,500,15,45,0,40,Yes,43,50.9,170,17.6,Diabetes,Moderate,"Low sugar, high fiber meals",Snack
-348,Bubur Lambuk,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,53,68.1,162,25.9,None,Moderate,Balanced meals,Breakfast
-349,Mee Kari,320,10,40,12,8,150,2.1,330,6,90,0,50,Yes,64,50.1,173,16.7,Diabetes,High,"Low sugar, high fiber meals",Main Course
-350,Ayam Percik,450,15,55,12,10,80,3,450,8,35,0,55,Yes,65,66.4,172,22.4,None,High,Balanced meals,Main Course
-351,Nasi Lemak,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,22,55.7,163,21,None,High,Balanced meals,Main Course
-352,Char Kway Teow,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,30,75.2,180,23.2,Diabetes,Moderate,"Low sugar, high fiber meals",Main Course
-353,Roti Canai,320,10,40,12,8,150,2.1,330,6,90,0,50,Yes,62,76.2,157,30.9,Hypertension,High,"Low sodium, potassium-rich meals",Breakfast
-354,Satay,450,15,55,12,10,80,3,450,8,35,0,55,Yes,39,62.5,152,27.1,Hypertension,Moderate,"Low sodium, potassium-rich meals",Appetizer
-355,Laksa,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,52,58.2,155,24.2,Hypertension,Low,"Low sodium, potassium-rich meals",Main Course
-356,Nasi Kerabu,350,12,60,10,8,120,2,500,15,45,0,40,Yes,51,54.7,153,23.4,None,Moderate,Balanced meals,Main Course
-357,Mee Goreng Mamak,450,15,55,12,10,80,3,450,8,35,0,55,Yes,60,86.3,160,33.7,None,Low,Balanced meals,Main Course
-358,Hainanese Chicken Rice,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,45,91.6,186,26.5,Hypertension,Low,"Low sodium, potassium-rich meals",Main Course
-359,Asam Pedas,320,10,40,12,8,150,2.1,330,6,90,0,50,Yes,36,72.9,166,26.5,Obesity,Moderate,"Low calorie, high protein meals",Main Course
-360,Rendang,250,8,30,5,6,100,1,400,5,90,0,35,Yes,25,99.8,178,31.5,Obesity,High,"Low calorie, high protein meals",Main Course
-361,Cendol,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,25,78.6,175,25.7,Obesity,Low,"Low calorie, high protein meals",Dessert
-362,Kuih Lapis,450,15,55,12,10,80,3,450,8,35,0,55,Yes,51,91.5,183,27.3,None,High,Balanced meals,Dessert
-363,Teh Tarik,450,15,55,12,10,80,3,450,8,35,0,55,Yes,45,75.1,152,32.5,Obesity,High,"Low calorie, high protein meals",Beverage
-364,Air Bandung,320,10,40,12,8,150,2.1,330,6,90,0,50,Yes,65,52.7,166,19.1,None,High,Balanced meals,Beverage
-365,Nasi Dagang,350,12,60,10,8,120,2,500,15,45,0,40,Yes,33,56.4,177,18,Diabetes,Moderate,"Low sugar, high fiber meals",Main Course
-366,Maggi Goreng,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,35,80.1,162,30.5,Hypertension,Moderate,"Low sodium, potassium-rich meals",Main Course
-367,Ayam Masak Merah,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,42,55.7,171,19,Obesity,Low,"Low calorie, high protein meals",Main Course
-368,Lontong,320,10,40,12,8,150,2.1,330,6,90,0,50,Yes,63,54.7,150,24.3,None,Low,Balanced meals,Main Course
-369,Nasi Kandar,320,10,40,12,8,150,2.1,330,6,90,0,50,Yes,23,70.3,164,26.1,None,Low,Balanced meals,Main Course
-370,Roti Jala,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,18,69.6,162,26.5,None,Low,Balanced meals,Breakfast
-371,Keropok Lekor,250,8,30,5,6,100,1,400,5,90,0,35,Yes,39,86.6,168,30.7,Diabetes,Moderate,"Low sugar, high fiber meals",Snack
-372,Ais Kacang,450,15,55,12,10,80,3,450,8,35,0,55,Yes,40,53.3,179,16.6,None,Moderate,Balanced meals,Dessert
-373,Pulut Panggang,250,8,30,5,6,100,1,400,5,90,0,35,Yes,25,99.8,155,41.5,Obesity,High,"Low calorie, high protein meals",Snack
-374,Mee Rebus,350,12,60,10,8,120,2,500,15,45,0,40,Yes,41,79.8,162,30.4,None,Low,Balanced meals,Main Course
-375,Mee Bandung,320,10,40,12,8,150,2.1,330,6,90,0,50,Yes,45,74.4,174,24.6,None,Moderate,Balanced meals,Main Course
-376,Kaya Toast,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,44,84.1,169,29.4,Diabetes,High,"Low sugar, high fiber meals",Breakfast
-377,Bubur Cha Cha,450,15,55,12,10,80,3,450,8,35,0,55,Yes,53,50.6,169,17.7,Hypertension,Low,"Low sodium, potassium-rich meals",Dessert
-378,Apam Balik,320,10,40,12,8,150,2.1,330,6,90,0,50,Yes,34,65.8,161,25.4,Hypertension,High,"Low sodium, potassium-rich meals",Snack
-379,Tosai,450,15,55,12,10,80,3,450,8,35,0,55,Yes,22,89.2,155,37.1,Hypertension,Moderate,"Low sodium, potassium-rich meals",Breakfast
-380,Curry Puff,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,52,67.2,162,25.6,Hypertension,Moderate,"Low sodium, potassium-rich meals",Snack
-381,Nasi Ulam,450,15,55,12,10,80,3,450,8,35,0,55,Yes,64,70.2,174,23.2,Obesity,High,"Low calorie, high protein meals",Main Course
-382,Sambal Udang,450,15,55,12,10,80,3,450,8,35,0,55,Yes,46,60.3,181,18.4,Obesity,Low,"Low calorie, high protein meals",Main Course
-383,Ikan Bakar,350,12,60,10,8,120,2,500,15,45,0,40,Yes,41,82.1,178,25.9,Obesity,Low,"Low calorie, high protein meals",Main Course
-384,Ulam-ulaman,350,12,60,10,8,120,2,500,15,45,0,40,Yes,43,58.9,159,23.3,Diabetes,Low,"Low sugar, high fiber meals",Side Dish
-385,Nasi Ayam Penyet,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,65,86.4,153,36.9,Obesity,Low,"Low calorie, high protein meals",Main Course
-386,Putu Mayam,250,8,30,5,6,100,1,400,5,90,0,35,Yes,22,73.5,151,32.2,Hypertension,Moderate,"Low sodium, potassium-rich meals",Dessert
-387,Nasi Goreng Kampung,320,10,40,12,8,150,2.1,330,6,90,0,50,Yes,35,69.7,152,30.2,Diabetes,High,"Low sugar, high fiber meals",Main Course
-388,Teh O Ais Limau,320,10,40,12,8,150,2.1,330,6,90,0,50,Yes,43,50.5,179,15.8,Diabetes,Moderate,"Low sugar, high fiber meals",Beverage
-389,Milo Ais,350,12,60,10,8,120,2,500,15,45,0,40,Yes,18,88.4,151,38.8,None,High,Balanced meals,Beverage
-390,Soto Ayam,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,25,69.7,167,25,None,High,Balanced meals,Main Course
-391,Sup Kambing,250,8,30,5,6,100,1,400,5,90,0,35,Yes,51,97.8,187,28,Diabetes,High,"Low sugar, high fiber meals",Main Course
-392,Pengat Pisang,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,34,79.6,155,33.1,Hypertension,Moderate,"Low sodium, potassium-rich meals",Dessert
-393,Kuih Seri Muka,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,44,89.6,167,32.1,Hypertension,High,"Low sodium, potassium-rich meals",Dessert
-394,Nasi Impit,320,10,40,12,8,150,2.1,330,6,90,0,50,Yes,23,60.3,152,26.1,Diabetes,High,"Low sugar, high fiber meals",Side Dish
-395,Acar Awak,250,8,30,5,6,100,1,400,5,90,0,35,Yes,30,52.1,184,15.4,None,Low,Balanced meals,Side Dish
-396,Lemang,250,8,30,5,6,100,1,400,5,90,0,35,Yes,63,67,185,19.6,Diabetes,Moderate,"Low sugar, high fiber meals",Main Course
-397,Otak-Otak,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,37,86.2,179,26.9,Diabetes,High,"Low sugar, high fiber meals",Snack
-398,Bubur Lambuk,350,12,60,10,8,120,2,500,15,45,0,40,Yes,64,50.8,151,22.3,Hypertension,High,"Low sodium, potassium-rich meals",Breakfast
-399,Mee Kari,350,12,60,10,8,120,2,500,15,45,0,40,Yes,32,81.2,187,23.2,None,Moderate,Balanced meals,Main Course
-400,Ayam Percik,250,8,30,5,6,100,1,400,5,90,0,35,Yes,32,92.5,170,32,Diabetes,High,"Low sugar, high fiber meals",Main Course
-401,Nasi Lemak,250,8,30,5,6,100,1,400,5,90,0,35,Yes,61,90.4,178,28.5,Diabetes,High,"Low sugar, high fiber meals",Main Course
-402,Char Kway Teow,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,19,95,158,38.1,None,Low,Balanced meals,Main Course
-403,Roti Canai,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,20,60.9,161,23.5,Obesity,Low,"Low calorie, high protein meals",Breakfast
-404,Satay,450,15,55,12,10,80,3,450,8,35,0,55,Yes,36,79.3,152,34.3,Hypertension,High,"Low sodium, potassium-rich meals",Appetizer
-405,Laksa,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,39,82.8,167,29.7,None,Low,Balanced meals,Main Course
-406,Nasi Kerabu,450,15,55,12,10,80,3,450,8,35,0,55,Yes,21,95.1,170,32.9,None,Moderate,Balanced meals,Main Course
-407,Mee Goreng Mamak,350,12,60,10,8,120,2,500,15,45,0,40,Yes,38,80.2,156,33,Hypertension,Moderate,"Low sodium, potassium-rich meals",Main Course
-408,Hainanese Chicken Rice,350,12,60,10,8,120,2,500,15,45,0,40,Yes,43,82.1,173,27.4,None,High,Balanced meals,Main Course
-409,Asam Pedas,250,8,30,5,6,100,1,400,5,90,0,35,Yes,58,54.1,151,23.7,None,Moderate,Balanced meals,Main Course
-410,Rendang,450,15,55,12,10,80,3,450,8,35,0,55,Yes,19,86.3,156,35.5,Diabetes,High,"Low sugar, high fiber meals",Main Course
-411,Cendol,250,8,30,5,6,100,1,400,5,90,0,35,Yes,54,99.3,158,39.8,Obesity,Low,"Low calorie, high protein meals",Dessert
-412,Kuih Lapis,450,15,55,12,10,80,3,450,8,35,0,55,Yes,28,93.9,188,26.6,None,Low,Balanced meals,Dessert
-413,Teh Tarik,320,10,40,12,8,150,2.1,330,6,90,0,50,Yes,38,94,168,33.3,Diabetes,High,"Low sugar, high fiber meals",Beverage
-414,Air Bandung,350,12,60,10,8,120,2,500,15,45,0,40,Yes,59,74.5,177,23.8,None,Low,Balanced meals,Beverage
-415,Nasi Dagang,450,15,55,12,10,80,3,450,8,35,0,55,Yes,57,70.6,164,26.2,Obesity,Low,"Low calorie, high protein meals",Main Course
-416,Maggi Goreng,350,12,60,10,8,120,2,500,15,45,0,40,Yes,29,95.9,189,26.8,Diabetes,High,"Low sugar, high fiber meals",Main Course
-417,Ayam Masak Merah,250,8,30,5,6,100,1,400,5,90,0,35,Yes,22,69.6,159,27.5,Hypertension,Moderate,"Low sodium, potassium-rich meals",Main Course
-418,Lontong,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,21,54.2,167,19.4,Diabetes,Moderate,"Low sugar, high fiber meals",Main Course
-419,Nasi Kandar,450,15,55,12,10,80,3,450,8,35,0,55,Yes,60,96.6,187,27.6,Obesity,Moderate,"Low calorie, high protein meals",Main Course
-420,Roti Jala,450,15,55,12,10,80,3,450,8,35,0,55,Yes,62,77.7,155,32.3,None,High,Balanced meals,Breakfast
-421,Keropok Lekor,250,8,30,5,6,100,1,400,5,90,0,35,Yes,60,74.8,174,24.7,None,Moderate,Balanced meals,Snack
-422,Ais Kacang,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,59,58.9,188,16.7,Diabetes,High,"Low sugar, high fiber meals",Dessert
-423,Pulut Panggang,320,10,40,12,8,150,2.1,330,6,90,0,50,Yes,28,93.5,161,36.1,None,High,Balanced meals,Snack
-424,Mee Rebus,350,12,60,10,8,120,2,500,15,45,0,40,Yes,40,72,182,21.7,Hypertension,Low,"Low sodium, potassium-rich meals",Main Course
-425,Mee Bandung,320,10,40,12,8,150,2.1,330,6,90,0,50,Yes,37,90.7,184,26.8,None,Low,Balanced meals,Main Course
-426,Kaya Toast,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,25,76,174,25.1,Diabetes,High,"Low sugar, high fiber meals",Breakfast
-427,Bubur Cha Cha,450,15,55,12,10,80,3,450,8,35,0,55,Yes,57,96.8,167,34.7,None,Moderate,Balanced meals,Dessert
-428,Apam Balik,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,57,75.7,175,24.7,Diabetes,Moderate,"Low sugar, high fiber meals",Snack
-429,Tosai,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,25,78.6,151,34.5,Hypertension,Low,"Low sodium, potassium-rich meals",Breakfast
-430,Curry Puff,250,8,30,5,6,100,1,400,5,90,0,35,Yes,65,82.9,158,33.2,None,High,Balanced meals,Snack
-431,Nasi Ulam,350,12,60,10,8,120,2,500,15,45,0,40,Yes,28,72.8,184,21.5,Diabetes,High,"Low sugar, high fiber meals",Main Course
-432,Sambal Udang,350,12,60,10,8,120,2,500,15,45,0,40,Yes,48,80.6,184,23.8,Hypertension,High,"Low sodium, potassium-rich meals",Main Course
-433,Ikan Bakar,350,12,60,10,8,120,2,500,15,45,0,40,Yes,34,83,175,27.1,Hypertension,High,"Low sodium, potassium-rich meals",Main Course
-434,Ulam-ulaman,350,12,60,10,8,120,2,500,15,45,0,40,Yes,22,77.6,186,22.4,Diabetes,Low,"Low sugar, high fiber meals",Side Dish
-435,Nasi Ayam Penyet,450,15,55,12,10,80,3,450,8,35,0,55,Yes,39,96.5,156,39.7,None,Moderate,Balanced meals,Main Course
-436,Putu Mayam,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,50,88.6,167,31.8,Diabetes,Low,"Low sugar, high fiber meals",Dessert
-437,Nasi Goreng Kampung,450,15,55,12,10,80,3,450,8,35,0,55,Yes,64,75.1,156,30.9,Obesity,Low,"Low calorie, high protein meals",Main Course
-438,Teh O Ais Limau,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,29,68.9,162,26.3,Diabetes,Low,"Low sugar, high fiber meals",Beverage
-439,Milo Ais,250,8,30,5,6,100,1,400,5,90,0,35,Yes,42,78.5,187,22.4,Diabetes,Low,"Low sugar, high fiber meals",Beverage
-440,Soto Ayam,250,8,30,5,6,100,1,400,5,90,0,35,Yes,32,96.4,155,40.1,None,High,Balanced meals,Main Course
-441,Sup Kambing,250,8,30,5,6,100,1,400,5,90,0,35,Yes,19,60.7,185,17.7,None,Moderate,Balanced meals,Main Course
-442,Pengat Pisang,450,15,55,12,10,80,3,450,8,35,0,55,Yes,59,56,154,23.6,Hypertension,Low,"Low sodium, potassium-rich meals",Dessert
-443,Kuih Seri Muka,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,65,58.4,159,23.1,Obesity,High,"Low calorie, high protein meals",Dessert
-444,Nasi Impit,250,8,30,5,6,100,1,400,5,90,0,35,Yes,30,52.4,182,15.8,Hypertension,Moderate,"Low sodium, potassium-rich meals",Side Dish
-445,Acar Awak,250,8,30,5,6,100,1,400,5,90,0,35,Yes,26,94.6,183,28.2,None,Moderate,Balanced meals,Side Dish
-446,Lemang,320,10,40,12,8,150,2.1,330,6,90,0,50,Yes,25,67.4,161,26,Obesity,Moderate,"Low calorie, high protein meals",Main Course
-447,Otak-Otak,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,24,81.2,162,30.9,Diabetes,Low,"Low sugar, high fiber meals",Snack
-448,Bubur Lambuk,350,12,60,10,8,120,2,500,15,45,0,40,Yes,61,90.3,185,26.4,Diabetes,High,"Low sugar, high fiber meals",Breakfast
-449,Mee Kari,250,8,30,5,6,100,1,400,5,90,0,35,Yes,52,96.9,189,27.1,Hypertension,Moderate,"Low sodium, potassium-rich meals",Main Course
-450,Ayam Percik,350,12,60,10,8,120,2,500,15,45,0,40,Yes,43,84.4,161,32.6,Obesity,Moderate,"Low calorie, high protein meals",Main Course
-451,Nasi Lemak,450,15,55,12,10,80,3,450,8,35,0,55,Yes,34,50.3,151,22.1,None,Low,Balanced meals,Main Course
-452,Char Kway Teow,250,8,30,5,6,100,1,400,5,90,0,35,Yes,34,78.2,160,30.5,Diabetes,High,"Low sugar, high fiber meals",Main Course
-453,Roti Canai,320,10,40,12,8,150,2.1,330,6,90,0,50,Yes,42,63,178,19.9,Obesity,Low,"Low calorie, high protein meals",Breakfast
-454,Satay,250,8,30,5,6,100,1,400,5,90,0,35,Yes,56,85,184,25.1,Hypertension,Moderate,"Low sodium, potassium-rich meals",Appetizer
-455,Laksa,450,15,55,12,10,80,3,450,8,35,0,55,Yes,20,53.7,184,15.9,Obesity,High,"Low calorie, high protein meals",Main Course
-456,Nasi Kerabu,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,24,71.5,172,24.2,Diabetes,Moderate,"Low sugar, high fiber meals",Main Course
-457,Mee Goreng Mamak,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,30,70.8,179,22.1,Hypertension,Low,"Low sodium, potassium-rich meals",Main Course
-458,Hainanese Chicken Rice,320,10,40,12,8,150,2.1,330,6,90,0,50,Yes,25,68.4,165,25.1,Diabetes,Moderate,"Low sugar, high fiber meals",Main Course
-459,Asam Pedas,250,8,30,5,6,100,1,400,5,90,0,35,Yes,37,95.6,161,36.9,Diabetes,Moderate,"Low sugar, high fiber meals",Main Course
-460,Rendang,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,46,73,171,25,Hypertension,High,"Low sodium, potassium-rich meals",Main Course
-461,Cendol,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,20,63.1,165,23.2,None,Low,Balanced meals,Dessert
-462,Kuih Lapis,350,12,60,10,8,120,2,500,15,45,0,40,Yes,31,98.8,163,37.2,None,High,Balanced meals,Dessert
-463,Teh Tarik,350,12,60,10,8,120,2,500,15,45,0,40,Yes,45,94.8,184,28,Hypertension,High,"Low sodium, potassium-rich meals",Beverage
-464,Air Bandung,350,12,60,10,8,120,2,500,15,45,0,40,Yes,63,94.4,174,31.2,Diabetes,Moderate,"Low sugar, high fiber meals",Beverage
-465,Nasi Dagang,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,37,84.4,163,31.8,Obesity,Low,"Low calorie, high protein meals",Main Course
-466,Maggi Goreng,250,8,30,5,6,100,1,400,5,90,0,35,Yes,63,69.7,165,25.6,None,Moderate,Balanced meals,Main Course
-467,Ayam Masak Merah,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,55,82.9,159,32.8,Diabetes,Low,"Low sugar, high fiber meals",Main Course
-468,Lontong,350,12,60,10,8,120,2,500,15,45,0,40,Yes,51,87.7,184,25.9,Hypertension,High,"Low sodium, potassium-rich meals",Main Course
-469,Nasi Kandar,350,12,60,10,8,120,2,500,15,45,0,40,Yes,31,67.1,157,27.2,Obesity,Low,"Low calorie, high protein meals",Main Course
-470,Roti Jala,250,8,30,5,6,100,1,400,5,90,0,35,Yes,31,54.7,157,22.2,Diabetes,High,"Low sugar, high fiber meals",Breakfast
-471,Keropok Lekor,450,15,55,12,10,80,3,450,8,35,0,55,Yes,26,70.1,150,31.2,Hypertension,Low,"Low sodium, potassium-rich meals",Snack
-472,Ais Kacang,320,10,40,12,8,150,2.1,330,6,90,0,50,Yes,50,86,173,28.7,Obesity,Moderate,"Low calorie, high protein meals",Dessert
-473,Pulut Panggang,450,15,55,12,10,80,3,450,8,35,0,55,Yes,50,71,176,22.9,None,High,Balanced meals,Snack
-474,Mee Rebus,250,8,30,5,6,100,1,400,5,90,0,35,Yes,36,86.1,184,25.4,None,Moderate,Balanced meals,Main Course
-475,Mee Bandung,450,15,55,12,10,80,3,450,8,35,0,55,Yes,54,86.6,177,27.6,None,Low,Balanced meals,Main Course
-476,Kaya Toast,450,15,55,12,10,80,3,450,8,35,0,55,Yes,65,98.5,178,31.1,Diabetes,Low,"Low sugar, high fiber meals",Breakfast
-477,Bubur Cha Cha,450,15,55,12,10,80,3,450,8,35,0,55,Yes,36,90.4,177,28.9,Diabetes,Low,"Low sugar, high fiber meals",Dessert
-478,Apam Balik,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,64,93.3,161,36,Obesity,Low,"Low calorie, high protein meals",Snack
-479,Tosai,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,35,87.7,178,27.7,None,High,Balanced meals,Breakfast
-480,Curry Puff,350,12,60,10,8,120,2,500,15,45,0,40,Yes,46,79.7,166,28.9,Hypertension,Moderate,"Low sodium, potassium-rich meals",Snack
-481,Nasi Ulam,350,12,60,10,8,120,2,500,15,45,0,40,Yes,52,55.7,165,20.5,None,Low,Balanced meals,Main Course
-482,Sambal Udang,320,10,40,12,8,150,2.1,330,6,90,0,50,Yes,48,85,164,31.6,Hypertension,Low,"Low sodium, potassium-rich meals",Main Course
-483,Ikan Bakar,320,10,40,12,8,150,2.1,330,6,90,0,50,Yes,24,77.4,158,31,Obesity,Moderate,"Low calorie, high protein meals",Main Course
-484,Ulam-ulaman,450,15,55,12,10,80,3,450,8,35,0,55,Yes,61,98,166,35.6,Diabetes,Low,"Low sugar, high fiber meals",Side Dish
-485,Nasi Ayam Penyet,250,8,30,5,6,100,1,400,5,90,0,35,Yes,24,75.1,187,21.5,Hypertension,Low,"Low sodium, potassium-rich meals",Main Course
-486,Putu Mayam,250,8,30,5,6,100,1,400,5,90,0,35,Yes,43,75.1,171,25.7,None,Low,Balanced meals,Dessert
-487,Nasi Goreng Kampung,450,15,55,12,10,80,3,450,8,35,0,55,Yes,33,81.1,172,27.4,Obesity,Moderate,"Low calorie, high protein meals",Main Course
-488,Teh O Ais Limau,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,58,77.5,162,29.5,None,High,Balanced meals,Beverage
-489,Milo Ais,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,24,74.1,160,28.9,Diabetes,Low,"Low sugar, high fiber meals",Beverage
-490,Soto Ayam,320,10,40,12,8,150,2.1,330,6,90,0,50,Yes,18,70,156,28.8,Diabetes,High,"Low sugar, high fiber meals",Main Course
-491,Sup Kambing,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,40,78.7,154,33.2,None,High,Balanced meals,Main Course
-492,Pengat Pisang,350,12,60,10,8,120,2,500,15,45,0,40,Yes,53,66.7,154,28.1,Hypertension,High,"Low sodium, potassium-rich meals",Dessert
-493,Kuih Seri Muka,350,12,60,10,8,120,2,500,15,45,0,40,Yes,46,80.3,167,28.8,Hypertension,Low,"Low sodium, potassium-rich meals",Dessert
-494,Nasi Impit,450,15,55,12,10,80,3,450,8,35,0,55,Yes,52,59.9,154,25.3,Diabetes,High,"Low sugar, high fiber meals",Side Dish
-495,Acar Awak,350,12,60,10,8,120,2,500,15,45,0,40,Yes,62,87.7,177,28,Hypertension,Low,"Low sodium, potassium-rich meals",Side Dish
-496,Lemang,350,12,60,10,8,120,2,500,15,45,0,40,Yes,53,53.2,172,18,Diabetes,High,"Low sugar, high fiber meals",Main Course
-497,Otak-Otak,350,12,60,10,8,120,2,500,15,45,0,40,Yes,18,61.7,157,25,Diabetes,Low,"Low sugar, high fiber meals",Snack
-498,Bubur Lambuk,250,8,30,5,6,100,1,400,5,90,0,35,Yes,45,78.3,169,27.4,Diabetes,Low,"Low sugar, high fiber meals",Breakfast
-499,Mee Kari,450,15,55,12,10,80,3,450,8,35,0,55,Yes,41,76.9,160,30,None,Moderate,Balanced meals,Main Course
-500,Ayam Percik,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,51,50.9,184,15,Obesity,Low,"Low calorie, high protein meals",Main Course
+1,Whole Grain Waffles with Fruit,450,15,55,12,10,80,3.0,450,8,35,0.0,55,Yes,43,53.4,150,23.7,Diabetes,Moderate,"Low sugar, high fiber meals",Main Course
+2,Oven-Baked Falafel Wrap,320,10,40,12,8,150,2.1,330,6,90,0.0,50,Yes,37,50.1,158,20.1,Diabetes,Low,"Low sugar, high fiber meals",Main Course
+3,Avocado Rice Bowl,350,12,60,10,8,120,2.0,500,15,45,0.0,40,Yes,51,98.2,177,31.3,Hypertension,Moderate,"Low sodium, potassium-rich meals",Breakfast
+4,Vegan Jambalaya,450,15,55,12,10,80,3.0,450,8,35,0.0,55,Yes,54,73.7,156,30.3,Diabetes,High,"Low sugar, high fiber meals",Appetizer
+5,Eggplant Tomato Bake,320,10,40,12,8,150,2.1,330,6,90,0.0,50,Yes,43,96.1,190,26.6,Obesity,Low,"Low calorie, high protein meals",Main Course
+6,Protein Smoothie Bowl,320,10,40,12,8,150,2.1,330,6,90,0.0,50,Yes,23,56.2,174,18.6,Obesity,Low,"Low calorie, high protein meals",Main Course
+7,Lentil Pasta Bake,450,15,55,12,10,80,3.0,450,8,35,0.0,55,Yes,44,52.1,168,18.5,Obesity,High,"Low calorie, high protein meals",Main Course
+8,Mediterranean Couscous Bowl,450,15,55,12,10,80,3.0,450,8,35,0.0,55,Yes,61,65.7,160,25.7,Diabetes,Moderate,"Low sugar, high fiber meals",Main Course
+9,Grilled Halibut with Veggies,450,15,55,12,10,80,3.0,450,8,35,0.0,55,Yes,59,74.4,153,31.8,None,High,Balanced meals,Main Course
+10,Avocado Rice Bowl,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,38,90.4,171,30.9,None,Moderate,Balanced meals,Main Course
+11,Kale Lentil Soup,350,12,60,10,8,120,2.0,500,15,45,0.0,40,Yes,62,95.2,175,31.1,Diabetes,High,"Low sugar, high fiber meals",Dessert
+12,Pumpkin Soup,250,8,30,5,6,100,1.0,400,5,90,0.0,35,Yes,19,87.8,167,31.5,Hypertension,Moderate,"Low sodium, potassium-rich meals",Dessert
+13,Lentil Veggie Patties,320,10,40,12,8,150,2.1,330,6,90,0.0,50,Yes,45,92.2,186,26.7,None,Low,Balanced meals,Beverage
+14,Roasted Cauliflower Tacos,450,15,55,12,10,80,3.0,450,8,35,0.0,55,Yes,59,50.0,158,20.0,Obesity,Moderate,"Low calorie, high protein meals",Beverage
+15,Asparagus Frittata,350,12,60,10,8,120,2.0,500,15,45,0.0,40,Yes,43,78.0,153,33.3,None,Moderate,Balanced meals,Main Course
+16,Stuffed Portobello Mushrooms,250,8,30,5,6,100,1.0,400,5,90,0.0,35,Yes,45,68.8,168,24.4,Hypertension,Moderate,"Low sodium, potassium-rich meals",Main Course
+17,Pumpkin Soup,320,10,40,12,8,150,2.1,330,6,90,0.0,50,Yes,21,59.9,184,17.7,Hypertension,Low,"Low sodium, potassium-rich meals",Main Course
+18,Brussels Sprouts Stir-Fry,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,62,94.5,186,27.3,Obesity,Low,"Low calorie, high protein meals",Main Course
+19,Stuffed Bell Peppers,320,10,40,12,8,150,2.1,330,6,90,0.0,50,Yes,39,51.4,180,15.9,Hypertension,Moderate,"Low sodium, potassium-rich meals",Main Course
+20,Stuffed Sweet Potatoes,350,12,60,10,8,120,2.0,500,15,45,0.0,40,Yes,65,64.1,153,27.4,None,Low,Balanced meals,Breakfast
+21,Baked Polenta with Veggies,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,50,91.8,155,38.2,None,Low,Balanced meals,Snack
+22,Bulgur Stuffed Peppers,450,15,55,12,10,80,3.0,450,8,35,0.0,55,Yes,59,65.6,172,22.2,Hypertension,Low,"Low sodium, potassium-rich meals",Dessert
+23,Pumpkin Chia Bowl,350,12,60,10,8,120,2.0,500,15,45,0.0,40,Yes,29,75.1,178,23.7,Diabetes,Low,"Low sugar, high fiber meals",Snack
+24,Spaghetti Squash Stir-fry,350,12,60,10,8,120,2.0,500,15,45,0.0,40,Yes,25,69.9,156,28.7,Diabetes,Low,"Low sugar, high fiber meals",Main Course
+25,Egg & Veggie Breakfast Bowl,250,8,30,5,6,100,1.0,400,5,90,0.0,35,Yes,60,58.6,166,21.3,Obesity,Moderate,"Low calorie, high protein meals",Main Course
+26,Vegetarian Sushi Bowl,450,15,55,12,10,80,3.0,450,8,35,0.0,55,Yes,49,66.3,186,19.2,None,Moderate,Balanced meals,Breakfast
+27,Beetroot Salad,320,10,40,12,8,150,2.1,330,6,90,0.0,50,Yes,62,68.1,151,29.9,Diabetes,High,"Low sugar, high fiber meals",Dessert
+28,Coconut Chia Pudding,350,12,60,10,8,120,2.0,500,15,45,0.0,40,Yes,25,71.0,160,27.7,Diabetes,High,"Low sugar, high fiber meals",Snack
+29,Kale & Apple Slaw,450,15,55,12,10,80,3.0,450,8,35,0.0,55,Yes,51,93.2,179,29.1,Diabetes,High,"Low sugar, high fiber meals",Breakfast
+30,Tofu Veggie Skewers,250,8,30,5,6,100,1.0,400,5,90,0.0,35,Yes,27,63.8,158,25.6,Obesity,Low,"Low calorie, high protein meals",Snack
+31,Vegan Buddha Bowl,350,12,60,10,8,120,2.0,500,15,45,0.0,40,Yes,63,99.7,169,34.9,None,High,Balanced meals,Main Course
+32,Baked Salmon with Veggies,320,10,40,12,8,150,2.1,330,6,90,0.0,50,Yes,43,81.4,179,25.4,Diabetes,Low,"Low sugar, high fiber meals",Main Course
+33,Crispy Baked Tofu,320,10,40,12,8,150,2.1,330,6,90,0.0,50,Yes,32,79.8,160,31.2,Diabetes,Low,"Low sugar, high fiber meals",Main Course
+34,Kale Chickpea Patties,320,10,40,12,8,150,2.1,330,6,90,0.0,50,Yes,44,87.0,181,26.6,Obesity,High,"Low calorie, high protein meals",Side Dish
+35,Beet & Feta Bowl,450,15,55,12,10,80,3.0,450,8,35,0.0,55,Yes,64,63.7,173,21.3,Obesity,Low,"Low calorie, high protein meals",Main Course
+36,Sun-dried Tomato Pasta,250,8,30,5,6,100,1.0,400,5,90,0.0,35,Yes,31,79.7,155,33.2,None,Moderate,Balanced meals,Dessert
+37,Spaghetti Squash Bowl,320,10,40,12,8,150,2.1,330,6,90,0.0,50,Yes,54,72.5,174,23.9,None,Low,Balanced meals,Main Course
+38,Low-carb Zucchini Fritters,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,23,51.0,176,16.5,None,Low,Balanced meals,Beverage
+39,Turkey Zoodle Bowl,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,56,52.5,165,19.3,Diabetes,Moderate,"Low sugar, high fiber meals",Beverage
+40,Sunflower Butter Toast,250,8,30,5,6,100,1.0,400,5,90,0.0,35,Yes,29,68.0,170,23.5,Hypertension,Moderate,"Low sodium, potassium-rich meals",Main Course
+41,Kale & Quinoa Salad,450,15,55,12,10,80,3.0,450,8,35,0.0,55,Yes,32,83.7,160,32.7,None,Moderate,Balanced meals,Main Course
+42,Oven-Roasted Tofu Bowl,350,12,60,10,8,120,2.0,500,15,45,0.0,40,Yes,51,87.5,173,29.2,Obesity,Moderate,"Low calorie, high protein meals",Dessert
+43,Grilled Portobello Burger,320,10,40,12,8,150,2.1,330,6,90,0.0,50,Yes,37,90.7,187,25.9,None,Moderate,Balanced meals,Dessert
+44,Tomato Cucumber Salad,320,10,40,12,8,150,2.1,330,6,90,0.0,50,Yes,39,98.2,174,32.4,Hypertension,Moderate,"Low sodium, potassium-rich meals",Side Dish
+45,Broccoli Tofu Curry,320,10,40,12,8,150,2.1,330,6,90,0.0,50,Yes,32,61.9,182,18.7,Diabetes,High,"Low sugar, high fiber meals",Side Dish
+46,Veggie Power Sandwich,320,10,40,12,8,150,2.1,330,6,90,0.0,50,Yes,64,66.7,188,18.9,Hypertension,High,"Low sodium, potassium-rich meals",Main Course
+47,Coconut Yogurt with Granola,350,12,60,10,8,120,2.0,500,15,45,0.0,40,Yes,53,91.8,161,35.4,None,Moderate,Balanced meals,Snack
+48,Bulgur Stuffed Peppers,450,15,55,12,10,80,3.0,450,8,35,0.0,55,Yes,27,94.1,159,37.2,Obesity,Low,"Low calorie, high protein meals",Breakfast
+49,Tofu Scramble,450,15,55,12,10,80,3.0,450,8,35,0.0,55,Yes,57,62.1,181,19.0,Hypertension,Low,"Low sodium, potassium-rich meals",Main Course
+50,Egg Spinach Quesadilla,450,15,55,12,10,80,3.0,450,8,35,0.0,55,Yes,64,79.1,171,27.1,Hypertension,Moderate,"Low sodium, potassium-rich meals",Main Course
+51,Grilled Halibut with Veggies,450,15,55,12,10,80,3.0,450,8,35,0.0,55,Yes,39,65.5,156,26.9,Obesity,High,"Low calorie, high protein meals",Main Course
+52,Baked Zucchini Casserole,450,15,55,12,10,80,3.0,450,8,35,0.0,55,Yes,60,82.4,154,34.7,None,Low,Balanced meals,Main Course
+53,Sunflower Seed Porridge,450,15,55,12,10,80,3.0,450,8,35,0.0,55,Yes,52,64.8,185,18.9,Hypertension,High,"Low sodium, potassium-rich meals",Breakfast
+54,Baked Veggie Frittata,250,8,30,5,6,100,1.0,400,5,90,0.0,35,Yes,42,85.9,179,26.8,Hypertension,Low,"Low sodium, potassium-rich meals",Appetizer
+55,Avocado Egg Bowl,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,65,65.1,187,18.6,None,High,Balanced meals,Main Course
+56,Lentil & Brown Rice Bowl,250,8,30,5,6,100,1.0,400,5,90,0.0,35,Yes,56,60.6,167,21.7,None,Moderate,Balanced meals,Main Course
+57,Baked Eggplant Chips,350,12,60,10,8,120,2.0,500,15,45,0.0,40,Yes,29,79.8,184,23.6,Obesity,High,"Low calorie, high protein meals",Main Course
+58,Sunflower Butter Toast,320,10,40,12,8,150,2.1,330,6,90,0.0,50,Yes,51,63.4,167,22.7,None,Moderate,Balanced meals,Main Course
+59,Black Bean Soup,450,15,55,12,10,80,3.0,450,8,35,0.0,55,Yes,23,65.5,170,22.7,Obesity,Low,"Low calorie, high protein meals",Main Course
+60,Tofu Salad Sandwich,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,53,74.5,188,21.1,Hypertension,High,"Low sodium, potassium-rich meals",Main Course
+61,Sweet Potato Lentil Stew,450,15,55,12,10,80,3.0,450,8,35,0.0,55,Yes,59,51.7,151,22.7,Diabetes,Moderate,"Low sugar, high fiber meals",Dessert
+62,Whole Grain Waffles with Fruit,320,10,40,12,8,150,2.1,330,6,90,0.0,50,Yes,22,98.8,176,31.9,Diabetes,High,"Low sugar, high fiber meals",Dessert
+63,Spinach & Chickpea Stew,350,12,60,10,8,120,2.0,500,15,45,0.0,40,Yes,63,75.2,166,27.3,Obesity,Moderate,"Low calorie, high protein meals",Beverage
+64,Grilled Chicken Lettuce Wraps,450,15,55,12,10,80,3.0,450,8,35,0.0,55,Yes,45,52.5,176,16.9,Hypertension,Low,"Low sodium, potassium-rich meals",Beverage
+65,Vegan Jambalaya,450,15,55,12,10,80,3.0,450,8,35,0.0,55,Yes,22,90.3,171,30.9,Obesity,Moderate,"Low calorie, high protein meals",Main Course
+66,Spinach Mushroom Wrap,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,22,99.1,171,33.9,Obesity,Moderate,"Low calorie, high protein meals",Main Course
+67,Avocado Chickpea Toast,250,8,30,5,6,100,1.0,400,5,90,0.0,35,Yes,57,91.1,165,33.5,Diabetes,High,"Low sugar, high fiber meals",Main Course
+68,Turkey Lettuce Wraps,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,51,90.5,181,27.6,Diabetes,Low,"Low sugar, high fiber meals",Main Course
+69,Lemon Herb Grilled Chicken,320,10,40,12,8,150,2.1,330,6,90,0.0,50,Yes,64,61.6,155,25.6,None,Low,Balanced meals,Main Course
+70,Roasted Butternut Squash,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,22,89.4,181,27.3,None,Low,Balanced meals,Breakfast
+71,Roasted Tofu Caesar Salad,450,15,55,12,10,80,3.0,450,8,35,0.0,55,Yes,38,58.6,173,19.6,Obesity,Low,"Low calorie, high protein meals",Snack
+72,Protein Pancakes with Blueberries,320,10,40,12,8,150,2.1,330,6,90,0.0,50,Yes,46,86.3,174,28.5,None,Low,Balanced meals,Dessert
+73,Sunflower Butter Toast,320,10,40,12,8,150,2.1,330,6,90,0.0,50,Yes,62,58.1,152,25.1,Hypertension,Low,"Low sodium, potassium-rich meals",Snack
+74,Millet with Steamed Greens,250,8,30,5,6,100,1.0,400,5,90,0.0,35,Yes,61,97.4,173,32.5,Hypertension,Low,"Low sodium, potassium-rich meals",Main Course
+75,Vegan Protein Shake,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,30,71.8,182,21.7,Obesity,High,"Low calorie, high protein meals",Main Course
+76,Bulgur with Roasted Vegetables,350,12,60,10,8,120,2.0,500,15,45,0.0,40,Yes,53,88.2,171,30.2,Diabetes,Low,"Low sugar, high fiber meals",Breakfast
+77,Baked Apple Oatmeal,250,8,30,5,6,100,1.0,400,5,90,0.0,35,Yes,45,57.3,171,19.6,Hypertension,Moderate,"Low sodium, potassium-rich meals",Dessert
+78,Vegetable Tempeh Bowl,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,34,63.5,190,17.6,Diabetes,Low,"Low sugar, high fiber meals",Snack
+79,Almond Yogurt Smoothie,450,15,55,12,10,80,3.0,450,8,35,0.0,55,Yes,18,96.2,154,40.6,Obesity,High,"Low calorie, high protein meals",Breakfast
+80,Sautéed Kale & Mushrooms,450,15,55,12,10,80,3.0,450,8,35,0.0,55,Yes,29,95.1,167,34.1,Hypertension,High,"Low sodium, potassium-rich meals",Snack
+81,High Protein Egg Wrap,320,10,40,12,8,150,2.1,330,6,90,0.0,50,Yes,23,90.6,187,25.9,Diabetes,Moderate,"Low sugar, high fiber meals",Main Course
+82,Lentil Tofu Patties,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,50,51.7,162,19.7,Hypertension,High,"Low sodium, potassium-rich meals",Main Course
+83,Low-carb Egg Muffins,250,8,30,5,6,100,1.0,400,5,90,0.0,35,Yes,62,93.5,184,27.6,Obesity,High,"Low calorie, high protein meals",Main Course
+84,Chickpea Tofu Curry,320,10,40,12,8,150,2.1,330,6,90,0.0,50,Yes,25,72.3,153,30.9,None,Low,Balanced meals,Side Dish
+85,Cabbage Quinoa Bowl,250,8,30,5,6,100,1.0,400,5,90,0.0,35,Yes,19,64.7,164,24.1,None,Low,Balanced meals,Main Course
+86,Grilled Fish Salad,350,12,60,10,8,120,2.0,500,15,45,0.0,40,Yes,59,76.2,150,33.9,Obesity,High,"Low calorie, high protein meals",Dessert
+87,Grilled Tilapia Wrap,450,15,55,12,10,80,3.0,450,8,35,0.0,55,Yes,52,53.8,184,15.9,Obesity,Low,"Low calorie, high protein meals",Main Course
+88,Turkey Lettuce Wraps,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,20,64.0,154,27.0,None,Moderate,Balanced meals,Beverage
+89,Kale Smoothie,250,8,30,5,6,100,1.0,400,5,90,0.0,35,Yes,21,85.0,153,36.3,Obesity,Moderate,"Low calorie, high protein meals",Beverage
+90,Roasted Chickpea Salad,250,8,30,5,6,100,1.0,400,5,90,0.0,35,Yes,20,50.3,185,14.7,Obesity,Low,"Low calorie, high protein meals",Main Course
+91,Egg & Avocado Sandwich,250,8,30,5,6,100,1.0,400,5,90,0.0,35,Yes,34,52.7,186,15.2,None,High,Balanced meals,Main Course
+92,Baked Veggie Frittata,450,15,55,12,10,80,3.0,450,8,35,0.0,55,Yes,52,58.4,178,18.4,Hypertension,Moderate,"Low sodium, potassium-rich meals",Dessert
+93,Spinach & Chickpea Stew,320,10,40,12,8,150,2.1,330,6,90,0.0,50,Yes,62,75.4,160,29.5,Diabetes,High,"Low sugar, high fiber meals",Dessert
+94,Beet & Feta Bowl,250,8,30,5,6,100,1.0,400,5,90,0.0,35,Yes,41,50.2,177,16.0,Obesity,Moderate,"Low calorie, high protein meals",Side Dish
+95,Cabbage Stir-Fry,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,59,89.6,174,29.6,None,Moderate,Balanced meals,Side Dish
+96,Green Bean Almondine,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,29,83.0,173,27.7,Diabetes,Low,"Low sugar, high fiber meals",Main Course
+97,Oatmeal Protein Bar,350,12,60,10,8,120,2.0,500,15,45,0.0,40,Yes,44,74.6,181,22.8,Diabetes,Moderate,"Low sugar, high fiber meals",Snack
+98,Apple & Peanut Butter Toast,350,12,60,10,8,120,2.0,500,15,45,0.0,40,Yes,20,73.0,184,21.6,Diabetes,Low,"Low sugar, high fiber meals",Breakfast
+99,Greek Yogurt with Berries,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,19,98.3,185,28.7,Hypertension,Low,"Low sodium, potassium-rich meals",Main Course
+100,Broccoli & Mushroom Quiche,450,15,55,12,10,80,3.0,450,8,35,0.0,55,Yes,33,71.4,169,25.0,Diabetes,High,"Low sugar, high fiber meals",Main Course
+101,Whole Wheat Veggie Pizza,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,32,81.1,174,26.8,Obesity,Low,"Low calorie, high protein meals",Main Course
+102,Grilled Chicken Lettuce Wraps,350,12,60,10,8,120,2.0,500,15,45,0.0,40,Yes,53,77.2,158,30.9,None,Low,Balanced meals,Main Course
+103,Whole Wheat Tofu Sandwich,320,10,40,12,8,150,2.1,330,6,90,0.0,50,Yes,51,95.5,150,42.4,Diabetes,Low,"Low sugar, high fiber meals",Breakfast
+104,Vegan Buddha Bowl,250,8,30,5,6,100,1.0,400,5,90,0.0,35,Yes,30,72.5,150,32.2,None,Low,Balanced meals,Appetizer
+105,Barley with Mixed Veggies,250,8,30,5,6,100,1.0,400,5,90,0.0,35,Yes,40,78.9,181,24.1,Obesity,Low,"Low calorie, high protein meals",Main Course
+106,Spinach Stuffed Mushrooms,450,15,55,12,10,80,3.0,450,8,35,0.0,55,Yes,25,70.0,174,23.1,Obesity,Moderate,"Low calorie, high protein meals",Main Course
+107,Vegetable Frittata,320,10,40,12,8,150,2.1,330,6,90,0.0,50,Yes,44,72.2,177,23.0,Obesity,Low,"Low calorie, high protein meals",Main Course
+108,Tofu Lettuce Wraps,320,10,40,12,8,150,2.1,330,6,90,0.0,50,Yes,32,69.4,159,27.5,Obesity,Low,"Low calorie, high protein meals",Main Course
+109,Roasted Chickpea Salad,450,15,55,12,10,80,3.0,450,8,35,0.0,55,Yes,47,55.9,177,17.8,Obesity,Low,"Low calorie, high protein meals",Main Course
+110,Baked Polenta with Veggies,320,10,40,12,8,150,2.1,330,6,90,0.0,50,Yes,57,52.7,177,16.8,None,Moderate,Balanced meals,Main Course
+111,Vegan Black Bean Burrito,250,8,30,5,6,100,1.0,400,5,90,0.0,35,Yes,34,54.4,181,16.6,Hypertension,High,"Low sodium, potassium-rich meals",Dessert
+112,Vegetable Lentil Soup,450,15,55,12,10,80,3.0,450,8,35,0.0,55,Yes,19,83.8,180,25.9,Hypertension,High,"Low sodium, potassium-rich meals",Dessert
+113,Baked Protein Muffins,250,8,30,5,6,100,1.0,400,5,90,0.0,35,Yes,64,83.3,162,31.7,None,Moderate,Balanced meals,Beverage
+114,Eggplant Stir-Fry,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,33,53.3,159,21.1,Diabetes,Moderate,"Low sugar, high fiber meals",Beverage
+115,Cauliflower Chickpea Bowl,350,12,60,10,8,120,2.0,500,15,45,0.0,40,Yes,38,54.0,183,16.1,Obesity,Low,"Low calorie, high protein meals",Main Course
+116,Baked Veggie Frittata,450,15,55,12,10,80,3.0,450,8,35,0.0,55,Yes,22,60.4,165,22.2,Obesity,Moderate,"Low calorie, high protein meals",Main Course
+117,Cucumber Quinoa Salad,450,15,55,12,10,80,3.0,450,8,35,0.0,55,Yes,18,75.2,154,31.7,Diabetes,Low,"Low sugar, high fiber meals",Main Course
+118,Mediterranean Couscous Bowl,350,12,60,10,8,120,2.0,500,15,45,0.0,40,Yes,27,87.4,190,24.2,Diabetes,Moderate,"Low sugar, high fiber meals",Main Course
+119,Whole Wheat Veggie Pizza,350,12,60,10,8,120,2.0,500,15,45,0.0,40,Yes,31,82.6,183,24.7,None,Moderate,Balanced meals,Main Course
+120,Quinoa & Black Beans,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,30,64.1,170,22.2,None,Low,Balanced meals,Breakfast
+121,Pumpkin Chia Bowl,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,20,81.1,179,25.3,Diabetes,Moderate,"Low sugar, high fiber meals",Snack
+122,Baked Apple Oatmeal,450,15,55,12,10,80,3.0,450,8,35,0.0,55,Yes,46,64.5,172,21.8,Diabetes,High,"Low sugar, high fiber meals",Dessert
+123,Spaghetti Squash with Marinara,350,12,60,10,8,120,2.0,500,15,45,0.0,40,Yes,65,76.1,156,31.3,Obesity,Moderate,"Low calorie, high protein meals",Snack
+124,Broccoli Cheddar Egg Cups,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,49,57.6,171,19.7,None,High,Balanced meals,Main Course
+125,Greek Yogurt with Berries,320,10,40,12,8,150,2.1,330,6,90,0.0,50,Yes,28,74.2,179,23.2,Hypertension,Moderate,"Low sodium, potassium-rich meals",Main Course
+126,Oven-Roasted Salmon Bowl,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,37,72.1,179,22.5,Diabetes,Low,"Low sugar, high fiber meals",Breakfast
+127,Low-fat Chicken Wrap,320,10,40,12,8,150,2.1,330,6,90,0.0,50,Yes,36,53.5,175,17.5,Diabetes,Moderate,"Low sugar, high fiber meals",Dessert
+128,Greek Veggie Wrap,350,12,60,10,8,120,2.0,500,15,45,0.0,40,Yes,36,63.5,169,22.2,Hypertension,Low,"Low sodium, potassium-rich meals",Snack
+129,Eggplant Tomato Bake,450,15,55,12,10,80,3.0,450,8,35,0.0,55,Yes,61,60.9,180,18.8,Hypertension,Moderate,"Low sodium, potassium-rich meals",Breakfast
+130,Green Detox Smoothie,450,15,55,12,10,80,3.0,450,8,35,0.0,55,Yes,37,99.6,189,27.9,None,Moderate,Balanced meals,Snack
+131,Tomato Cucumber Salad,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,25,83.0,175,27.1,None,Low,Balanced meals,Main Course
+132,Kale Lentil Soup,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,51,68.7,182,20.7,Obesity,Moderate,"Low calorie, high protein meals",Main Course
+133,Vegetable Couscous,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,51,84.4,153,36.1,Obesity,High,"Low calorie, high protein meals",Main Course
+134,Baked Beans on Toast,320,10,40,12,8,150,2.1,330,6,90,0.0,50,Yes,42,95.8,183,28.6,Hypertension,High,"Low sodium, potassium-rich meals",Side Dish
+135,Tofu Veggie Skewers,320,10,40,12,8,150,2.1,330,6,90,0.0,50,Yes,65,65.0,187,18.6,Diabetes,Low,"Low sugar, high fiber meals",Main Course
+136,Spinach Egg Muffin Cups,450,15,55,12,10,80,3.0,450,8,35,0.0,55,Yes,26,64.9,187,18.6,None,High,Balanced meals,Dessert
+137,Chickpea Pasta Salad,450,15,55,12,10,80,3.0,450,8,35,0.0,55,Yes,62,78.1,182,23.6,Hypertension,High,"Low sodium, potassium-rich meals",Main Course
+138,Avocado & Egg Salad,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,27,57.0,186,16.5,Hypertension,High,"Low sodium, potassium-rich meals",Beverage
+139,Green Bean Almondine,350,12,60,10,8,120,2.0,500,15,45,0.0,40,Yes,26,93.2,160,36.4,Diabetes,Moderate,"Low sugar, high fiber meals",Beverage
+140,Kale & Quinoa Salad,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,57,90.3,165,33.2,Obesity,High,"Low calorie, high protein meals",Main Course
+141,Minestrone Soup,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,23,56.5,161,21.8,None,Low,Balanced meals,Main Course
+142,Grilled Halibut with Veggies,350,12,60,10,8,120,2.0,500,15,45,0.0,40,Yes,28,59.5,164,22.1,Diabetes,Low,"Low sugar, high fiber meals",Dessert
+143,Steamed Fish & Greens,350,12,60,10,8,120,2.0,500,15,45,0.0,40,Yes,23,50.4,181,15.4,None,Moderate,Balanced meals,Dessert
+144,Egg White Scramble,250,8,30,5,6,100,1.0,400,5,90,0.0,35,Yes,48,96.8,173,32.3,Diabetes,Low,"Low sugar, high fiber meals",Side Dish
+145,Avocado Tempeh Bowl,250,8,30,5,6,100,1.0,400,5,90,0.0,35,Yes,32,61.4,152,26.6,None,Moderate,Balanced meals,Side Dish
+146,Veggie Packed Wrap,450,15,55,12,10,80,3.0,450,8,35,0.0,55,Yes,43,65.8,170,22.8,Diabetes,High,"Low sugar, high fiber meals",Main Course
+147,Millet with Steamed Greens,250,8,30,5,6,100,1.0,400,5,90,0.0,35,Yes,63,67.1,189,18.8,Hypertension,Moderate,"Low sodium, potassium-rich meals",Snack
+148,Baked Cod with Asparagus,450,15,55,12,10,80,3.0,450,8,35,0.0,55,Yes,64,67.1,183,20.0,None,High,Balanced meals,Breakfast
+149,Oven Baked Tempeh Bowl,450,15,55,12,10,80,3.0,450,8,35,0.0,55,Yes,48,70.3,184,20.8,Diabetes,High,"Low sugar, high fiber meals",Main Course
+150,Low-carb Zucchini Fritters,320,10,40,12,8,150,2.1,330,6,90,0.0,50,Yes,43,70.1,174,23.2,Hypertension,Moderate,"Low sodium, potassium-rich meals",Main Course
+151,Chickpea Veggie Stir-fry,450,15,55,12,10,80,3.0,450,8,35,0.0,55,Yes,33,83.6,174,27.6,Hypertension,High,"Low sodium, potassium-rich meals",Main Course
+152,Low-Sodium Bean Chili,250,8,30,5,6,100,1.0,400,5,90,0.0,35,Yes,44,61.8,177,19.7,Obesity,Low,"Low calorie, high protein meals",Main Course
+153,Edamame Salad,320,10,40,12,8,150,2.1,330,6,90,0.0,50,Yes,26,93.1,156,38.3,Hypertension,High,"Low sodium, potassium-rich meals",Breakfast
+154,Low-fat Greek Yogurt Parfait,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,61,53.9,174,17.8,Diabetes,Moderate,"Low sugar, high fiber meals",Appetizer
+155,Tofu Veggie Curry,450,15,55,12,10,80,3.0,450,8,35,0.0,55,Yes,47,56.9,189,15.9,Obesity,Moderate,"Low calorie, high protein meals",Main Course
+156,Green Smoothie Bowl,320,10,40,12,8,150,2.1,330,6,90,0.0,50,Yes,50,57.5,166,20.9,Obesity,Low,"Low calorie, high protein meals",Main Course
+157,Spinach Strawberry Salad,450,15,55,12,10,80,3.0,450,8,35,0.0,55,Yes,45,86.2,166,31.3,Hypertension,High,"Low sodium, potassium-rich meals",Main Course
+158,Vegan Quinoa Burgers,450,15,55,12,10,80,3.0,450,8,35,0.0,55,Yes,47,70.5,172,23.8,Hypertension,High,"Low sodium, potassium-rich meals",Main Course
+159,Spaghetti Squash Bowl,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,18,80.9,182,24.4,Obesity,High,"Low calorie, high protein meals",Main Course
+160,Cottage Cheese & Pineapple,250,8,30,5,6,100,1.0,400,5,90,0.0,35,Yes,51,86.8,171,29.7,None,Low,Balanced meals,Main Course
+161,Low-fat Greek Yogurt Parfait,450,15,55,12,10,80,3.0,450,8,35,0.0,55,Yes,35,88.7,151,38.9,None,High,Balanced meals,Dessert
+162,Apple & Peanut Butter Toast,250,8,30,5,6,100,1.0,400,5,90,0.0,35,Yes,61,87.6,155,36.5,Diabetes,Low,"Low sugar, high fiber meals",Dessert
+163,Seared Tofu & Spinach,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,61,74.6,162,28.4,Diabetes,High,"Low sugar, high fiber meals",Beverage
+164,Lentil Tacos,350,12,60,10,8,120,2.0,500,15,45,0.0,40,Yes,47,70.8,160,27.7,Diabetes,Low,"Low sugar, high fiber meals",Beverage
+165,Coconut Yogurt with Granola,350,12,60,10,8,120,2.0,500,15,45,0.0,40,Yes,50,71.2,168,25.2,None,Low,Balanced meals,Main Course
+166,Quinoa Black Bean Bowl,320,10,40,12,8,150,2.1,330,6,90,0.0,50,Yes,43,93.3,154,39.3,Diabetes,Low,"Low sugar, high fiber meals",Main Course
+167,Oven Baked Tempeh Bowl,320,10,40,12,8,150,2.1,330,6,90,0.0,50,Yes,34,55.1,171,18.8,Hypertension,Low,"Low sodium, potassium-rich meals",Main Course
+168,Broccoli & Mushroom Quiche,450,15,55,12,10,80,3.0,450,8,35,0.0,55,Yes,52,59.6,152,25.8,Obesity,Low,"Low calorie, high protein meals",Main Course
+169,Tofu Bolognese,450,15,55,12,10,80,3.0,450,8,35,0.0,55,Yes,64,56.3,159,22.3,Obesity,Moderate,"Low calorie, high protein meals",Main Course
+170,Sunflower Seed Porridge,250,8,30,5,6,100,1.0,400,5,90,0.0,35,Yes,33,54.2,165,19.9,Obesity,High,"Low calorie, high protein meals",Breakfast
+171,Cucumber & Hummus Sandwich,350,12,60,10,8,120,2.0,500,15,45,0.0,40,Yes,55,86.3,154,36.4,None,Low,Balanced meals,Snack
+172,Low-fat Greek Yogurt Parfait,250,8,30,5,6,100,1.0,400,5,90,0.0,35,Yes,61,53.2,183,15.9,Obesity,Moderate,"Low calorie, high protein meals",Dessert
+173,Stuffed Zucchini Boats,250,8,30,5,6,100,1.0,400,5,90,0.0,35,Yes,20,91.0,150,40.4,Diabetes,Low,"Low sugar, high fiber meals",Snack
+174,Greek Veggie Wrap,320,10,40,12,8,150,2.1,330,6,90,0.0,50,Yes,58,88.9,159,35.2,Diabetes,Low,"Low sugar, high fiber meals",Main Course
+175,Avocado Chickpea Toast,250,8,30,5,6,100,1.0,400,5,90,0.0,35,Yes,63,73.1,153,31.2,Obesity,Low,"Low calorie, high protein meals",Main Course
+176,Low-Sodium Bean Chili,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,64,65.6,172,22.2,Obesity,Low,"Low calorie, high protein meals",Breakfast
+177,Roasted Veggie Pasta,250,8,30,5,6,100,1.0,400,5,90,0.0,35,Yes,25,87.3,166,31.7,Hypertension,Low,"Low sodium, potassium-rich meals",Dessert
+178,Tofu Veggie Skewers,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,32,85.3,166,31.0,None,Low,Balanced meals,Snack
+179,Crispy Baked Tofu,320,10,40,12,8,150,2.1,330,6,90,0.0,50,Yes,23,55.2,160,21.6,None,High,Balanced meals,Breakfast
+180,Quinoa & Black Beans,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,24,77.5,153,33.1,Diabetes,High,"Low sugar, high fiber meals",Snack
+181,Grilled Shrimp with Couscous,450,15,55,12,10,80,3.0,450,8,35,0.0,55,Yes,54,62.3,176,20.1,Obesity,Moderate,"Low calorie, high protein meals",Main Course
+182,Avocado & Egg Salad,250,8,30,5,6,100,1.0,400,5,90,0.0,35,Yes,33,78.3,180,24.2,Hypertension,Moderate,"Low sodium, potassium-rich meals",Main Course
+183,Mushroom Chickpea Stroganoff,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,35,97.2,162,37.0,Diabetes,Low,"Low sugar, high fiber meals",Main Course
+184,Shrimp & Avocado Salad,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,28,51.4,174,17.0,Obesity,Low,"Low calorie, high protein meals",Side Dish
+185,Cottage Cheese & Pineapple,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,62,65.7,152,28.4,Hypertension,Moderate,"Low sodium, potassium-rich meals",Main Course
+186,Zucchini Noodles with Pesto,450,15,55,12,10,80,3.0,450,8,35,0.0,55,Yes,50,65.0,156,26.7,None,Low,Balanced meals,Dessert
+187,Minestrone Soup,350,12,60,10,8,120,2.0,500,15,45,0.0,40,Yes,35,55.6,161,21.4,Hypertension,Low,"Low sodium, potassium-rich meals",Main Course
+188,Brown Rice with Grilled Vegetables,320,10,40,12,8,150,2.1,330,6,90,0.0,50,Yes,62,71.6,163,26.9,Diabetes,Moderate,"Low sugar, high fiber meals",Beverage
+189,Roasted Tomato Soup,320,10,40,12,8,150,2.1,330,6,90,0.0,50,Yes,23,92.2,152,39.9,Hypertension,Low,"Low sodium, potassium-rich meals",Beverage
+190,Oven Baked Tempeh Bowl,320,10,40,12,8,150,2.1,330,6,90,0.0,50,Yes,52,73.4,161,28.3,Diabetes,Moderate,"Low sugar, high fiber meals",Main Course
+191,Almond Butter Banana Toast,450,15,55,12,10,80,3.0,450,8,35,0.0,55,Yes,34,95.6,179,29.8,Hypertension,High,"Low sodium, potassium-rich meals",Main Course
+192,Cucumber & Hummus Sandwich,320,10,40,12,8,150,2.1,330,6,90,0.0,50,Yes,20,81.3,188,23.0,Hypertension,High,"Low sodium, potassium-rich meals",Dessert
+193,Zucchini Chickpea Fritters,320,10,40,12,8,150,2.1,330,6,90,0.0,50,Yes,19,87.8,175,28.7,Hypertension,High,"Low sodium, potassium-rich meals",Dessert
+194,Spicy Tofu & Rice Bowl,350,12,60,10,8,120,2.0,500,15,45,0.0,40,Yes,30,71.1,155,29.6,Obesity,Moderate,"Low calorie, high protein meals",Side Dish
+195,Spicy Tofu & Rice Bowl,250,8,30,5,6,100,1.0,400,5,90,0.0,35,Yes,26,81.1,173,27.1,Obesity,Moderate,"Low calorie, high protein meals",Side Dish
+196,Lentil Tofu Patties,320,10,40,12,8,150,2.1,330,6,90,0.0,50,Yes,59,96.3,153,41.1,Diabetes,High,"Low sugar, high fiber meals",Main Course
+197,Salmon Poke Bowl,320,10,40,12,8,150,2.1,330,6,90,0.0,50,Yes,46,95.1,181,29.0,Hypertension,Low,"Low sodium, potassium-rich meals",Snack
+198,Pasta with Zoodles,350,12,60,10,8,120,2.0,500,15,45,0.0,40,Yes,34,94.7,155,39.4,None,Moderate,Balanced meals,Breakfast
+199,Veggie Stir-Fry Noodles,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,38,98.6,165,36.2,None,Low,Balanced meals,Main Course
+200,Lentil Pasta Bake,250,8,30,5,6,100,1.0,400,5,90,0.0,35,Yes,20,94.0,176,30.3,None,Low,Balanced meals,Main Course
+201,Chickpea Power Bowl,250,8,30,5,6,100,1.0,400,5,90,0.0,35,Yes,51,70.0,176,22.6,None,Low,Balanced meals,Main Course
+202,Zucchini & Tomato Gratin,450,15,55,12,10,80,3.0,450,8,35,0.0,55,Yes,35,71.2,172,24.1,None,Moderate,Balanced meals,Main Course
+203,High-Protein Lentil Soup,350,12,60,10,8,120,2.0,500,15,45,0.0,40,Yes,21,60.0,163,22.6,None,High,Balanced meals,Breakfast
+204,Mushroom Chickpea Stroganoff,450,15,55,12,10,80,3.0,450,8,35,0.0,55,Yes,36,96.2,177,30.7,Hypertension,High,"Low sodium, potassium-rich meals",Appetizer
+205,Mango Smoothie Bowl,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,26,77.2,179,24.1,Obesity,High,"Low calorie, high protein meals",Main Course
+206,Spaghetti Squash with Marinara,450,15,55,12,10,80,3.0,450,8,35,0.0,55,Yes,47,75.5,178,23.8,Obesity,Low,"Low calorie, high protein meals",Main Course
+207,Cauliflower Pizza,350,12,60,10,8,120,2.0,500,15,45,0.0,40,Yes,39,83.1,161,32.1,Diabetes,Low,"Low sugar, high fiber meals",Main Course
+208,Vegetarian Sushi Bowl,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,57,91.4,185,26.7,Obesity,High,"Low calorie, high protein meals",Main Course
+209,Egg White Omelette with Spinach,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,30,86.4,158,34.6,Diabetes,Low,"Low sugar, high fiber meals",Main Course
+210,Oven-Roasted Tofu Bowl,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,38,54.9,178,17.3,Hypertension,High,"Low sodium, potassium-rich meals",Main Course
+211,Vegetarian Chili Bowl,250,8,30,5,6,100,1.0,400,5,90,0.0,35,Yes,22,69.1,158,27.7,None,Moderate,Balanced meals,Dessert
+212,Roasted Butternut Squash,450,15,55,12,10,80,3.0,450,8,35,0.0,55,Yes,61,89.8,180,27.7,Obesity,Moderate,"Low calorie, high protein meals",Dessert
+213,Hummus with Carrot Sticks,320,10,40,12,8,150,2.1,330,6,90,0.0,50,Yes,56,59.0,174,19.5,None,Low,Balanced meals,Beverage
+214,Green Smoothie Bowl,350,12,60,10,8,120,2.0,500,15,45,0.0,40,Yes,44,91.5,157,37.1,None,Low,Balanced meals,Beverage
+215,Brussels Sprouts Stir-Fry,320,10,40,12,8,150,2.1,330,6,90,0.0,50,Yes,30,84.2,158,33.7,None,Moderate,Balanced meals,Main Course
+216,Kale Smoothie,350,12,60,10,8,120,2.0,500,15,45,0.0,40,Yes,24,93.4,151,41.0,None,Moderate,Balanced meals,Main Course
+217,Cabbage Quinoa Bowl,350,12,60,10,8,120,2.0,500,15,45,0.0,40,Yes,30,75.2,176,24.3,Hypertension,Low,"Low sodium, potassium-rich meals",Main Course
+218,Vegan Shepherd's Pie,250,8,30,5,6,100,1.0,400,5,90,0.0,35,Yes,24,93.6,182,28.3,None,Moderate,Balanced meals,Main Course
+219,Low-Sodium Bean Chili,450,15,55,12,10,80,3.0,450,8,35,0.0,55,Yes,51,66.0,171,22.6,None,Moderate,Balanced meals,Main Course
+220,Lentil & Kale Bowl,320,10,40,12,8,150,2.1,330,6,90,0.0,50,Yes,31,98.5,160,38.5,Hypertension,Low,"Low sodium, potassium-rich meals",Breakfast
+221,Couscous with Grilled Tofu,450,15,55,12,10,80,3.0,450,8,35,0.0,55,Yes,28,60.9,159,24.1,None,Moderate,Balanced meals,Snack
+222,Cabbage Stir-Fry,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,62,80.7,183,24.1,Diabetes,Moderate,"Low sugar, high fiber meals",Dessert
+223,Avocado Toast on Whole Grain Bread,320,10,40,12,8,150,2.1,330,6,90,0.0,50,Yes,43,53.5,180,16.5,Hypertension,High,"Low sodium, potassium-rich meals",Snack
+224,Beetroot Salad,320,10,40,12,8,150,2.1,330,6,90,0.0,50,Yes,54,91.7,169,32.1,Diabetes,Low,"Low sugar, high fiber meals",Main Course
+225,Roasted Veggie Pasta,450,15,55,12,10,80,3.0,450,8,35,0.0,55,Yes,56,82.9,190,23.0,None,High,Balanced meals,Main Course
+226,Peanut Sauce Noodle Bowl,450,15,55,12,10,80,3.0,450,8,35,0.0,55,Yes,63,82.9,164,30.8,Diabetes,High,"Low sugar, high fiber meals",Breakfast
+227,Broccoli Cheddar Egg Cups,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,45,86.7,160,33.9,Obesity,Low,"Low calorie, high protein meals",Dessert
+228,Veggie & Quinoa Casserole,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,52,74.5,188,21.1,Diabetes,Low,"Low sugar, high fiber meals",Snack
+229,Turkey & Avocado Wrap,350,12,60,10,8,120,2.0,500,15,45,0.0,40,Yes,18,75.1,176,24.2,None,Moderate,Balanced meals,Breakfast
+230,High-Protein Lentil Soup,450,15,55,12,10,80,3.0,450,8,35,0.0,55,Yes,20,59.1,157,24.0,None,Moderate,Balanced meals,Snack
+231,Stuffed Sweet Potatoes,350,12,60,10,8,120,2.0,500,15,45,0.0,40,Yes,19,85.2,152,36.9,Hypertension,High,"Low sodium, potassium-rich meals",Main Course
+232,Vegetable Frittata,320,10,40,12,8,150,2.1,330,6,90,0.0,50,Yes,48,78.7,190,21.8,Hypertension,High,"Low sodium, potassium-rich meals",Main Course
+233,Salmon Poke Bowl,320,10,40,12,8,150,2.1,330,6,90,0.0,50,Yes,29,89.9,182,27.1,Diabetes,Moderate,"Low sugar, high fiber meals",Main Course
+234,Baked Eggplant Chips,350,12,60,10,8,120,2.0,500,15,45,0.0,40,Yes,51,62.6,150,27.8,Hypertension,Moderate,"Low sodium, potassium-rich meals",Side Dish
+235,Mango Avocado Salsa Bowl,250,8,30,5,6,100,1.0,400,5,90,0.0,35,Yes,19,63.2,152,27.4,None,Low,Balanced meals,Main Course
+236,Almond Butter Banana Toast,350,12,60,10,8,120,2.0,500,15,45,0.0,40,Yes,22,57.9,158,23.2,Obesity,Low,"Low calorie, high protein meals",Dessert
+237,Shrimp & Avocado Salad,320,10,40,12,8,150,2.1,330,6,90,0.0,50,Yes,52,58.8,165,21.6,None,Low,Balanced meals,Main Course
+238,Tofu Scramble,450,15,55,12,10,80,3.0,450,8,35,0.0,55,Yes,31,83.8,184,24.8,None,Low,Balanced meals,Beverage
+239,Tomato Basil Quinoa,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,18,78.9,187,22.6,None,Moderate,Balanced meals,Beverage
+240,Low-carb Zucchini Fritters,450,15,55,12,10,80,3.0,450,8,35,0.0,55,Yes,50,56.6,178,17.9,Obesity,Moderate,"Low calorie, high protein meals",Main Course
+241,Avocado Toast on Whole Grain Bread,250,8,30,5,6,100,1.0,400,5,90,0.0,35,Yes,22,79.8,164,29.7,Obesity,Low,"Low calorie, high protein meals",Main Course
+242,Tofu and Mushroom Skewers,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,35,67.0,185,19.6,Hypertension,Low,"Low sodium, potassium-rich meals",Dessert
+243,Spaghetti Squash Stir-fry,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,41,94.4,178,29.8,Hypertension,Low,"Low sodium, potassium-rich meals",Dessert
+244,Roasted Veggie Pasta,250,8,30,5,6,100,1.0,400,5,90,0.0,35,Yes,62,73.5,168,26.0,Obesity,Moderate,"Low calorie, high protein meals",Side Dish
+245,Grilled Chicken Salad,320,10,40,12,8,150,2.1,330,6,90,0.0,50,Yes,39,78.2,172,26.4,Obesity,Moderate,"Low calorie, high protein meals",Side Dish
+246,Zucchini & Egg Bake,320,10,40,12,8,150,2.1,330,6,90,0.0,50,Yes,36,51.1,164,19.0,None,High,Balanced meals,Main Course
+247,Low-Carb Greek Salad,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,65,60.8,167,21.8,Hypertension,Low,"Low sodium, potassium-rich meals",Snack
+248,Sautéed Kale & Mushrooms,320,10,40,12,8,150,2.1,330,6,90,0.0,50,Yes,44,85.7,190,23.7,Diabetes,Low,"Low sugar, high fiber meals",Breakfast
+249,Cucumber & Hummus Sandwich,350,12,60,10,8,120,2.0,500,15,45,0.0,40,Yes,23,62.2,172,21.0,Diabetes,High,"Low sugar, high fiber meals",Main Course
+250,Quinoa Black Bean Bowl,250,8,30,5,6,100,1.0,400,5,90,0.0,35,Yes,21,61.8,184,18.3,Diabetes,Low,"Low sugar, high fiber meals",Main Course
+251,Whole Wheat Tofu Sandwich,320,10,40,12,8,150,2.1,330,6,90,0.0,50,Yes,37,54.2,175,17.7,Obesity,Low,"Low calorie, high protein meals",Main Course
+252,Overnight Oats with Chia,450,15,55,12,10,80,3.0,450,8,35,0.0,55,Yes,62,84.5,162,32.2,Obesity,Low,"Low calorie, high protein meals",Main Course
+253,Vegetable Tempeh Bowl,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,39,86.1,181,26.3,Obesity,High,"Low calorie, high protein meals",Breakfast
+254,Fajita Veggie Bowl,320,10,40,12,8,150,2.1,330,6,90,0.0,50,Yes,35,73.4,165,27.0,None,Low,Balanced meals,Appetizer
+255,Cabbage Stir-Fry,350,12,60,10,8,120,2.0,500,15,45,0.0,40,Yes,26,62.5,184,18.5,Hypertension,Moderate,"Low sodium, potassium-rich meals",Main Course
+256,Vegetarian Chili Bowl,320,10,40,12,8,150,2.1,330,6,90,0.0,50,Yes,41,71.9,174,23.7,Diabetes,Low,"Low sugar, high fiber meals",Main Course
+257,Tofu Veggie Curry,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,21,54.8,154,23.1,None,High,Balanced meals,Main Course
+258,Avocado & Egg Salad,250,8,30,5,6,100,1.0,400,5,90,0.0,35,Yes,45,69.7,181,21.3,Hypertension,High,"Low sodium, potassium-rich meals",Main Course
+259,Spinach & Chickpea Stew,250,8,30,5,6,100,1.0,400,5,90,0.0,35,Yes,52,56.5,174,18.7,None,High,Balanced meals,Main Course
+260,Rice Paper Veggie Rolls,250,8,30,5,6,100,1.0,400,5,90,0.0,35,Yes,53,87.8,158,35.2,Obesity,High,"Low calorie, high protein meals",Main Course
+261,Soba Noodles with Greens,320,10,40,12,8,150,2.1,330,6,90,0.0,50,Yes,65,88.1,175,28.8,Diabetes,Low,"Low sugar, high fiber meals",Dessert
+262,Chickpea Veggie Stir-fry,450,15,55,12,10,80,3.0,450,8,35,0.0,55,Yes,65,60.6,155,25.2,Obesity,Low,"Low calorie, high protein meals",Dessert
+263,Green Smoothie Bowl,450,15,55,12,10,80,3.0,450,8,35,0.0,55,Yes,38,92.0,186,26.6,Diabetes,High,"Low sugar, high fiber meals",Beverage
+264,Lentil & Kale Bowl,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,53,88.8,160,34.7,None,High,Balanced meals,Beverage
+265,Soba Noodles with Greens,350,12,60,10,8,120,2.0,500,15,45,0.0,40,Yes,60,93.6,154,39.5,Hypertension,Low,"Low sodium, potassium-rich meals",Main Course
+266,Brussels Sprouts Stir-Fry,250,8,30,5,6,100,1.0,400,5,90,0.0,35,Yes,46,85.0,151,37.3,Obesity,Low,"Low calorie, high protein meals",Main Course
+267,Quinoa Black Bean Bowl,450,15,55,12,10,80,3.0,450,8,35,0.0,55,Yes,59,63.6,178,20.1,None,Low,Balanced meals,Main Course
+268,Bulgur with Roasted Vegetables,350,12,60,10,8,120,2.0,500,15,45,0.0,40,Yes,40,98.9,161,38.2,None,Moderate,Balanced meals,Main Course
+269,Coconut Chia Pudding,250,8,30,5,6,100,1.0,400,5,90,0.0,35,Yes,44,63.5,184,18.8,Diabetes,Moderate,"Low sugar, high fiber meals",Main Course
+270,Green Detox Smoothie,350,12,60,10,8,120,2.0,500,15,45,0.0,40,Yes,27,99.1,183,29.6,None,Moderate,Balanced meals,Breakfast
+271,Eggplant Lasagna,320,10,40,12,8,150,2.1,330,6,90,0.0,50,Yes,64,94.1,187,26.9,None,Low,Balanced meals,Snack
+272,Protein Pancakes with Blueberries,350,12,60,10,8,120,2.0,500,15,45,0.0,40,Yes,42,55.4,171,18.9,Diabetes,Low,"Low sugar, high fiber meals",Dessert
+273,Grilled Tuna Salad,350,12,60,10,8,120,2.0,500,15,45,0.0,40,Yes,44,97.8,161,37.7,None,Moderate,Balanced meals,Snack
+274,Chickpea Pasta Salad,450,15,55,12,10,80,3.0,450,8,35,0.0,55,Yes,57,97.2,162,37.0,Hypertension,High,"Low sodium, potassium-rich meals",Main Course
+275,Vegetarian Chili Bowl,450,15,55,12,10,80,3.0,450,8,35,0.0,55,Yes,61,99.4,177,31.7,None,Low,Balanced meals,Main Course
+276,Brown Rice with Grilled Vegetables,250,8,30,5,6,100,1.0,400,5,90,0.0,35,Yes,53,77.4,180,23.9,Diabetes,Low,"Low sugar, high fiber meals",Breakfast
+277,Vegan Stir-fry Bowl,320,10,40,12,8,150,2.1,330,6,90,0.0,50,Yes,41,83.6,157,33.9,Obesity,Low,"Low calorie, high protein meals",Dessert
+278,Chia Seed Pudding,320,10,40,12,8,150,2.1,330,6,90,0.0,50,Yes,45,74.9,189,21.0,Obesity,Low,"Low calorie, high protein meals",Snack
+279,Oven-Roasted Salmon Bowl,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,56,69.5,159,27.5,Obesity,High,"Low calorie, high protein meals",Breakfast
+280,Spinach and Feta Salad,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,18,91.4,151,40.1,Hypertension,Low,"Low sodium, potassium-rich meals",Snack
+281,Seared Tofu & Spinach,350,12,60,10,8,120,2.0,500,15,45,0.0,40,Yes,61,94.7,164,35.2,Diabetes,Moderate,"Low sugar, high fiber meals",Main Course
+282,Whole Grain Pasta with Tomato Sauce,450,15,55,12,10,80,3.0,450,8,35,0.0,55,Yes,55,58.6,155,24.4,Diabetes,High,"Low sugar, high fiber meals",Main Course
+283,Baked Zucchini Casserole,320,10,40,12,8,150,2.1,330,6,90,0.0,50,Yes,55,68.8,172,23.3,Hypertension,Moderate,"Low sodium, potassium-rich meals",Main Course
+284,Vegetable Spring Rolls,350,12,60,10,8,120,2.0,500,15,45,0.0,40,Yes,32,75.9,161,29.3,Obesity,Moderate,"Low calorie, high protein meals",Side Dish
+285,Broccoli & Mushroom Quiche,320,10,40,12,8,150,2.1,330,6,90,0.0,50,Yes,34,50.0,165,18.4,None,Low,Balanced meals,Main Course
+286,Tofu and Mushroom Skewers,450,15,55,12,10,80,3.0,450,8,35,0.0,55,Yes,28,99.5,177,31.8,None,Moderate,Balanced meals,Dessert
+287,Baked Eggplant Chips,320,10,40,12,8,150,2.1,330,6,90,0.0,50,Yes,18,73.6,171,25.2,Hypertension,Low,"Low sodium, potassium-rich meals",Main Course
+288,Egg & Avocado Sandwich,320,10,40,12,8,150,2.1,330,6,90,0.0,50,Yes,32,73.8,179,23.0,None,High,Balanced meals,Beverage
+289,Spinach Stuffed Mushrooms,350,12,60,10,8,120,2.0,500,15,45,0.0,40,Yes,45,62.8,150,27.9,None,Low,Balanced meals,Beverage
+290,Kale Lentil Soup,250,8,30,5,6,100,1.0,400,5,90,0.0,35,Yes,59,91.3,154,38.5,Diabetes,High,"Low sugar, high fiber meals",Main Course
+291,High-Protein Lentil Soup,250,8,30,5,6,100,1.0,400,5,90,0.0,35,Yes,35,65.8,188,18.6,Diabetes,Moderate,"Low sugar, high fiber meals",Main Course
+292,Oat Bran Pancakes,450,15,55,12,10,80,3.0,450,8,35,0.0,55,Yes,18,96.3,153,41.1,Obesity,High,"Low calorie, high protein meals",Dessert
+293,Baked Protein Muffins,250,8,30,5,6,100,1.0,400,5,90,0.0,35,Yes,57,60.5,172,20.5,Obesity,Moderate,"Low calorie, high protein meals",Dessert
+294,Stuffed Zucchini Boats,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,46,85.9,160,33.6,Hypertension,Moderate,"Low sodium, potassium-rich meals",Side Dish
+295,Tomato Avocado Toast,450,15,55,12,10,80,3.0,450,8,35,0.0,55,Yes,20,68.0,164,25.3,Obesity,High,"Low calorie, high protein meals",Side Dish
+296,Cucumber Quinoa Salad,320,10,40,12,8,150,2.1,330,6,90,0.0,50,Yes,58,55.7,189,15.6,Hypertension,Low,"Low sodium, potassium-rich meals",Main Course
+297,Peanut Sauce Noodle Bowl,350,12,60,10,8,120,2.0,500,15,45,0.0,40,Yes,37,66.1,151,29.0,Obesity,Moderate,"Low calorie, high protein meals",Snack
+298,Green Bean Almondine,450,15,55,12,10,80,3.0,450,8,35,0.0,55,Yes,24,80.1,178,25.3,Hypertension,Moderate,"Low sodium, potassium-rich meals",Breakfast
+299,Tofu Thai Bowl,320,10,40,12,8,150,2.1,330,6,90,0.0,50,Yes,49,52.6,170,18.2,Diabetes,High,"Low sugar, high fiber meals",Main Course
+300,Low-Carb Greek Salad,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,36,72.0,168,25.5,None,Low,Balanced meals,Main Course
+301,Cabbage & Tofu Stir-fry,350,12,60,10,8,120,2.0,500,15,45,0.0,40,Yes,31,87.9,179,27.4,Hypertension,Low,"Low sodium, potassium-rich meals",Main Course
+302,Low-carb Egg Muffins,320,10,40,12,8,150,2.1,330,6,90,0.0,50,Yes,55,54.4,161,21.0,None,Moderate,Balanced meals,Main Course
+303,Whole Wheat Tofu Sandwich,250,8,30,5,6,100,1.0,400,5,90,0.0,35,Yes,25,83.0,156,34.1,None,High,Balanced meals,Breakfast
+304,Mango Avocado Salsa Bowl,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,60,63.4,155,26.4,None,Low,Balanced meals,Appetizer
+305,Stuffed Portobello Mushrooms,320,10,40,12,8,150,2.1,330,6,90,0.0,50,Yes,19,74.9,177,23.9,None,High,Balanced meals,Main Course
+306,Sautéed Kale & Mushrooms,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,33,77.8,151,34.1,Hypertension,Low,"Low sodium, potassium-rich meals",Main Course
+307,Seared Tofu & Spinach,250,8,30,5,6,100,1.0,400,5,90,0.0,35,Yes,56,62.0,172,21.0,Obesity,Moderate,"Low calorie, high protein meals",Main Course
+308,Vegan Black Bean Burrito,320,10,40,12,8,150,2.1,330,6,90,0.0,50,Yes,31,54.7,184,16.2,Obesity,High,"Low calorie, high protein meals",Main Course
+309,Grilled Chicken Salad,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,64,80.1,172,27.1,Hypertension,Moderate,"Low sodium, potassium-rich meals",Main Course
+310,Broccoli Cheddar Egg Cups,450,15,55,12,10,80,3.0,450,8,35,0.0,55,Yes,61,57.7,151,25.3,Diabetes,Low,"Low sugar, high fiber meals",Main Course
+311,Vegan Jambalaya,320,10,40,12,8,150,2.1,330,6,90,0.0,50,Yes,53,89.0,173,29.7,None,High,Balanced meals,Dessert
+312,Mediterranean Veggie Platter,450,15,55,12,10,80,3.0,450,8,35,0.0,55,Yes,36,58.2,163,21.9,Hypertension,High,"Low sodium, potassium-rich meals",Dessert
+313,Stuffed Bell Peppers,320,10,40,12,8,150,2.1,330,6,90,0.0,50,Yes,26,59.6,179,18.6,Obesity,High,"Low calorie, high protein meals",Beverage
+314,Baked Oats with Pear,250,8,30,5,6,100,1.0,400,5,90,0.0,35,Yes,46,93.4,180,28.8,Obesity,Moderate,"Low calorie, high protein meals",Beverage
+315,Bulgur Stuffed Peppers,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,62,94.4,172,31.9,Hypertension,High,"Low sodium, potassium-rich meals",Main Course
+316,Minestrone Soup,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,56,68.3,162,26.0,None,Low,Balanced meals,Main Course
+317,Egg White Scramble,320,10,40,12,8,150,2.1,330,6,90,0.0,50,Yes,22,71.4,172,24.1,None,High,Balanced meals,Main Course
+318,Lentil & Brown Rice Bowl,450,15,55,12,10,80,3.0,450,8,35,0.0,55,Yes,36,67.0,155,27.9,None,Low,Balanced meals,Main Course
+319,Baked Salmon with Veggies,350,12,60,10,8,120,2.0,500,15,45,0.0,40,Yes,34,56.2,180,17.3,None,High,Balanced meals,Main Course
+320,Chickpea Tofu Curry,320,10,40,12,8,150,2.1,330,6,90,0.0,50,Yes,18,54.7,160,21.4,Diabetes,Moderate,"Low sugar, high fiber meals",Breakfast
+321,Vegan Stir-fry Bowl,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,19,60.8,162,23.2,Hypertension,Moderate,"Low sodium, potassium-rich meals",Snack
+322,Lentil & Kale Bowl,320,10,40,12,8,150,2.1,330,6,90,0.0,50,Yes,55,52.4,165,19.2,Diabetes,Moderate,"Low sugar, high fiber meals",Dessert
+323,Vegetable Lentil Soup,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,56,52.7,178,16.6,Obesity,High,"Low calorie, high protein meals",Snack
+324,Veggie Power Sandwich,320,10,40,12,8,150,2.1,330,6,90,0.0,50,Yes,29,64.3,172,21.7,Obesity,Moderate,"Low calorie, high protein meals",Main Course
+325,Protein Smoothie Bowl,450,15,55,12,10,80,3.0,450,8,35,0.0,55,Yes,47,89.8,180,27.7,Diabetes,Moderate,"Low sugar, high fiber meals",Main Course
+326,Chickpea Tofu Curry,250,8,30,5,6,100,1.0,400,5,90,0.0,35,Yes,20,97.0,176,31.3,None,High,Balanced meals,Breakfast
+327,Stuffed Zucchini Boats,320,10,40,12,8,150,2.1,330,6,90,0.0,50,Yes,61,56.7,181,17.3,Hypertension,High,"Low sodium, potassium-rich meals",Dessert
+328,Veggie & Quinoa Casserole,320,10,40,12,8,150,2.1,330,6,90,0.0,50,Yes,43,94.5,181,28.8,Obesity,High,"Low calorie, high protein meals",Snack
+329,Shrimp & Avocado Salad,250,8,30,5,6,100,1.0,400,5,90,0.0,35,Yes,24,60.9,176,19.7,Hypertension,High,"Low sodium, potassium-rich meals",Breakfast
+330,Spinach and Feta Salad,450,15,55,12,10,80,3.0,450,8,35,0.0,55,Yes,35,91.2,162,34.8,Obesity,Low,"Low calorie, high protein meals",Snack
+331,Spinach Mushroom Wrap,250,8,30,5,6,100,1.0,400,5,90,0.0,35,Yes,52,74.2,179,23.2,Diabetes,High,"Low sugar, high fiber meals",Main Course
+332,Tempeh Stir-fry,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,27,69.2,168,24.5,Hypertension,Low,"Low sodium, potassium-rich meals",Main Course
+333,Baked Salmon with Veggies,320,10,40,12,8,150,2.1,330,6,90,0.0,50,Yes,41,63.9,163,24.1,Hypertension,Low,"Low sodium, potassium-rich meals",Main Course
+334,Roasted Cauliflower Tacos,250,8,30,5,6,100,1.0,400,5,90,0.0,35,Yes,47,66.4,168,23.5,Diabetes,Moderate,"Low sugar, high fiber meals",Side Dish
+335,Oatmeal Protein Bar,250,8,30,5,6,100,1.0,400,5,90,0.0,35,Yes,64,60.4,159,23.9,Obesity,High,"Low calorie, high protein meals",Main Course
+336,Broccoli Tofu Curry,350,12,60,10,8,120,2.0,500,15,45,0.0,40,Yes,64,65.0,187,18.6,None,Moderate,Balanced meals,Dessert
+337,Grilled Chicken Lettuce Wraps,250,8,30,5,6,100,1.0,400,5,90,0.0,35,Yes,44,64.4,173,21.5,Obesity,Low,"Low calorie, high protein meals",Main Course
+338,Lentil Veggie Patties,450,15,55,12,10,80,3.0,450,8,35,0.0,55,Yes,47,82.9,186,24.0,Obesity,Moderate,"Low calorie, high protein meals",Beverage
+339,Spinach Mushroom Wrap,250,8,30,5,6,100,1.0,400,5,90,0.0,35,Yes,60,62.8,157,25.5,None,High,Balanced meals,Beverage
+340,Fajita Veggie Bowl,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,45,71.6,157,29.0,None,Low,Balanced meals,Main Course
+341,Grilled Shrimp with Couscous,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,42,87.8,184,25.9,None,Moderate,Balanced meals,Main Course
+342,Asparagus & Quinoa Bowl,350,12,60,10,8,120,2.0,500,15,45,0.0,40,Yes,50,78.2,190,21.7,Hypertension,Low,"Low sodium, potassium-rich meals",Dessert
+343,Miso Soup with Tofu,250,8,30,5,6,100,1.0,400,5,90,0.0,35,Yes,20,64.6,165,23.7,Obesity,Low,"Low calorie, high protein meals",Dessert
+344,Oven-Baked Falafel Wrap,320,10,40,12,8,150,2.1,330,6,90,0.0,50,Yes,53,55.0,188,15.6,Hypertension,Low,"Low sodium, potassium-rich meals",Side Dish
+345,Tofu Salad Sandwich,250,8,30,5,6,100,1.0,400,5,90,0.0,35,Yes,53,71.7,179,22.4,Hypertension,High,"Low sodium, potassium-rich meals",Side Dish
+346,Stuffed Avocado Salad,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,22,99.9,176,32.3,None,Moderate,Balanced meals,Main Course
+347,Zucchini Chickpea Fritters,350,12,60,10,8,120,2.0,500,15,45,0.0,40,Yes,43,50.9,170,17.6,Diabetes,Moderate,"Low sugar, high fiber meals",Snack
+348,Almond Butter Banana Toast,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,53,68.1,162,25.9,None,Moderate,Balanced meals,Breakfast
+349,Sweet Potato Bowl,320,10,40,12,8,150,2.1,330,6,90,0.0,50,Yes,64,50.1,173,16.7,Diabetes,High,"Low sugar, high fiber meals",Main Course
+350,Brown Rice Sushi,450,15,55,12,10,80,3.0,450,8,35,0.0,55,Yes,65,66.4,172,22.4,None,High,Balanced meals,Main Course
+351,Egg White Scramble,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,22,55.7,163,21.0,None,High,Balanced meals,Main Course
+352,Spinach Strawberry Salad,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,30,75.2,180,23.2,Diabetes,Moderate,"Low sugar, high fiber meals",Main Course
+353,Cauliflower Chickpea Bowl,320,10,40,12,8,150,2.1,330,6,90,0.0,50,Yes,62,76.2,157,30.9,Hypertension,High,"Low sodium, potassium-rich meals",Breakfast
+354,Baked Cod with Asparagus,450,15,55,12,10,80,3.0,450,8,35,0.0,55,Yes,39,62.5,152,27.1,Hypertension,Moderate,"Low sodium, potassium-rich meals",Appetizer
+355,Kale Smoothie,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,52,58.2,155,24.2,Hypertension,Low,"Low sodium, potassium-rich meals",Main Course
+356,Tofu Stir-fry with Broccoli,350,12,60,10,8,120,2.0,500,15,45,0.0,40,Yes,51,54.7,153,23.4,None,Moderate,Balanced meals,Main Course
+357,Apple Cinnamon Oats,450,15,55,12,10,80,3.0,450,8,35,0.0,55,Yes,60,86.3,160,33.7,None,Low,Balanced meals,Main Course
+358,Vegetarian Sushi Bowl,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,45,91.6,186,26.5,Hypertension,Low,"Low sodium, potassium-rich meals",Main Course
+359,Vegan Buddha Bowl,320,10,40,12,8,150,2.1,330,6,90,0.0,50,Yes,36,72.9,166,26.5,Obesity,Moderate,"Low calorie, high protein meals",Main Course
+360,Low-fat Chicken Wrap,250,8,30,5,6,100,1.0,400,5,90,0.0,35,Yes,25,99.8,178,31.5,Obesity,High,"Low calorie, high protein meals",Main Course
+361,Zucchini & Tomato Gratin,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,25,78.6,175,25.7,Obesity,Low,"Low calorie, high protein meals",Dessert
+362,Grilled Tilapia Wrap,450,15,55,12,10,80,3.0,450,8,35,0.0,55,Yes,51,91.5,183,27.3,None,High,Balanced meals,Dessert
+363,Tofu Stir-fry with Broccoli,450,15,55,12,10,80,3.0,450,8,35,0.0,55,Yes,45,75.1,152,32.5,Obesity,High,"Low calorie, high protein meals",Beverage
+364,Carrot & Lentil Patties,320,10,40,12,8,150,2.1,330,6,90,0.0,50,Yes,65,52.7,166,19.1,None,High,Balanced meals,Beverage
+365,Vegetable Spring Rolls,350,12,60,10,8,120,2.0,500,15,45,0.0,40,Yes,33,56.4,177,18.0,Diabetes,Moderate,"Low sugar, high fiber meals",Main Course
+366,Tomato Avocado Toast,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,35,80.1,162,30.5,Hypertension,Moderate,"Low sodium, potassium-rich meals",Main Course
+367,Cauliflower Rice Bowl,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,42,55.7,171,19.0,Obesity,Low,"Low calorie, high protein meals",Main Course
+368,Baked Polenta with Veggies,320,10,40,12,8,150,2.1,330,6,90,0.0,50,Yes,63,54.7,150,24.3,None,Low,Balanced meals,Main Course
+369,Fajita Veggie Bowl,320,10,40,12,8,150,2.1,330,6,90,0.0,50,Yes,23,70.3,164,26.1,None,Low,Balanced meals,Main Course
+370,Overnight Oats with Chia,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,18,69.6,162,26.5,None,Low,Balanced meals,Breakfast
+371,Roasted Tofu and Broccoli,250,8,30,5,6,100,1.0,400,5,90,0.0,35,Yes,39,86.6,168,30.7,Diabetes,Moderate,"Low sugar, high fiber meals",Snack
+372,Eggplant Lasagna,450,15,55,12,10,80,3.0,450,8,35,0.0,55,Yes,40,53.3,179,16.6,None,Moderate,Balanced meals,Dessert
+373,Chia Seed Pudding,250,8,30,5,6,100,1.0,400,5,90,0.0,35,Yes,25,99.8,155,41.5,Obesity,High,"Low calorie, high protein meals",Snack
+374,High Protein Egg Wrap,350,12,60,10,8,120,2.0,500,15,45,0.0,40,Yes,41,79.8,162,30.4,None,Low,Balanced meals,Main Course
+375,Rice Paper Veggie Rolls,320,10,40,12,8,150,2.1,330,6,90,0.0,50,Yes,45,74.4,174,24.6,None,Moderate,Balanced meals,Main Course
+376,Baked Zucchini Casserole,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,44,84.1,169,29.4,Diabetes,High,"Low sugar, high fiber meals",Breakfast
+377,Zucchini Noodles with Pesto,450,15,55,12,10,80,3.0,450,8,35,0.0,55,Yes,53,50.6,169,17.7,Hypertension,Low,"Low sodium, potassium-rich meals",Dessert
+378,Sun-dried Tomato Pasta,320,10,40,12,8,150,2.1,330,6,90,0.0,50,Yes,34,65.8,161,25.4,Hypertension,High,"Low sodium, potassium-rich meals",Snack
+379,Grilled Tuna Salad,450,15,55,12,10,80,3.0,450,8,35,0.0,55,Yes,22,89.2,155,37.1,Hypertension,Moderate,"Low sodium, potassium-rich meals",Breakfast
+380,Baked Beans on Toast,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,52,67.2,162,25.6,Hypertension,Moderate,"Low sodium, potassium-rich meals",Snack
+381,Zucchini & Egg Bake,450,15,55,12,10,80,3.0,450,8,35,0.0,55,Yes,64,70.2,174,23.2,Obesity,High,"Low calorie, high protein meals",Main Course
+382,Vegan Protein Shake,450,15,55,12,10,80,3.0,450,8,35,0.0,55,Yes,46,60.3,181,18.4,Obesity,Low,"Low calorie, high protein meals",Main Course
+383,Roasted Chickpea Salad,350,12,60,10,8,120,2.0,500,15,45,0.0,40,Yes,41,82.1,178,25.9,Obesity,Low,"Low calorie, high protein meals",Main Course
+384,Grilled Veggie Wrap,350,12,60,10,8,120,2.0,500,15,45,0.0,40,Yes,43,58.9,159,23.3,Diabetes,Low,"Low sugar, high fiber meals",Side Dish
+385,Couscous with Grilled Tofu,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,65,86.4,153,36.9,Obesity,Low,"Low calorie, high protein meals",Main Course
+386,Tempeh Stir-fry,250,8,30,5,6,100,1.0,400,5,90,0.0,35,Yes,22,73.5,151,32.2,Hypertension,Moderate,"Low sodium, potassium-rich meals",Dessert
+387,Edamame Salad,320,10,40,12,8,150,2.1,330,6,90,0.0,50,Yes,35,69.7,152,30.2,Diabetes,High,"Low sugar, high fiber meals",Main Course
+388,Tomato Mozzarella Salad,320,10,40,12,8,150,2.1,330,6,90,0.0,50,Yes,43,50.5,179,15.8,Diabetes,Moderate,"Low sugar, high fiber meals",Beverage
+389,Avocado Tempeh Bowl,350,12,60,10,8,120,2.0,500,15,45,0.0,40,Yes,18,88.4,151,38.8,None,High,Balanced meals,Beverage
+390,Grilled Turkey Wrap,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,25,69.7,167,25.0,None,High,Balanced meals,Main Course
+391,Asparagus Frittata,250,8,30,5,6,100,1.0,400,5,90,0.0,35,Yes,51,97.8,187,28.0,Diabetes,High,"Low sugar, high fiber meals",Main Course
+392,Grilled Tuna Salad,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,34,79.6,155,33.1,Hypertension,Moderate,"Low sodium, potassium-rich meals",Dessert
+393,Oats with Almond Milk & Banana,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,44,89.6,167,32.1,Hypertension,High,"Low sodium, potassium-rich meals",Dessert
+394,Coconut Chia Pudding,320,10,40,12,8,150,2.1,330,6,90,0.0,50,Yes,23,60.3,152,26.1,Diabetes,High,"Low sugar, high fiber meals",Side Dish
+395,Vegetable Lentil Soup,250,8,30,5,6,100,1.0,400,5,90,0.0,35,Yes,30,52.1,184,15.4,None,Low,Balanced meals,Side Dish
+396,Asparagus Frittata,250,8,30,5,6,100,1.0,400,5,90,0.0,35,Yes,63,67.0,185,19.6,Diabetes,Moderate,"Low sugar, high fiber meals",Main Course
+397,Overnight Oats with Chia,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,37,86.2,179,26.9,Diabetes,High,"Low sugar, high fiber meals",Snack
+398,Oats with Almond Milk & Banana,350,12,60,10,8,120,2.0,500,15,45,0.0,40,Yes,64,50.8,151,22.3,Hypertension,High,"Low sodium, potassium-rich meals",Breakfast
+399,Spinach Egg Muffin Cups,350,12,60,10,8,120,2.0,500,15,45,0.0,40,Yes,32,81.2,187,23.2,None,Moderate,Balanced meals,Main Course
+400,Zucchini & Egg Bake,250,8,30,5,6,100,1.0,400,5,90,0.0,35,Yes,32,92.5,170,32.0,Diabetes,High,"Low sugar, high fiber meals",Main Course
+401,Egg & Veggie Breakfast Bowl,250,8,30,5,6,100,1.0,400,5,90,0.0,35,Yes,61,90.4,178,28.5,Diabetes,High,"Low sugar, high fiber meals",Main Course
+402,Mango Avocado Salsa Bowl,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,19,95.0,158,38.1,None,Low,Balanced meals,Main Course
+403,Whole Wheat Veggie Pizza,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,20,60.9,161,23.5,Obesity,Low,"Low calorie, high protein meals",Breakfast
+404,Sweet Potato Lentil Stew,450,15,55,12,10,80,3.0,450,8,35,0.0,55,Yes,36,79.3,152,34.3,Hypertension,High,"Low sodium, potassium-rich meals",Appetizer
+405,Tofu Bolognese,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,39,82.8,167,29.7,None,Low,Balanced meals,Main Course
+406,Tofu and Mushroom Skewers,450,15,55,12,10,80,3.0,450,8,35,0.0,55,Yes,21,95.1,170,32.9,None,Moderate,Balanced meals,Main Course
+407,Sweet Potato Bowl,350,12,60,10,8,120,2.0,500,15,45,0.0,40,Yes,38,80.2,156,33.0,Hypertension,Moderate,"Low sodium, potassium-rich meals",Main Course
+408,Eggplant Tomato Bake,350,12,60,10,8,120,2.0,500,15,45,0.0,40,Yes,43,82.1,173,27.4,None,High,Balanced meals,Main Course
+409,Kale Chickpea Patties,250,8,30,5,6,100,1.0,400,5,90,0.0,35,Yes,58,54.1,151,23.7,None,Moderate,Balanced meals,Main Course
+410,Sweet Potato Bowl,450,15,55,12,10,80,3.0,450,8,35,0.0,55,Yes,19,86.3,156,35.5,Diabetes,High,"Low sugar, high fiber meals",Main Course
+411,Chickpea Power Bowl,250,8,30,5,6,100,1.0,400,5,90,0.0,35,Yes,54,99.3,158,39.8,Obesity,Low,"Low calorie, high protein meals",Dessert
+412,Grilled Portobello Burger,450,15,55,12,10,80,3.0,450,8,35,0.0,55,Yes,28,93.9,188,26.6,None,Low,Balanced meals,Dessert
+413,Hummus with Carrot Sticks,320,10,40,12,8,150,2.1,330,6,90,0.0,50,Yes,38,94.0,168,33.3,Diabetes,High,"Low sugar, high fiber meals",Beverage
+414,Baked Cod with Asparagus,350,12,60,10,8,120,2.0,500,15,45,0.0,40,Yes,59,74.5,177,23.8,None,Low,Balanced meals,Beverage
+415,Vegan Stir-fry Bowl,450,15,55,12,10,80,3.0,450,8,35,0.0,55,Yes,57,70.6,164,26.2,Obesity,Low,"Low calorie, high protein meals",Main Course
+416,Turkey & Avocado Wrap,350,12,60,10,8,120,2.0,500,15,45,0.0,40,Yes,29,95.9,189,26.8,Diabetes,High,"Low sugar, high fiber meals",Main Course
+417,Vegetable Couscous,250,8,30,5,6,100,1.0,400,5,90,0.0,35,Yes,22,69.6,159,27.5,Hypertension,Moderate,"Low sodium, potassium-rich meals",Main Course
+418,Cauliflower Chickpea Bowl,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,21,54.2,167,19.4,Diabetes,Moderate,"Low sugar, high fiber meals",Main Course
+419,Veggie Power Sandwich,450,15,55,12,10,80,3.0,450,8,35,0.0,55,Yes,60,96.6,187,27.6,Obesity,Moderate,"Low calorie, high protein meals",Main Course
+420,Tofu Lettuce Wraps,450,15,55,12,10,80,3.0,450,8,35,0.0,55,Yes,62,77.7,155,32.3,None,High,Balanced meals,Breakfast
+421,Grilled Veggie Wrap,250,8,30,5,6,100,1.0,400,5,90,0.0,35,Yes,60,74.8,174,24.7,None,Moderate,Balanced meals,Snack
+422,Miso Soup with Tofu,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,59,58.9,188,16.7,Diabetes,High,"Low sugar, high fiber meals",Dessert
+423,Oat Bran Pancakes,320,10,40,12,8,150,2.1,330,6,90,0.0,50,Yes,28,93.5,161,36.1,None,High,Balanced meals,Snack
+424,Baked Sweet Potato & Tuna,350,12,60,10,8,120,2.0,500,15,45,0.0,40,Yes,40,72.0,182,21.7,Hypertension,Low,"Low sodium, potassium-rich meals",Main Course
+425,Veggie Stir-Fry Noodles,320,10,40,12,8,150,2.1,330,6,90,0.0,50,Yes,37,90.7,184,26.8,None,Low,Balanced meals,Main Course
+426,Whole Grain Waffles with Fruit,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,25,76.0,174,25.1,Diabetes,High,"Low sugar, high fiber meals",Breakfast
+427,Spinach and Feta Salad,450,15,55,12,10,80,3.0,450,8,35,0.0,55,Yes,57,96.8,167,34.7,None,Moderate,Balanced meals,Dessert
+428,Grilled Fish Salad,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,57,75.7,175,24.7,Diabetes,Moderate,"Low sugar, high fiber meals",Snack
+429,Tofu Stir-fry with Broccoli,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,25,78.6,151,34.5,Hypertension,Low,"Low sodium, potassium-rich meals",Breakfast
+430,Vegan Shepherd's Pie,250,8,30,5,6,100,1.0,400,5,90,0.0,35,Yes,65,82.9,158,33.2,None,High,Balanced meals,Snack
+431,Lemon Herb Grilled Chicken,350,12,60,10,8,120,2.0,500,15,45,0.0,40,Yes,28,72.8,184,21.5,Diabetes,High,"Low sugar, high fiber meals",Main Course
+432,Steamed Fish & Greens,350,12,60,10,8,120,2.0,500,15,45,0.0,40,Yes,48,80.6,184,23.8,Hypertension,High,"Low sodium, potassium-rich meals",Main Course
+433,Egg White Omelette with Spinach,350,12,60,10,8,120,2.0,500,15,45,0.0,40,Yes,34,83.0,175,27.1,Hypertension,High,"Low sodium, potassium-rich meals",Main Course
+434,Pumpkin Chia Bowl,350,12,60,10,8,120,2.0,500,15,45,0.0,40,Yes,22,77.6,186,22.4,Diabetes,Low,"Low sugar, high fiber meals",Side Dish
+435,Greek Yogurt with Berries,450,15,55,12,10,80,3.0,450,8,35,0.0,55,Yes,39,96.5,156,39.7,None,Moderate,Balanced meals,Main Course
+436,Cabbage & Tofu Stir-fry,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,50,88.6,167,31.8,Diabetes,Low,"Low sugar, high fiber meals",Dessert
+437,Cauliflower Mash Bowl,450,15,55,12,10,80,3.0,450,8,35,0.0,55,Yes,64,75.1,156,30.9,Obesity,Low,"Low calorie, high protein meals",Main Course
+438,Veggie Packed Wrap,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,29,68.9,162,26.3,Diabetes,Low,"Low sugar, high fiber meals",Beverage
+439,Mushroom Chickpea Stroganoff,250,8,30,5,6,100,1.0,400,5,90,0.0,35,Yes,42,78.5,187,22.4,Diabetes,Low,"Low sugar, high fiber meals",Beverage
+440,Mango Smoothie Bowl,250,8,30,5,6,100,1.0,400,5,90,0.0,35,Yes,32,96.4,155,40.1,None,High,Balanced meals,Main Course
+441,Low-Carb Greek Salad,250,8,30,5,6,100,1.0,400,5,90,0.0,35,Yes,19,60.7,185,17.7,None,Moderate,Balanced meals,Main Course
+442,Cabbage & Tofu Stir-fry,450,15,55,12,10,80,3.0,450,8,35,0.0,55,Yes,59,56.0,154,23.6,Hypertension,Low,"Low sodium, potassium-rich meals",Dessert
+443,Avocado Tempeh Bowl,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,65,58.4,159,23.1,Obesity,High,"Low calorie, high protein meals",Dessert
+444,Almond Yogurt Smoothie,250,8,30,5,6,100,1.0,400,5,90,0.0,35,Yes,30,52.4,182,15.8,Hypertension,Moderate,"Low sodium, potassium-rich meals",Side Dish
+445,Cauliflower Mash Bowl,250,8,30,5,6,100,1.0,400,5,90,0.0,35,Yes,26,94.6,183,28.2,None,Moderate,Balanced meals,Side Dish
+446,Avocado Toast on Whole Grain Bread,320,10,40,12,8,150,2.1,330,6,90,0.0,50,Yes,25,67.4,161,26.0,Obesity,Moderate,"Low calorie, high protein meals",Main Course
+447,Tomato Mozzarella Salad,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,24,81.2,162,30.9,Diabetes,Low,"Low sugar, high fiber meals",Snack
+448,Kale Chickpea Patties,350,12,60,10,8,120,2.0,500,15,45,0.0,40,Yes,61,90.3,185,26.4,Diabetes,High,"Low sugar, high fiber meals",Breakfast
+449,Roasted Tofu and Broccoli,250,8,30,5,6,100,1.0,400,5,90,0.0,35,Yes,52,96.9,189,27.1,Hypertension,Moderate,"Low sodium, potassium-rich meals",Main Course
+450,Asparagus & Quinoa Bowl,350,12,60,10,8,120,2.0,500,15,45,0.0,40,Yes,43,84.4,161,32.6,Obesity,Moderate,"Low calorie, high protein meals",Main Course
+451,Grilled Turkey Wrap,450,15,55,12,10,80,3.0,450,8,35,0.0,55,Yes,34,50.3,151,22.1,None,Low,Balanced meals,Main Course
+452,Apple Cinnamon Oats,250,8,30,5,6,100,1.0,400,5,90,0.0,35,Yes,34,78.2,160,30.5,Diabetes,High,"Low sugar, high fiber meals",Main Course
+453,Carrot & Lentil Patties,320,10,40,12,8,150,2.1,330,6,90,0.0,50,Yes,42,63.0,178,19.9,Obesity,Low,"Low calorie, high protein meals",Breakfast
+454,Kale & Apple Slaw,250,8,30,5,6,100,1.0,400,5,90,0.0,35,Yes,56,85.0,184,25.1,Hypertension,Moderate,"Low sodium, potassium-rich meals",Appetizer
+455,Grilled Tilapia Wrap,450,15,55,12,10,80,3.0,450,8,35,0.0,55,Yes,20,53.7,184,15.9,Obesity,High,"Low calorie, high protein meals",Main Course
+456,Roasted Veggie Bowl,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,24,71.5,172,24.2,Diabetes,Moderate,"Low sugar, high fiber meals",Main Course
+457,Cauliflower Pizza,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,30,70.8,179,22.1,Hypertension,Low,"Low sodium, potassium-rich meals",Main Course
+458,Coconut Yogurt with Granola,320,10,40,12,8,150,2.1,330,6,90,0.0,50,Yes,25,68.4,165,25.1,Diabetes,Moderate,"Low sugar, high fiber meals",Main Course
+459,Oven-Roasted Salmon Bowl,250,8,30,5,6,100,1.0,400,5,90,0.0,35,Yes,37,95.6,161,36.9,Diabetes,Moderate,"Low sugar, high fiber meals",Main Course
+460,Cauliflower Rice Bowl,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,46,73.0,171,25.0,Hypertension,High,"Low sodium, potassium-rich meals",Main Course
+461,Vegan Black Bean Burrito,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,20,63.1,165,23.2,None,Low,Balanced meals,Dessert
+462,Vegan Quinoa Burgers,350,12,60,10,8,120,2.0,500,15,45,0.0,40,Yes,31,98.8,163,37.2,None,High,Balanced meals,Dessert
+463,Brown Rice Sushi,350,12,60,10,8,120,2.0,500,15,45,0.0,40,Yes,45,94.8,184,28.0,Hypertension,High,"Low sodium, potassium-rich meals",Beverage
+464,Whole Grain Pasta with Tomato Sauce,350,12,60,10,8,120,2.0,500,15,45,0.0,40,Yes,63,94.4,174,31.2,Diabetes,Moderate,"Low sugar, high fiber meals",Beverage
+465,Oven-Baked Falafel Wrap,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,37,84.4,163,31.8,Obesity,Low,"Low calorie, high protein meals",Main Course
+466,Pasta with Zoodles,250,8,30,5,6,100,1.0,400,5,90,0.0,35,Yes,63,69.7,165,25.6,None,Moderate,Balanced meals,Main Course
+467,Carrot & Lentil Patties,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,55,82.9,159,32.8,Diabetes,Low,"Low sugar, high fiber meals",Main Course
+468,Roasted Veggie Bowl,350,12,60,10,8,120,2.0,500,15,45,0.0,40,Yes,51,87.7,184,25.9,Hypertension,High,"Low sodium, potassium-rich meals",Main Course
+469,Tofu Veggie Curry,350,12,60,10,8,120,2.0,500,15,45,0.0,40,Yes,31,67.1,157,27.2,Obesity,Low,"Low calorie, high protein meals",Main Course
+470,Egg Spinach Quesadilla,250,8,30,5,6,100,1.0,400,5,90,0.0,35,Yes,31,54.7,157,22.2,Diabetes,High,"Low sugar, high fiber meals",Breakfast
+471,Stuffed Avocado Salad,450,15,55,12,10,80,3.0,450,8,35,0.0,55,Yes,26,70.1,150,31.2,Hypertension,Low,"Low sodium, potassium-rich meals",Snack
+472,Lentil Tacos,320,10,40,12,8,150,2.1,330,6,90,0.0,50,Yes,50,86.0,173,28.7,Obesity,Moderate,"Low calorie, high protein meals",Dessert
+473,Almond Yogurt Smoothie,450,15,55,12,10,80,3.0,450,8,35,0.0,55,Yes,50,71.0,176,22.9,None,High,Balanced meals,Snack
+474,Turkey Zoodle Bowl,250,8,30,5,6,100,1.0,400,5,90,0.0,35,Yes,36,86.1,184,25.4,None,Moderate,Balanced meals,Main Course
+475,Tomato Basil Quinoa,450,15,55,12,10,80,3.0,450,8,35,0.0,55,Yes,54,86.6,177,27.6,None,Low,Balanced meals,Main Course
+476,Mediterranean Couscous Bowl,450,15,55,12,10,80,3.0,450,8,35,0.0,55,Yes,65,98.5,178,31.1,Diabetes,Low,"Low sugar, high fiber meals",Breakfast
+477,Turkey Lettuce Wraps,450,15,55,12,10,80,3.0,450,8,35,0.0,55,Yes,36,90.4,177,28.9,Diabetes,Low,"Low sugar, high fiber meals",Dessert
+478,Mediterranean Veggie Platter,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,64,93.3,161,36.0,Obesity,Low,"Low calorie, high protein meals",Snack
+479,Tofu Thai Bowl,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,35,87.7,178,27.7,None,High,Balanced meals,Breakfast
+480,Brown Rice Sushi,350,12,60,10,8,120,2.0,500,15,45,0.0,40,Yes,46,79.7,166,28.9,Hypertension,Moderate,"Low sodium, potassium-rich meals",Snack
+481,Baked Sweet Potato & Tuna,350,12,60,10,8,120,2.0,500,15,45,0.0,40,Yes,52,55.7,165,20.5,None,Low,Balanced meals,Main Course
+482,Cabbage Quinoa Bowl,320,10,40,12,8,150,2.1,330,6,90,0.0,50,Yes,48,85.0,164,31.6,Hypertension,Low,"Low sodium, potassium-rich meals",Main Course
+483,Tomato Basil Quinoa,320,10,40,12,8,150,2.1,330,6,90,0.0,50,Yes,24,77.4,158,31.0,Obesity,Moderate,"Low calorie, high protein meals",Main Course
+484,Roasted Tomato Soup,450,15,55,12,10,80,3.0,450,8,35,0.0,55,Yes,61,98.0,166,35.6,Diabetes,Low,"Low sugar, high fiber meals",Side Dish
+485,Roasted Tofu Caesar Salad,250,8,30,5,6,100,1.0,400,5,90,0.0,35,Yes,24,75.1,187,21.5,Hypertension,Low,"Low sodium, potassium-rich meals",Main Course
+486,Avocado Egg Bowl,250,8,30,5,6,100,1.0,400,5,90,0.0,35,Yes,43,75.1,171,25.7,None,Low,Balanced meals,Dessert
+487,Spaghetti Squash with Marinara,450,15,55,12,10,80,3.0,450,8,35,0.0,55,Yes,33,81.1,172,27.4,Obesity,Moderate,"Low calorie, high protein meals",Main Course
+488,Spinach Egg Muffin Cups,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,58,77.5,162,29.5,None,High,Balanced meals,Beverage
+489,Sunflower Seed Porridge,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,24,74.1,160,28.9,Diabetes,Low,"Low sugar, high fiber meals",Beverage
+490,Eggplant Stir-Fry,320,10,40,12,8,150,2.1,330,6,90,0.0,50,Yes,18,70.0,156,28.8,Diabetes,High,"Low sugar, high fiber meals",Main Course
+491,Vegan Shepherd's Pie,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,40,78.7,154,33.2,None,High,Balanced meals,Main Course
+492,Avocado Egg Bowl,350,12,60,10,8,120,2.0,500,15,45,0.0,40,Yes,53,66.7,154,28.1,Hypertension,High,"Low sodium, potassium-rich meals",Dessert
+493,Grilled Turkey Wrap,350,12,60,10,8,120,2.0,500,15,45,0.0,40,Yes,46,80.3,167,28.8,Hypertension,Low,"Low sodium, potassium-rich meals",Dessert
+494,Black Bean Soup,450,15,55,12,10,80,3.0,450,8,35,0.0,55,Yes,52,59.9,154,25.3,Diabetes,High,"Low sugar, high fiber meals",Side Dish
+495,Eggplant Stir-Fry,350,12,60,10,8,120,2.0,500,15,45,0.0,40,Yes,62,87.7,177,28.0,Hypertension,Low,"Low sodium, potassium-rich meals",Side Dish
+496,Barley with Mixed Veggies,350,12,60,10,8,120,2.0,500,15,45,0.0,40,Yes,53,53.2,172,18.0,Diabetes,High,"Low sugar, high fiber meals",Main Course
+497,Chickpea Power Bowl,350,12,60,10,8,120,2.0,500,15,45,0.0,40,Yes,18,61.7,157,25.0,Diabetes,Low,"Low sugar, high fiber meals",Snack
+498,Baked Oats with Pear,250,8,30,5,6,100,1.0,400,5,90,0.0,35,Yes,45,78.3,169,27.4,Diabetes,Low,"Low sugar, high fiber meals",Breakfast
+499,Hummus with Carrot Sticks,450,15,55,12,10,80,3.0,450,8,35,0.0,55,Yes,41,76.9,160,30.0,None,Moderate,Balanced meals,Main Course
+500,Roasted Cauliflower Tacos,400,35,20,18,5,100,3.5,400,10,120,1.2,60,No,51,50.9,184,15.0,Obesity,Low,"Low calorie, high protein meals",Main Course

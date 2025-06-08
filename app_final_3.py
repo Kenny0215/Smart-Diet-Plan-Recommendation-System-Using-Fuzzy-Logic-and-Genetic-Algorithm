@@ -36,88 +36,131 @@ def activity_membership(activity_level):
         "High": triangular(activity_level, 6, 8, 10)
     }
 
-## These membership functions determine the degree to which an input (age, BMI, activity)
+## These membership functions determine the degree to which an input (age, BMI, activity level)
 ## belongs to each fuzzy category.
 
 def fuzzy_health_assessment(age, bmi, activity, diabetes=False, hypertension=False):
-    """
-    Compute a fuzzy risk score using weighted averages.
-    For each factor, we assign:
-      - Age: Young=0, Adult=25, Elder=60
-      - BMI: Underweight=16, Normal=18.5, Overweight=25, Obese=30
-      - Activity: Low=80, Moderate=50, High=20
-    The final risk is the average, adjusted for diabetes (+5) and hypertension (+3).
-    """
     age_m = age_membership(age)
     bmi_m = bmi_membership(bmi)
     act_m = activity_membership(activity)
 
-    age_risk = {"Young": 0, "Adult": 25, "Elder": 60}
-    bmi_risk = {"Underweight": 18, "Normal": 22, "Overweight": 27, "Obese": 40}
-    act_risk = {"Low": 80, "Moderate": 50, "High": 20}
-
-    age_risk_val = sum(age_m[cat] * age_risk[cat] for cat in age_m) / (sum(age_m.values()) + 1e-6)
-    bmi_risk_val = sum(bmi_m[cat] * bmi_risk[cat] for cat in bmi_m) / (sum(bmi_m.values()) + 1e-6)
-    act_risk_val = sum(act_m[cat] * act_risk[cat] for cat in act_m) / (sum(act_m.values()) + 1e-6)
-
-    risk_score = (age_risk_val + bmi_risk_val + act_risk_val) / 3
-    if diabetes:
-        risk_score += 5
-    if hypertension:
-        risk_score += 3
-    risk_score = np.clip(risk_score, 0, 100)
-
-    if risk_score < 35:
-        risk_category = "Low"
-    elif risk_score < 60:
-        risk_category = "Medium"
-    else:
+    # Rule: BMI Obese & Diabetes => High Risk
+    if bmi >= 30 and diabetes:
         risk_category = "High"
 
-    explanation = {
-        "Age Risk Value": age_risk_val,
-        "BMI Risk Value": bmi_risk_val,
-        "Activity Risk Value": act_risk_val,
-        "Final Risk Score": risk_score
-    }
-    return risk_score, risk_category, explanation
+    # Rule: BMI Obese & Activity Low & Hypertension => High Risk
+    if bmi >= 30 and activity <= 3 and hypertension:
+        risk_category = "High"
 
-def get_recommendations(age, risk_category):
-    """
-    Provide personalized nutrient recommendations based on risk and age.
-    """
-    if risk_category == "High":
-        base_cal = 1800
-        protein_rec = "High"
-        fat_level = "Low"
-        carb_level = "Moderate"
-    elif risk_category == "Medium":
-        base_cal = 2100
-        protein_rec = "Moderate"
-        fat_level = "Moderate"
-        carb_level = "Moderate"
-    else:
-        base_cal = 2500
-        protein_rec = "Moderate"
-        fat_level = "Moderate"
-        carb_level = "High"
+    # Rule: Age Elder & Normal BMI & Moderate Activity => Medium Risk
+    if age >= 60 and 18.5 <= bmi <= 24.9 and 3 < activity <= 7:
+        risk_category = "Moderate"
 
-    if age > 60:
-        base_cal -= 200  # Older adults need slightly less
+    # Rule: Age Young & Diabetes => Medium Risk
+    if age < 30 and diabetes:
+        risk_category = "Moderate"
 
-    return {
-        "Recommended Calories": base_cal,
-        "Protein": protein_rec,
-        "Fat": fat_level,
-        "Carbs": carb_level
-    }
+    # Rule: Underweight & Activity High => Low to Medium Risk
+    if bmi < 18.5 and activity >= 7:
+        risk_category = "Moderate"
 
+    # Fallback to fuzzy logic computation if not overridden
+    if risk_category is None:
+        age_risk = {"Young": 0, "Adult": 25, "Elder": 60}
+        bmi_risk = {"Underweight": 18, "Normal": 22, "Overweight": 27, "Obese": 40}
+        act_risk = {"Low": 80, "Moderate": 50, "High": 20}
+
+        age_risk_val = sum(age_m[cat] * age_risk[cat] for cat in age_m) / (sum(age_m.values()) + 1e-6)
+        bmi_risk_val = sum(bmi_m[cat] * bmi_risk[cat] for cat in bmi_m) / (sum(bmi_m.values()) + 1e-6)
+        act_risk_val = sum(act_m[cat] * act_risk[cat] for cat in act_m) / (sum(act_m.values()) + 1e-6)
+
+        risk_score = (age_risk_val + bmi_risk_val + act_risk_val) / 3
+        if diabetes:
+            risk_score += 5
+        if hypertension:
+            risk_score += 3
+        risk_score = np.clip(risk_score, 0, 100)
+
+        if risk_score < 35:
+            risk_category = "Low"
+        elif risk_score < 60:
+            risk_category = "Moderate"
+        else:
+            risk_category = "High"
+
+    return risk_category
+
+# Get_recommendations to use new rules
+def get_recommendations(age, bmi, activity, diabetes, hypertension, risk_category):
+    recommendations = {}
+
+    if risk_category == "High" and diabetes:
+        recommendations["Carbs"] = "Low"
+        recommendations["Sugar"] = "Low"
+
+    if risk_category == "Medium" and hypertension:
+        recommendations["Sodium"] = "Low"
+        recommendations["Potassium"] = "High"
+
+    if risk_category == "Low" and age >= 60:
+        recommendations["Calcium"] = "High"
+
+    if risk_category == "Medium" and age >= 60:
+        recommendations["Fiber"] = "High"
+
+    if risk_category == "High" and activity >= 7:
+        recommendations["Protein"] = "High"
+
+    if risk_category == "Medium" and bmi >= 25:
+        recommendations["Calories"] = "Moderate"
+        recommendations["Fat"] = "Moderate"
+
+    if risk_category == "Low" and bmi < 18.5:
+        recommendations["Calories"] = "Moderate"
+        recommendations["Protein"] = "Moderate"
+
+    if bmi < 18.5 and activity <= 3:
+        risk_category = "Moderate"
+
+    if age >= 60 and (diabetes or hypertension):
+        risk_category = "High"
+
+    # Fallbacks
+    if "Calories" not in recommendations:
+        recommendations["Calories"] = {
+            "High": 1800,
+            "Medium": 2100,
+            "Low": 2500
+        }[risk_category]
+
+    if "Protein" not in recommendations:
+        recommendations["Protein"] = {
+            "High": "High",
+            "Medium": "Moderate",
+            "Low": "Moderate"
+        }[risk_category]
+
+    if "Fat" not in recommendations:
+        recommendations["Fat"] = {
+            "High": "Low",
+            "Medium": "Moderate",
+            "Low": "Moderate"
+        }[risk_category]
+
+    if "Carbs" not in recommendations:
+        recommendations["Carbs"] = {
+            "High": "Moderate",
+            "Medium": "Moderate",
+            "Low": "High"
+        }[risk_category]
+
+    return recommendations
 
 
 # ---------------------------------
 # Genetic Algorithm (GA) Functions
 # ---------------------------------
-POPULATION_SIZE = 20
+POPULATION_SIZE = 500
 NUM_DAYS = 7
 MEALS_PER_DAY = 3
 CHROMOSOME_LENGTH = NUM_DAYS * MEALS_PER_DAY
@@ -128,7 +171,7 @@ w_macro = 0.5
 w_variety = 0.3
 w_allergy = 0.2
 
-def fitness_function(chromosome, vegetarian, high_protein):
+def fitness_function(chromosome, high_protein=True):
     plan = meals_df[meals_df["Meal_ID"].isin(chromosome)]
     total_calories = plan["Calories"].sum()
     target_weekly = TARGET_CALORIES * 7
@@ -136,9 +179,6 @@ def fitness_function(chromosome, vegetarian, high_protein):
     variety_score = CHROMOSOME_LENGTH - len(set(chromosome))
 
     penalty = 0
-    if vegetarian:
-        non_veg = plan[plan["Vegetarian"]=="No"].shape[0]
-        penalty += non_veg * 50
     protein_total = plan["Protein_g"].sum()
     avg_protein = protein_total / CHROMOSOME_LENGTH
     if high_protein:
@@ -146,14 +186,15 @@ def fitness_function(chromosome, vegetarian, high_protein):
             penalty += (10 - avg_protein) * 100
         else:
             penalty -= 50
+
     return w_macro * macro_diff_score + w_variety * variety_score + w_allergy * penalty
 
 def create_chromosome():
     return [random.choice(meal_ids) for _ in range(CHROMOSOME_LENGTH)]
 
-def tournament_selection(population, k=3, vegetarian=False, high_protein=False):
+def tournament_selection(population, k=3, high_protein=True):
     selected = random.sample(population, k)
-    selected.sort(key=lambda chromo: fitness_function(chromo, vegetarian, high_protein))
+    selected.sort(key=lambda chromo: fitness_function(chromo, high_protein))
     return selected[0]
 
 def crossover(parent1, parent2):
@@ -172,30 +213,25 @@ def mutate(chromosome, mutation_rate=0.15):
             new_chromosome[i] = random.choice(meal_ids)
     return new_chromosome
 
-# Use session state to store GA results so that changing the selectbox doesn't rerun the GA.
-if "ga_result" not in st.session_state:
-    st.session_state.ga_result = None
-    st.session_state.fitness_history = None
-
-def run_ga(vegetarian, high_protein):
+def run_ga(high_protein=True):
     population = [create_chromosome() for _ in range(POPULATION_SIZE)]
     best_chromo = None
     best_fit = float('inf')
     fitness_history = []
     for generation in range(GENERATIONS):
         new_population = []
-        population.sort(key=lambda chromo: fitness_function(chromo, vegetarian, high_protein))
+        population.sort(key=lambda chromo: fitness_function(chromo, high_protein))
         new_population.extend(population[:2])
         while len(new_population) < POPULATION_SIZE:
-            parent1 = tournament_selection(population, vegetarian=vegetarian, high_protein=high_protein)
-            parent2 = tournament_selection(population, vegetarian=vegetarian, high_protein=high_protein)
+            parent1 = tournament_selection(population, high_protein=high_protein)
+            parent2 = tournament_selection(population, high_protein=high_protein)
             child1, child2 = crossover(parent1, parent2)
             child1 = mutate(child1, mutation_rate=0.15)
             child2 = mutate(child2, mutation_rate=0.15)
             new_population.extend([child1, child2])
         population = new_population[:POPULATION_SIZE]
-        current_best = min(population, key=lambda chromo: fitness_function(chromo, vegetarian, high_protein))
-        current_fit = fitness_function(current_best, vegetarian, high_protein)
+        current_best = min(population, key=lambda chromo: fitness_function(chromo, high_protein))
+        current_fit = fitness_function(current_best, high_protein)
         if current_fit < best_fit:
             best_fit = current_fit
             best_chromo = current_best
@@ -271,14 +307,12 @@ with tabs[1]:
 # ----------------------------
 with tabs[2]:
     st.header("Meal Plan Optimization")
-    st.markdown("Click the button below to generate an optimized weekly meal plan based on your dietary preferences.")
-    dietary_veg = st.checkbox("Vegetarian", value=False, key="veg")
-    dietary_high_protein = st.checkbox("High Protein", value=False, key="high_protein")
+    st.markdown("Click the button below to generate an optimized weekly meal plan focusing on high protein intake.")
 
     # Check if GA result is stored in session_state; if not, run GA when button clicked.
     if st.button("Generate Meal Plan"):
         with st.spinner("Optimizing your meal plan..."):
-            best_plan, fitness_history = run_ga(dietary_veg, dietary_high_protein)
+            best_plan, fitness_history = run_ga(high_protein=True)
             st.session_state.ga_result = best_plan
             st.session_state.fitness_history = fitness_history
         st.success("Meal plan generated!")
@@ -295,19 +329,18 @@ with tabs[2]:
 
         # Convert Meal_IDs to "ID - Meal Name"
         meal_names = []
-
         for meal_id in st.session_state.ga_result:
-          meal_row = meals_df[meals_df["Meal_ID"] == meal_id]
-        if not meal_row.empty:
-          name = meal_row.iloc[0]["Meal_Name"]
-          meal_names.append(f"{meal_id} - {name}")
-        else:
-          meal_names.append(f"{meal_id} - Unknown")
+            meal_row = meals_df[meals_df["Meal_ID"] == meal_id]
+            if not meal_row.empty:
+                name = meal_row.iloc[0]["Meal_Name"]
+                meal_names.append(f"{meal_id} - {name}")
+            else:
+                meal_names.append(f"{meal_id} - Unknown")
 
         # Build weekly plan DataFrame with meal names
         plan_df_named = pd.DataFrame(
-          np.array(meal_names).reshape(NUM_DAYS, MEALS_PER_DAY),
-          columns=["Meal 1", "Meal 2", "Meal 3"]
+            np.array(meal_names).reshape(NUM_DAYS, MEALS_PER_DAY),
+            columns=["Meal 1", "Meal 2", "Meal 3"]
         )
         st.subheader("Optimized Weekly Meal Plan")
         st.dataframe(plan_df_named)
@@ -331,9 +364,8 @@ with tabs[2]:
 
         # Interactive Meal Nutrient Breakdown
         st.subheader("View Meal Nutrient Breakdown")
-        # Use a selectbox with a key to preserve state
         meal_choice = st.selectbox("Select a Meal ID from the Optimized Plan", sorted(set(st.session_state.ga_result)), key="meal_select")
-        selected_meal = meals_df[meals_df["Meal_ID"]==meal_choice].iloc[0]
+        selected_meal = meals_df[meals_df["Meal_ID"] == meal_choice].iloc[0]
         fig_meal, ax_meal = plt.subplots(figsize=(8, 4))
         meal_nutrients = ["Calories", "Protein_g", "Carbohydrate_g", "Fat_g", "Fiber_g"]
         nutrient_values = [selected_meal[n] for n in meal_nutrients]
