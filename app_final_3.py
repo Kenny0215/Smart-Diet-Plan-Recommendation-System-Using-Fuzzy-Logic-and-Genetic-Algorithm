@@ -43,33 +43,39 @@ def activity_membership(activity_level):
 ## belongs to each fuzzy category.
 
 def fuzzy_health_assessment(age, bmi, activity, diabetes=False, hypertension=False):
+    explanation = {
+        "age_membership": age_membership(age),
+        "bmi_membership": bmi_membership(bmi),
+        "activity_membership": activity_membership(activity),
+        "rules_triggered": []
+    }
+
     risk_category = None
 
-    age_m = age_membership(age)
-    bmi_m = bmi_membership(bmi)
-    act_m = activity_membership(activity)
+    age_m = explanation["age_membership"]
+    bmi_m = explanation["bmi_membership"]
+    act_m = explanation["activity_membership"]
 
-    # Rule: BMI Obese & Diabetes => High Risk
     if bmi >= 30 and diabetes:
         risk_category = "High"
+        explanation["rules_triggered"].append("BMI Obese & Diabetes => High Risk")
 
-    # Rule: BMI Obese & Activity Low & Hypertension => High Risk
     if bmi >= 30 and activity <= 3 and hypertension:
         risk_category = "High"
+        explanation["rules_triggered"].append("BMI Obese & Activity Low & Hypertension => High Risk")
 
-    # Rule: Age Elder & Normal BMI & Moderate Activity => Medium Risk
     if age >= 60 and 18.5 <= bmi <= 24.9 and 3 < activity <= 7:
         risk_category = "Moderate"
+        explanation["rules_triggered"].append("Age Elder & Normal BMI & Moderate Activity => Moderate Risk")
 
-    # Rule: Age Young & Diabetes => Medium Risk
     if age < 30 and diabetes:
         risk_category = "Moderate"
+        explanation["rules_triggered"].append("Age Young & Diabetes => Moderate Risk")
 
-    # Rule: Underweight & Activity High => Low to Medium Risk
     if bmi < 18.5 and activity >= 7:
         risk_category = "Moderate"
+        explanation["rules_triggered"].append("Underweight & Activity High => Moderate Risk")
 
-    # Fallback to fuzzy logic computation if not overridden
     if risk_category is None:
         age_risk = {"Young": 0, "Adult": 25, "Elder": 60}
         bmi_risk = {"Underweight": 18, "Normal": 22, "Overweight": 27, "Obese": 40}
@@ -93,7 +99,13 @@ def fuzzy_health_assessment(age, bmi, activity, diabetes=False, hypertension=Fal
         else:
             risk_category = "High"
 
-    return risk_category
+        explanation["rules_triggered"].append("Fallback fuzzy score-based categorization")
+        explanation["risk_score"] = risk_score
+    else:
+        explanation["risk_score"] = "Rule-based classification"
+
+    return explanation["risk_score"], risk_category, explanation
+
 
 # Get_recommendations to use new rules
 def get_recommendations(age, bmi, activity, diabetes, hypertension, risk_category):
@@ -391,42 +403,33 @@ with tabs[2]:
 # Tab 4: Membership Functions
 # ----------------------------
 with tabs[3]:
-    st.header("Membership Function Plots")
-    st.markdown("These plots illustrate the membership functions used for Age, BMI and Activity.")
+    st.header("Membership Function Visualizations")
 
-    st.subheader("Age Membership Functions")
-    x_age = np.linspace(0, 100, 500)
-    fig_age, ax_age = plt.subplots(figsize=(8, 4))
-    ax_age.plot(x_age, [age_membership(x)["Young"] for x in x_age], label="Young")
-    ax_age.plot(x_age, [age_membership(x)["Adult"] for x in x_age], label="Adult")
-    ax_age.plot(x_age, [age_membership(x)["Elder"] for x in x_age], label="Elder")
-    ax_age.set_xlabel("Age")
-    ax_age.set_ylabel("Membership Degree")
-    ax_age.set_title("Age Membership Functions")
-    ax_age.legend()
-    st.pyplot(fig_age)
+    x_age = np.linspace(15, 65, 500)
+    x_bmi = np.linspace(10, 50, 500)
+    x_activity = np.linspace(0, 10, 500)
 
-    st.subheader("BMI Membership Functions")
-    x_bmi = np.linspace(0, 50, 500)
-    fig_bmi, ax_bmi = plt.subplots(figsize=(8, 4))
-    ax_bmi.plot(x_bmi, [bmi_membership(x)["Underweight"] for x in x_bmi], label="Underweight")
-    ax_bmi.plot(x_bmi, [bmi_membership(x)["Normal"] for x in x_bmi], label="Normal")
-    ax_bmi.plot(x_bmi, [bmi_membership(x)["Overweight"] for x in x_bmi], label="Overweight")
-    ax_bmi.plot(x_bmi, [bmi_membership(x)["Obese"] for x in x_bmi], label="Obese")
-    ax_bmi.set_xlabel("BMI")
-    ax_bmi.set_ylabel("Membership Degree")
-    ax_bmi.set_title("BMI Membership Functions")
-    ax_bmi.legend()
-    st.pyplot(fig_bmi)
+    fig1, ax1 = plt.subplots()
+    ax1.plot(x_age, triangular(x_age, 18, 20, 25), label="Young")
+    ax1.plot(x_age, triangular(x_age, 30, 35, 45), label="Adult")
+    ax1.plot(x_age, triangular(x_age, 50, 55, 60), label="Elder")
+    ax1.set_title("Age Membership Functions")
+    ax1.legend()
+    st.pyplot(fig1)
 
-    st.subheader("Activity Membership Functions")
-    x_act = np.linspace(0, 10, 500)
-    fig_act, ax_act = plt.subplots(figsize=(8, 4))
-    ax_act.plot(x_act, [activity_membership(x)["Low"] for x in x_act], label="Low")
-    ax_act.plot(x_act, [activity_membership(x)["Moderate"] for x in x_act], label="Moderate")
-    ax_act.plot(x_act, [activity_membership(x)["High"] for x in x_act], label="High")
-    ax_act.set_xlabel("Activity Level")
-    ax_act.set_ylabel("Membership Degree")
-    ax_act.set_title("Activity Membership Functions")
-    ax_act.legend()
-    st.pyplot(fig_act)
+    fig2, ax2 = plt.subplots()
+    ax2.plot(x_bmi, triangular(x_bmi, 0, 16, 18.5), label="Underweight")
+    ax2.plot(x_bmi, triangular(x_bmi, 18, 22, 25), label="Normal")
+    ax2.plot(x_bmi, triangular(x_bmi, 23, 27, 30), label="Overweight")
+    ax2.plot(x_bmi, triangular(x_bmi, 28, 35, 50), label="Obese")
+    ax2.set_title("BMI Membership Functions")
+    ax2.legend()
+    st.pyplot(fig2)
+
+    fig3, ax3 = plt.subplots()
+    ax3.plot(x_activity, triangular(x_activity, 1, 2, 4), label="Low")
+    ax3.plot(x_activity, triangular(x_activity, 3, 5, 7), label="Moderate")
+    ax3.plot(x_activity, triangular(x_activity, 6, 8, 10), label="High")
+    ax3.set_title("Activity Level Membership Functions")
+    ax3.legend()
+    st.pyplot(fig3)
