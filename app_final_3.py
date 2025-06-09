@@ -378,12 +378,14 @@ with tabs[2]:
                 "Protein": day_plan["Protein_g"].sum(),
                 "Carbohydrates": day_plan["Carbohydrate_g"].sum(),
                 "Fat": day_plan["Fat_g"].sum(),
-                "Fiber": day_plan["Fiber_g"].sum()
+                "Fiber": day_plan["Fiber_g"].sum(),
             }
             daily_totals.append(totals)
-        daily_df = pd.DataFrame(daily_totals)
-        st.subheader("Daily Nutrient Totals")
-        st.dataframe(daily_df)
+
+        nutrient_df = pd.DataFrame(daily_totals, index=[f"Day {i+1}" for i in range(NUM_DAYS)])
+        st.subheader("Daily Nutrient Breakdown")
+        st.dataframe(nutrient_df)
+
 
         # Interactive Meal Nutrient Breakdown
         st.subheader("View Meal Nutrient Breakdown")
