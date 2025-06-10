@@ -241,19 +241,6 @@ w_macro = 0.5
 w_variety = 0.3
 w_allergy = 0.2
 
-You're absolutely right! The traceback clearly indicates an AttributeError because st.session_state.ga_result is being accessed before it's initialized.
-
-Even though I included the initialization block in my previous response, it's crucial that this block is placed at the top level of your Streamlit script, meaning outside of any if statements, functions, or with blocks (like with tabs[2]: or with st.container():).
-
-Streamlit re-runs the entire script from top to bottom whenever there's an interaction (like a button click). If your st.session_state initialization is inside a conditional block, it might not run on every re-execution, leading to this error.
-
-Here's how to fix it:
-
-Move your session state initialization code to the very beginning of your app_final_3.py file, right after your imports and global variable definitions.
-
-Correct Placement:
-
-Python
 
 import streamlit as st
 import pandas as pd
@@ -261,9 +248,6 @@ import numpy as np
 import matplotlib.pyplot as plt
 import random
 
-# Make sure these are defined globally or at the top of your script
-# Example placeholder for meals_df and meal_ids
-# You MUST replace this with your actual data loading
 meals_data = {
     "Meal_ID": list(range(1, 101)),
     "Meal_Name": [f"Meal {i}" for i in range(1, 101)],
