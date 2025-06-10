@@ -241,20 +241,6 @@ w_macro = 0.5
 w_variety = 0.3
 w_allergy = 0.2
 
- import pandas as pd
- import random
- meals_data = {
-     "Meal_ID": list(range(1, 101)),
-    "Meal_Name": [f"Meal {i}" for i in range(1, 101)],
-     "Calories": [random.randint(300, 800) for _ in range(100)],
-     "Protein_g": [random.randint(10, 50) for _ in range(100)],
-     "Carbohydrate_g": [random.randint(30, 100) for _ in range(100)],
-     "Fat_g": [random.randint(10, 40) for _ in range(100)],
-     "Fiber_g": [random.randint(5, 15) for _ in range(100)],
- }
- meals_df = pd.DataFrame(meals_data)
- meal_ids = meals_df["Meal_ID"].tolist()
-
 
 def fitness_function(chromosome, high_protein=True):
     # Ensure meals_df is accessible here.
