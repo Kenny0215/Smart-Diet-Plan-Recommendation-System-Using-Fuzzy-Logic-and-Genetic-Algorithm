@@ -19,17 +19,17 @@ def triangular(x, a, b, c):
 
 def age_membership(age):
     return {
-        "Young": triangular(age, 18, 20, 25),
-        "Adult": triangular(age, 30, 35, 45),
-        "Elder": triangular(age, 50, 55, 60)
+        "Young": triangular(age, 18, 20, 30),
+        "Adult": triangular(age, 29, 35, 45),
+        "Elder": triangular(age, 44, 55, 60)
     }
 
 def bmi_membership(bmi):
     return {
         "Underweight": triangular(bmi, 0, 16, 18.5),
         "Normal": triangular(bmi, 18, 22, 25),
-        "Overweight": triangular(bmi, 23, 27, 30),
-        "Obese": triangular(bmi, 28, 35, 50)
+        "Overweight": triangular(bmi, 24, 27, 30),
+        "Obese": triangular(bmi, 29, 36, 50)
     }
 
 def activity_membership(activity_level):
@@ -43,114 +43,187 @@ def activity_membership(activity_level):
 ## belongs to each fuzzy category.
 
 def fuzzy_health_assessment(age, bmi, activity, diabetes=False, hypertension=False):
+
+    # Get membership degrees for each input variable
     age_m = age_membership(age)
     bmi_m = bmi_membership(bmi)
     act_m = activity_membership(activity)
 
-    risk_category = None
     rules_triggered = []
+    risk_category = None
 
-    if bmi >= 30 and diabetes:
+    # --- High Risk Rules (Applied in order of priority) ---
+
+    # Rule: IF BMI IS Obese AND Activity IS Low AND Hypertension IS True THEN Risk IS High.
+    if bmi_m.get('Obese', 0) > 0 and act_m.get('Low', 0) > 0 and hypertension:
         risk_category = "High"
-        rules_triggered.append("BMI Obese & Diabetes => High Risk")
+        rules_triggered.append("Rule: Obese BMI, Low Activity, and Hypertension => High Risk")
 
-    if bmi >= 30 and activity <= 3 and hypertension:
+    # Rule: IF Age IS Elder AND (Diabetes IS True OR Hypertension IS True) THEN Risk IS High.
+    if risk_category is None and age_m.get('Elder', 0) > 0 and (diabetes or hypertension):
         risk_category = "High"
-        rules_triggered.append("BMI Obese & Activity Low & Hypertension => High Risk")
+        rules_triggered.append("Rule: Elder Age with Diabetes or Hypertension => High Risk")
+        
+    # Rule: if bmi is obese and diabetes is true then risk is high.
+    if risk_category is None and bmi_m.get('Obese', 0) > 0 and diabetes:
+        risk_category = "High"
+        rules_triggered.append("Rule: Obese BMI and Diabetes => High Risk")
 
-    if age >= 60 and 18.5 <= bmi <= 24.9 and 3 < activity <= 7:
+    # Rule: IF Activity IS Low AND (Diabetes IS True OR Hypertension IS True) THEN Risk IS High.
+    if risk_category is None and act_m.get('Low', 0) > 0 and (diabetes or hypertension):
+        risk_category = "High"
+        rules_triggered.append("Rule: Low Activity with Diabetes or Hypertension => High Risk")
+        
+    # Rule: If age high BMI low , higher risk
+    if risk_category is None and age_m.get('Elder', 0) > 0 and bmi_m.get('Underweight', 0) > 0:
+        risk_category = "High"
+        rules_triggered.append("Rule: Elder Age and Underweight => High Risk")
+        
+    # Rule: If age medium BMI low , higher risk
+    if risk_category is None and age_m.get('Adult', 0) > 0 and bmi_m.get('Underweight', 0) > 0:
+        risk_category = "High"
+        rules_triggered.append("Rule: Adult Age and Underweight => High Risk")
+
+    # --- Moderate Risk Rules ---
+
+    # Rule: IF Age IS Adult AND BMI IS Normal AND (Diabetes IS True OR Hypertension IS True) THEN Risk IS Medium.
+    if risk_category is None and age_m.get('Adult', 0) > 0 and bmi_m.get('Normal', 0) > 0 and (diabetes or hypertension):
         risk_category = "Moderate"
-        rules_triggered.append("Age Elder & Normal BMI & Moderate Activity => Moderate Risk")
-
-    if age < 30 and diabetes:
+        rules_triggered.append("Rule: Adult with Normal BMI having Diabetes or Hypertension => Moderate Risk")
+        
+    # Rule: IF Age IS Elder AND BMI IS Normal AND Activity IS Moderate THEN Risk IS Medium.
+    if risk_category is None and age_m.get('Elder', 0) > 0 and bmi_m.get('Normal', 0) > 0 and act_m.get('Moderate', 0) > 0:
         risk_category = "Moderate"
-        rules_triggered.append("Age Young & Diabetes => Moderate Risk")
+        rules_triggered.append("Rule: Elder with Normal BMI and Moderate Activity => Moderate Risk")
 
-    if bmi < 18.5 and activity >= 7:
+    # Rule: IF Age IS Young AND Diabetes IS True THEN Risk IS Medium.
+    if risk_category is None and age_m.get('Young', 0) > 0 and diabetes:
         risk_category = "Moderate"
-        rules_triggered.append("Underweight & Activity High => Moderate Risk")
+        rules_triggered.append("Rule: Young Age with Diabetes => Moderate Risk")
+        
+    # Rule: IF Age IS Adult AND BMI IS Overweight THEN Risk IS Medium.
+    if risk_category is None and age_m.get('Adult', 0) > 0 and bmi_m.get('Overweight', 0) > 0:
+        risk_category = "Moderate"
+        rules_triggered.append("Rule: Adult with Overweight BMI => Moderate Risk")
+        
+    # Rule: IF BMI IS Underweight AND Activity IS Low THEN Risk IS Medium.
+    if risk_category is None and bmi_m.get('Underweight', 0) > 0 and act_m.get('Low', 0) > 0:
+        risk_category = "Moderate"
+        rules_triggered.append("Rule: Underweight BMI and Low Activity => Moderate Risk")
+        
+    # Rule: IF BMI IS Underweight AND Activity IS High THEN Risk IS Low to Medium. (Categorized as Moderate)
+    if risk_category is None and bmi_m.get('Underweight', 0) > 0 and act_m.get('High', 0) > 0:
+        risk_category = "Moderate"
+        rules_triggered.append("Rule: Underweight BMI and High Activity => Moderate Risk")
 
-    if risk_category is None:
-        # Weighted average risk values
-        age_weights = {"Young": 0, "Adult": 25, "Elder": 60}
-        bmi_weights = {"Underweight": 18, "Normal": 22, "Overweight": 27, "Obese": 40}
-        activity_weights = {"Low": 80, "Moderate": 50, "High": 20}
 
+    # --- Explanation and Return Logic ---
+
+    if risk_category is not None:
+        # If a rule was triggered, format the explanation
+        explanation = {
+            "Risk Category": risk_category,
+            "Rules Triggered": rules_triggered,
+            "Final Risk Score": "Determined by specific health rules."
+        }
+
+    else:
+        # If no rules were triggered, use the original score-based calculation
+        age_weights = {"Young": 10, "Adult": 40, "Elder": 70}
+        bmi_weights = {"Underweight": 60, "Normal": 10, "Overweight": 40, "Obese": 80}
+        activity_weights = {"Low": 70, "Moderate": 40, "High": 10}
+
+        # Calculate weighted average for each factor
         age_risk_val = sum(age_m[cat] * age_weights[cat] for cat in age_m) / (sum(age_m.values()) + 1e-6)
         bmi_risk_val = sum(bmi_m[cat] * bmi_weights[cat] for cat in bmi_m) / (sum(bmi_m.values()) + 1e-6)
         act_risk_val = sum(act_m[cat] * activity_weights[cat] for cat in act_m) / (sum(act_m.values()) + 1e-6)
 
+        # Combine scores
         risk_score = (age_risk_val + bmi_risk_val + act_risk_val) / 3
+
+        # Add penalties for pre-existing conditions
         if diabetes:
-            risk_score += 5
+            risk_score += 15
         if hypertension:
-            risk_score += 3
+            risk_score += 10
+        
         risk_score = np.clip(risk_score, 0, 100)
 
-        if risk_score < 35:
+        # Determine risk category based on final score
+        if risk_score < 40:
             risk_category = "Low"
-        elif risk_score < 60:
+        elif risk_score < 70:
             risk_category = "Moderate"
         else:
             risk_category = "High"
-
+            
         explanation = {
-            "Age Risk Value": round(age_risk_val, 2),
-            "BMI Risk Value": round(bmi_risk_val, 2),
-            "Activity Risk Value": round(act_risk_val, 2),
+            "Age Risk Contribution": f"{round(age_risk_val, 2)}/100",
+            "BMI Risk Contribution": f"{round(bmi_risk_val, 2)}/100",
+            "Activity Risk Contribution": f"{round(act_risk_val, 2)}/100",
             "Final Risk Score": round(risk_score, 2),
             "Risk Category": risk_category,
-            "Rules Triggered": ["Score-based classification"]
+            "Rules Triggered": ["Score-based classification (no specific rules met)"]
         }
 
-    else:
-        explanation = {
-            "Risk Category": risk_category,
-            "Rules Triggered": rules_triggered,
-            "Final Risk Score": "Based on specific condition rules"
-        }
-
-    return explanation["Final Risk Score"], risk_category, explanation
+    return explanation.get("Final Risk Score"), risk_category, explanation
 
 
 # Get_recommendations to use new rules
-def get_recommendations(age, bmi, activity, diabetes, hypertension, risk_category):
+def get_recommendations(risk_category, age, bmi, activity, diabetes, hypertension):
+
+    # Get the fuzzy membership degrees for the inputs
+    age_m = age_membership(age)
+    bmi_m = bmi_membership(bmi)
+    act_m = activity_membership(activity)
+
     recommendations = {}
 
-    # Rule-based recommendations
-    if risk_category == "High" and diabetes:
-        recommendations["Carbs"] = "Low"
-        recommendations["Sugar"] = "Low"
+    # --- Recommendations for LOW risk ---
+    if risk_category == "Low":
+        # Rule: IF Risk IS Low AND Age IS Elder THEN Recommended_Calcium IS Higher.
+        if age_m.get('Elder', 0) > 0:
+            recommendations['Calcium Intake'] = 'Higher'
 
-    if risk_category == "Medium" and hypertension:
-        recommendations["Sodium"] = "Low"
-        recommendations["Potassium"] = "High"
+        # Rule: IF Risk IS Low AND BMI IS Underweight THEN Recommended_Calories IS Higher_Moderate AND Recommended_Protein IS Higher_Moderate.
+        if bmi_m.get('Underweight', 0) > 0:
+            recommendations['Caloric Intake'] = 'Moderate'
+            recommendations['Protein Intake'] = 'Moderate'
 
-    if risk_category == "Low" and age >= 60:
-        recommendations["Calcium"] = "High"
+        # Rule: IF Risk IS Low AND Age IS Young AND Activity IS High THEN Recommended_Calories IS Very_High.
+        if age_m.get('Young', 0) > 0 and act_m.get('High', 0) > 0:
+            recommendations['Caloric Intake'] = 'High'
 
-    if risk_category == "Medium" and age >= 60:
-        recommendations["Fiber"] = "High"
+    # --- Recommendations for MODERATE risk ---
+    elif risk_category == "Moderate":
+        # Rule: IF Risk IS Medium AND Hypertension IS True THEN Recommended_Sodium IS Low AND Recommended_Potassium IS Higher.
+        if hypertension:
+            recommendations['Sodium Intake'] = 'Low'
+            recommendations['Potassium Intake'] = 'Higher'
 
-    if risk_category == "High" and activity >= 7:
-        recommendations["Protein"] = "High"
+        # Rule: IF Risk IS Medium AND BMI IS Overweight THEN Recommended_Calories IS Lower_Moderate AND Recommended_Fat IS Lower_Moderate.
+        if bmi_m.get('Overweight', 0) > 0:
+            recommendations['Caloric Intake'] = 'Low'
+            recommendations['Fat Intake'] = 'Low'
 
-    if risk_category == "Medium" and bmi >= 25:
-        recommendations["Calories"] = "Moderate"
-        recommendations["Fat"] = "Moderate"
+        # Rule: IF Risk IS Medium AND Age IS Elder THEN Recommended_Fiber IS Higher.
+        if age_m.get('Elder', 0) > 0:
+            recommendations['Fiber Intake'] = 'High'
 
-    if risk_category == "Low" and bmi < 18.5:
-        recommendations["Calories"] = "Moderate"
-        recommendations["Protein"] = "Moderate"
+    # --- Recommendations for HIGH risk ---
+    elif risk_category == "High":
+        # Rule: IF Risk IS High AND Diabetes IS True THEN Recommended_Carbs IS Low AND Recommended_Sugar IS Very_Low.
+        if diabetes:
+            recommendations['Carbohydrate Intake'] = 'Low'
+            recommendations['Sugar Intake'] = 'Low'
 
-    # Adjust risk category based on specific additional conditions
-    if bmi < 18.5 and activity <= 3:
-        risk_category = "Moderate"
-        recommendations["Note"] = "Risk reclassified to Moderate due to low activity and underweight"
+        # Rule: IF Risk IS High AND Activity IS High THEN Recommended_Protein IS Very_High.
+        if act_m.get('High', 0) > 0:
+            recommendations['Protein Intake'] = 'High'
 
-    if age >= 60 and (diabetes or hypertension):
-        risk_category = "High"
-        recommendations["Note"] = "Risk reclassified to High due to age with diabetes or hypertension"
+    # Add a general recommendation if no specific rules were triggered
+    if not recommendations:
+        recommendations['General Advice'] = 'Maintain a balanced diet and regular exercise. Consult a healthcare professional for personalized advice.'
 
     return recommendations
 
@@ -168,7 +241,24 @@ w_macro = 0.5
 w_variety = 0.3
 w_allergy = 0.2
 
+ import pandas as pd
+ import random
+ meals_data = {
+     "Meal_ID": list(range(1, 101)),
+    "Meal_Name": [f"Meal {i}" for i in range(1, 101)],
+     "Calories": [random.randint(300, 800) for _ in range(100)],
+     "Protein_g": [random.randint(10, 50) for _ in range(100)],
+     "Carbohydrate_g": [random.randint(30, 100) for _ in range(100)],
+     "Fat_g": [random.randint(10, 40) for _ in range(100)],
+     "Fiber_g": [random.randint(5, 15) for _ in range(100)],
+ }
+ meals_df = pd.DataFrame(meals_data)
+ meal_ids = meals_df["Meal_ID"].tolist()
+
+
 def fitness_function(chromosome, high_protein=True):
+    # Ensure meals_df is accessible here.
+    # If meals_df is very large, consider optimizing this lookup or passing it.
     plan = meals_df[meals_df["Meal_ID"].isin(chromosome)]
     total_calories = plan["Calories"].sum()
     target_weekly = TARGET_CALORIES * 7
@@ -211,16 +301,31 @@ def mutate(chromosome, mutation_rate=0.15):
     return new_chromosome
 
 # Use session state to store GA results so that changing the selectbox doesn't rerun the GA.
-if "ga_result" not in st.session_state:
-    st.session_state.ga_result = None
-    st.session_state.fitness_history = None
+# Ensure this is at the top level of your Streamlit script, not inside a tab.
+# if "ga_result" not in st.session_state:
+#     st.session_state.ga_result = None
+#     st.session_state.fitness_history = None
 
-def run_ga(high_protein=True, elitism_size=5, mutation_rate=0.15, patience=10, min_delta=1.0):
+def run_ga(high_protein=True, elitism_size=5): 
     population = [create_chromosome() for _ in range(POPULATION_SIZE)]
     best_chromo = None
     best_fit = float('inf')
     fitness_history = []
     no_improvement = 0
+
+    # --- TUNED GA PARAMETERS ---
+    # Set patience to run almost all generations to observe full behavior initially
+    # If the graph still flattens, you can try increasing GENERATIONS or other parameters
+    patience_tuned = GENERATIONS # Effectively runs for all GENERATIONS before considering early stopping
+    min_delta_tuned = 0.001     # Allows even very small improvements to count
+
+    # Try a slightly higher initial mutation rate for more exploration
+    initial_mutation_rate_tuned = 0.25 # Increased from 0.15
+
+    # Tournament selection 'k' - you can adjust this if needed
+    tournament_k_tuned = 3 # Kept as 3, but can try 2 for less selection pressure
+
+    # --- END TUNED GA PARAMETERS ---
 
     for generation in range(GENERATIONS):
         # Evaluate fitness for current population
@@ -229,39 +334,45 @@ def run_ga(high_protein=True, elitism_size=5, mutation_rate=0.15, patience=10, m
 
         # Elitism: preserve top individuals
         elites = [chromo for chromo, _ in fitness_scores[:elitism_size]]
-        current_best, current_fit = fitness_scores[0]
+        current_best_chromo_gen, current_best_fit_gen = fitness_scores[0] # Best of the current generation
 
-        # Check improvement
-        if best_fit - current_fit > min_delta:
-            best_fit = current_fit
-            best_chromo = current_best
-            no_improvement = 0
+        # Update the overall best chromosome and fitness
+        if current_best_fit_gen < best_fit:
+            if (best_fit - current_best_fit_gen) > min_delta_tuned: # Only reset counter if significant improvement
+                no_improvement = 0
+            best_fit = current_best_fit_gen
+            best_chromo = current_best_chromo_gen
         else:
-            no_improvement += 1
+            no_improvement += 1 # No improvement in this generation or improvement was less than min_delta
 
         # Early stopping
-        if no_improvement >= patience:
-            print(f"Early stopping at generation {generation}")
+        if no_improvement >= patience_tuned:
+            print(f"Early stopping at generation {generation} due to no significant improvement.")
             break
+
+        # Record the overall best fitness found so far
+        fitness_history.append(best_fit)
 
         # Create new population
         new_population = elites.copy()
         while len(new_population) < POPULATION_SIZE:
-            parent1 = tournament_selection(population, high_protein=high_protein)
-            parent2 = tournament_selection(population, high_protein=high_protein)
+            parent1 = tournament_selection(population, k=tournament_k_tuned, high_protein=high_protein)
+            parent2 = tournament_selection(population, k=tournament_k_tuned, high_protein=high_protein)
             child1, child2 = crossover(parent1, parent2)
+            
             # Adaptive mutation: reduce rate over time
-            adapt_mutation = mutation_rate * (1 - generation / GENERATIONS)
+            # Ensure adapt_mutation doesn't go below a reasonable minimum if you want continued exploration
+            adapt_mutation = initial_mutation_rate_tuned * (1 - generation / GENERATIONS)
+            # You might add a lower bound: adapt_mutation = max(0.01, initial_mutation_rate_tuned * (1 - generation / GENERATIONS))
+
             child1 = mutate(child1, mutation_rate=adapt_mutation)
             child2 = mutate(child2, mutation_rate=adapt_mutation)
             new_population.extend([child1, child2])
 
         # Ensure population size remains constant
         population = new_population[:POPULATION_SIZE]
-        fitness_history.append(best_fit)
 
     return best_chromo, fitness_history
-
 
 # -------------------------------
 # Streamlit App Layout with Tabs
@@ -410,12 +521,12 @@ with tabs[3]:
 
     x_age = np.linspace(15, 65, 500)
     x_bmi = np.linspace(10, 50, 500)
-    x_activity = np.linspace(0, 10, 500)
+    x_activity = np.linspace(1, 10, 500)
 
     fig1, ax1 = plt.subplots()
-    ax1.plot(x_age, triangular(x_age, 18, 20, 25), label="Young")
-    ax1.plot(x_age, triangular(x_age, 30, 35, 45), label="Adult")
-    ax1.plot(x_age, triangular(x_age, 50, 55, 60), label="Elder")
+    ax1.plot(x_age, triangular(x_age, 18, 20, 30), label="Young")
+    ax1.plot(x_age, triangular(x_age, 29, 35, 45), label="Adult")
+    ax1.plot(x_age, triangular(x_age, 44, 55, 60), label="Elder")
     ax1.set_title("Age Membership Functions")
     ax1.legend()
     st.pyplot(fig1)
@@ -423,8 +534,8 @@ with tabs[3]:
     fig2, ax2 = plt.subplots()
     ax2.plot(x_bmi, triangular(x_bmi, 0, 16, 18.5), label="Underweight")
     ax2.plot(x_bmi, triangular(x_bmi, 18, 22, 25), label="Normal")
-    ax2.plot(x_bmi, triangular(x_bmi, 23, 27, 30), label="Overweight")
-    ax2.plot(x_bmi, triangular(x_bmi, 28, 35, 50), label="Obese")
+    ax2.plot(x_bmi, triangular(x_bmi, 24, 27, 30), label="Overweight")
+    ax2.plot(x_bmi, triangular(x_bmi, 29, 36, 50), label="Obese")
     ax2.set_title("BMI Membership Functions")
     ax2.legend()
     st.pyplot(fig2)
