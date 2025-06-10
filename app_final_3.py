@@ -241,6 +241,59 @@ w_macro = 0.5
 w_variety = 0.3
 w_allergy = 0.2
 
+You're absolutely right! The traceback clearly indicates an AttributeError because st.session_state.ga_result is being accessed before it's initialized.
+
+Even though I included the initialization block in my previous response, it's crucial that this block is placed at the top level of your Streamlit script, meaning outside of any if statements, functions, or with blocks (like with tabs[2]: or with st.container():).
+
+Streamlit re-runs the entire script from top to bottom whenever there's an interaction (like a button click). If your st.session_state initialization is inside a conditional block, it might not run on every re-execution, leading to this error.
+
+Here's how to fix it:
+
+Move your session state initialization code to the very beginning of your app_final_3.py file, right after your imports and global variable definitions.
+
+Correct Placement:
+
+Python
+
+import streamlit as st
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import random
+
+# Make sure these are defined globally or at the top of your script
+# Example placeholder for meals_df and meal_ids
+# You MUST replace this with your actual data loading
+meals_data = {
+    "Meal_ID": list(range(1, 101)),
+    "Meal_Name": [f"Meal {i}" for i in range(1, 101)],
+    "Calories": [random.randint(300, 800) for _ in range(100)],
+    "Protein_g": [random.randint(10, 50) for _ in range(100)],
+    "Carbohydrate_g": [random.randint(30, 100) for _ in range(100)],
+    "Fat_g": [random.randint(10, 40) for _ in range(100)],
+    "Fiber_g": [random.randint(5, 15) for _ in range(100)],
+}
+meals_df = pd.DataFrame(meals_data)
+meal_ids = meals_df["Meal_ID"].tolist()
+
+# Define your GA parameters (should be global or accessible)
+POPULATION_SIZE = 500
+NUM_DAYS = 7
+MEALS_PER_DAY = 3
+CHROMOSOME_LENGTH = NUM_DAYS * MEALS_PER_DAY
+GENERATIONS = 50
+TARGET_CALORIES = 2100
+
+w_macro = 0.5
+w_variety = 0.3
+w_allergy = 0.2
+
+
+if "ga_result" not in st.session_state:
+    st.session_state.ga_result = None
+if "fitness_history" not in st.session_state: 
+    st.session_state.fitness_history = None
+
 
 def fitness_function(chromosome, high_protein=True):
     # Ensure meals_df is accessible here.
@@ -285,12 +338,6 @@ def mutate(chromosome, mutation_rate=0.15):
         if random.random() < mutation_rate:
             new_chromosome[i] = random.choice(meal_ids)
     return new_chromosome
-
-# Use session state to store GA results so that changing the selectbox doesn't rerun the GA.
-# Ensure this is at the top level of your Streamlit script, not inside a tab.
-# if "ga_result" not in st.session_state:
-#     st.session_state.ga_result = None
-#     st.session_state.fitness_history = None
 
 def run_ga(high_protein=True, elitism_size=5): 
     population = [create_chromosome() for _ in range(POPULATION_SIZE)]
