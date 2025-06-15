@@ -461,7 +461,6 @@ with tabs[2]:
     st.header("Meal Plan Optimization")
     st.markdown("Click the button below to generate an optimized weekly meal plan focusing on high protein intake.")
 
-    # Check if GA result is stored in session_state; if not, run GA when button clicked.
     if st.button("Generate Meal Plan"):
         with st.spinner("Optimizing your meal plan..."):
             best_plan, fitness_history = run_ga(high_protein=True)
@@ -470,7 +469,7 @@ with tabs[2]:
         st.success("Meal plan generated!")
 
     if st.session_state.ga_result is not None:
-        # GA Evolution Chart
+        # --- Display GA Evolution Chart ---
         st.subheader("GA Evolution")
         fig_ga, ax_ga = plt.subplots(figsize=(8, 4))
         ax_ga.plot(st.session_state.fitness_history, marker='o', linestyle='-')
@@ -479,35 +478,36 @@ with tabs[2]:
         ax_ga.set_title("GA Evolution: Fitness over Generations")
         st.pyplot(fig_ga)
 
-        # Convert Meal_IDs to "ID - Meal Name"  
+        # --- Convert Meal IDs to Meal Names ---
         meal_names = []
         for meal_id in st.session_state.ga_result:
-           meal_row = meals_df[meals_df["Meal_ID"] == meal_id]
-        if not meal_row.empty:
-           name = meal_row.iloc[0]["Meal_Name"]
-           meal_names.append(f"{name} - {meal_id}")  # Changed order: Meal Name - ID
-        else:
-           meal_names.append(f"Unknown - {meal_id}")
+            row = meals_df[meals_df["Meal_ID"] == meal_id]
+            if not row.empty:
+                meal_name = row.iloc[0]["Meal_Name"]
+                meal_names.append(f"{meal_name} ({meal_id})")  # e.g., "Whole Grain Waffles (65)"
+            else:
+                meal_names.append(f"Unknown Meal ({meal_id})")
 
-        # Build weekly plan DataFrame with meal names
-        plan_df_named = pd.DataFrame(
+        # --- Reshape into Weekly Plan ---
+        plan_df = pd.DataFrame(
             np.array(meal_names).reshape(NUM_DAYS, MEALS_PER_DAY),
-            columns=["Meal 1", "Meal 2", "Meal 3"]
+            columns=["Breakfast", "Lunch", "Dinner"]
         )
-        st.subheader("Optimized Weekly Meal Plan")
-        st.dataframe(plan_df_named)
 
-        # Daily Nutrient Totals
+        st.subheader("Optimized Weekly Meal Plan")
+        st.dataframe(plan_df)
+
+        # --- Daily Nutrient Totals ---
         daily_totals = []
         for day in range(NUM_DAYS):
-            day_ids = st.session_state.ga_result[day*MEALS_PER_DAY:(day+1)*MEALS_PER_DAY]
+            day_ids = st.session_state.ga_result[day * MEALS_PER_DAY: (day + 1) * MEALS_PER_DAY]
             day_plan = meals_df[meals_df["Meal_ID"].isin(day_ids)]
             totals = {
                 "Calories": day_plan["Calories"].sum(),
-                "Protein": day_plan["Protein_g"].sum(),
-                "Carbohydrates": day_plan["Carbohydrate_g"].sum(),
-                "Fat": day_plan["Fat_g"].sum(),
-                "Fiber": day_plan["Fiber_g"].sum(),
+                "Protein (g)": day_plan["Protein_g"].sum(),
+                "Carbs (g)": day_plan["Carbohydrate_g"].sum(),
+                "Fat (g)": day_plan["Fat_g"].sum(),
+                "Fiber (g)": day_plan["Fiber_g"].sum()
             }
             daily_totals.append(totals)
 
@@ -515,18 +515,24 @@ with tabs[2]:
         st.subheader("Daily Nutrient Breakdown")
         st.dataframe(nutrient_df)
 
-
-        # Interactive Meal Nutrient Breakdown
+        # --- Interactive Meal Nutrient Breakdown ---
         st.subheader("View Meal Nutrient Breakdown")
-        meal_choice = st.selectbox("Select a Meal ID from the Optimized Plan", sorted(set(st.session_state.ga_result)), key="meal_select")
+        meal_choice = st.selectbox(
+            "Select a Meal from the Optimized Plan",
+            options=st.session_state.ga_result,
+            format_func=lambda x: f"{meals_df[meals_df['Meal_ID'] == x].iloc[0]['Meal_Name']} ({x})",
+            key="meal_select"
+        )
         selected_meal = meals_df[meals_df["Meal_ID"] == meal_choice].iloc[0]
+
         fig_meal, ax_meal = plt.subplots(figsize=(8, 4))
         meal_nutrients = ["Calories", "Protein_g", "Carbohydrate_g", "Fat_g", "Fiber_g"]
         nutrient_values = [selected_meal[n] for n in meal_nutrients]
         ax_meal.bar(meal_nutrients, nutrient_values, color="skyblue")
         ax_meal.set_ylabel("Value")
-        ax_meal.set_title(f"Nutrient Breakdown: {selected_meal['Meal_Name']}")
+        ax_meal.set_title(f"Nutrient Breakdown: {selected_meal['Meal_Name']} ({meal_choice})")
         st.pyplot(fig_meal)
+
     else:
         st.info("Click 'Generate Meal Plan' to optimize your weekly meal plan.")
 
