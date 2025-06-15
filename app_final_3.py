@@ -479,14 +479,14 @@ with tabs[2]:
         st.pyplot(fig_ga)
 
         # --- Convert Meal IDs to Meal Names ---
-        meal_names = []
-        for meal_id in st.session_state.ga_result:
-             meal_row = meals_df[meals_df["Meal_ID"] == meal_id]
-        if not meal_row.empty:
-             name = meal_row.iloc[0]["Meal_Name"]
-             meal_names.append(f"Meal {meal_id} - {name}")  # New: "Meal ID - Name"
-        else:
-             meal_names.append(f"Meal {meal_id} - Unknown")
+meal_names = []
+for meal_id in st.session_state.ga_result:
+    meal_row = meals_df[meals_df["Meal_ID"] == meal_id]
+    if not meal_row.empty:
+        name = meal_row.iloc[0]["Meal_Name"]
+        meal_names.append(f"Meal {meal_id} - {name}")  # "Meal ID - Name"
+    else:
+        meal_names.append(f"Meal {meal_id} - Unknown")
 
         # --- Reshape into Weekly Plan ---
         plan_df = pd.DataFrame(
