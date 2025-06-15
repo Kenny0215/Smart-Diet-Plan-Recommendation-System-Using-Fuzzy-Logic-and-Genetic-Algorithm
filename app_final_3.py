@@ -63,7 +63,7 @@ def fuzzy_health_assessment(age, bmi, activity, diabetes=False, hypertension=Fal
     if risk_category is None and age_m.get('Elder', 0) > 0 and (diabetes or hypertension):
         risk_category = "High"
         rules_triggered.append("Rule: Elder Age with Diabetes or Hypertension => High Risk")
-        
+
     # Rule: if bmi is obese and diabetes is true then risk is high.
     if risk_category is None and bmi_m.get('Obese', 0) > 0 and diabetes:
         risk_category = "High"
@@ -73,12 +73,12 @@ def fuzzy_health_assessment(age, bmi, activity, diabetes=False, hypertension=Fal
     if risk_category is None and act_m.get('Low', 0) > 0 and (diabetes or hypertension):
         risk_category = "High"
         rules_triggered.append("Rule: Low Activity with Diabetes or Hypertension => High Risk")
-        
+
     # Rule: If age high BMI low , higher risk
     if risk_category is None and age_m.get('Elder', 0) > 0 and bmi_m.get('Underweight', 0) > 0:
         risk_category = "High"
         rules_triggered.append("Rule: Elder Age and Underweight => High Risk")
-        
+
     # Rule: If age medium BMI low , higher risk
     if risk_category is None and age_m.get('Adult', 0) > 0 and bmi_m.get('Underweight', 0) > 0:
         risk_category = "High"
@@ -90,7 +90,7 @@ def fuzzy_health_assessment(age, bmi, activity, diabetes=False, hypertension=Fal
     if risk_category is None and age_m.get('Adult', 0) > 0 and bmi_m.get('Normal', 0) > 0 and (diabetes or hypertension):
         risk_category = "Moderate"
         rules_triggered.append("Rule: Adult with Normal BMI having Diabetes or Hypertension => Moderate Risk")
-        
+
     # Rule: IF Age IS Elder AND BMI IS Normal AND Activity IS Moderate THEN Risk IS Medium.
     if risk_category is None and age_m.get('Elder', 0) > 0 and bmi_m.get('Normal', 0) > 0 and act_m.get('Moderate', 0) > 0:
         risk_category = "Moderate"
@@ -100,17 +100,17 @@ def fuzzy_health_assessment(age, bmi, activity, diabetes=False, hypertension=Fal
     if risk_category is None and age_m.get('Young', 0) > 0 and diabetes:
         risk_category = "Moderate"
         rules_triggered.append("Rule: Young Age with Diabetes => Moderate Risk")
-        
+
     # Rule: IF Age IS Adult AND BMI IS Overweight THEN Risk IS Medium.
     if risk_category is None and age_m.get('Adult', 0) > 0 and bmi_m.get('Overweight', 0) > 0:
         risk_category = "Moderate"
         rules_triggered.append("Rule: Adult with Overweight BMI => Moderate Risk")
-        
+
     # Rule: IF BMI IS Underweight AND Activity IS Low THEN Risk IS Medium.
     if risk_category is None and bmi_m.get('Underweight', 0) > 0 and act_m.get('Low', 0) > 0:
         risk_category = "Moderate"
         rules_triggered.append("Rule: Underweight BMI and Low Activity => Moderate Risk")
-        
+
     # Rule: IF BMI IS Underweight AND Activity IS High THEN Risk IS Low to Medium. (Categorized as Moderate)
     if risk_category is None and bmi_m.get('Underweight', 0) > 0 and act_m.get('High', 0) > 0:
         risk_category = "Moderate"
@@ -146,7 +146,7 @@ def fuzzy_health_assessment(age, bmi, activity, diabetes=False, hypertension=Fal
             risk_score += 15
         if hypertension:
             risk_score += 10
-        
+
         risk_score = np.clip(risk_score, 0, 100)
 
         # Determine risk category based on final score
@@ -156,7 +156,7 @@ def fuzzy_health_assessment(age, bmi, activity, diabetes=False, hypertension=Fal
             risk_category = "Moderate"
         else:
             risk_category = "High"
-            
+
         explanation = {
             "Age Risk Contribution": f"{round(age_risk_val, 2)}/100",
             "BMI Risk Contribution": f"{round(bmi_risk_val, 2)}/100",
@@ -275,7 +275,7 @@ w_allergy = 0.2
 
 if "ga_result" not in st.session_state:
     st.session_state.ga_result = None
-if "fitness_history" not in st.session_state: 
+if "fitness_history" not in st.session_state:
     st.session_state.fitness_history = None
 
 
@@ -323,7 +323,7 @@ def mutate(chromosome, mutation_rate=0.15):
             new_chromosome[i] = random.choice(meal_ids)
     return new_chromosome
 
-def run_ga(high_protein=True, elitism_size=5): 
+def run_ga(high_protein=True, elitism_size=5):
     population = [create_chromosome() for _ in range(POPULATION_SIZE)]
     best_chromo = None
     best_fit = float('inf')
@@ -376,7 +376,7 @@ def run_ga(high_protein=True, elitism_size=5):
             parent1 = tournament_selection(population, k=tournament_k_tuned, high_protein=high_protein)
             parent2 = tournament_selection(population, k=tournament_k_tuned, high_protein=high_protein)
             child1, child2 = crossover(parent1, parent2)
-            
+
             # Adaptive mutation: reduce rate over time
             # Ensure adapt_mutation doesn't go below a reasonable minimum if you want continued exploration
             adapt_mutation = initial_mutation_rate_tuned * (1 - generation / GENERATIONS)
@@ -479,15 +479,15 @@ with tabs[2]:
         ax_ga.set_title("GA Evolution: Fitness over Generations")
         st.pyplot(fig_ga)
 
-        # Convert Meal_IDs to "ID - Meal Name"
+        # Convert Meal_IDs to "ID - Meal Name"  
         meal_names = []
         for meal_id in st.session_state.ga_result:
-            meal_row = meals_df[meals_df["Meal_ID"] == meal_id]
-            if not meal_row.empty:
-                name = meal_row.iloc[0]["Meal_Name"]
-                meal_names.append(f"{meal_id} - {name}")
-            else:
-                meal_names.append(f"{meal_id} - Unknown")
+           meal_row = meals_df[meals_df["Meal_ID"] == meal_id]
+        if not meal_row.empty:
+           name = meal_row.iloc[0]["Meal_Name"]
+           meal_names.append(f"{name} - {meal_id}")  # Changed order: Meal Name - ID
+        else:
+           meal_names.append(f"Unknown - {meal_id}")
 
         # Build weekly plan DataFrame with meal names
         plan_df_named = pd.DataFrame(
@@ -537,7 +537,7 @@ with tabs[3]:
     st.header("Membership Function Visualizations")
 
     x_age = np.linspace(15, 65, 500)
-    x_bmi = np.linspace(10, 50, 500)
+    x_bmi = np.linspace(10, 50, 1000)
     x_activity = np.linspace(1, 10, 500)
 
     fig1, ax1 = plt.subplots()
@@ -548,7 +548,7 @@ with tabs[3]:
     ax1.legend()
     st.pyplot(fig1)
 
-    fig2, ax2 = plt.subplots()
+    fig2, ax2 = plt.subplots(figsize=(10,6))
     ax2.plot(x_bmi, triangular(x_bmi, 0, 16, 18.5), label="Underweight")
     ax2.plot(x_bmi, triangular(x_bmi, 18, 22, 25), label="Normal")
     ax2.plot(x_bmi, triangular(x_bmi, 24, 27, 30), label="Overweight")
